@@ -1,0 +1,14 @@
+C:\Users\vojte\VeeamSync\OneWayFolderSyncer\bin\Debug\net8.0\OneWayFolderSyncer.exe
+C:\Users\vojte\VeeamSync\OneWayFolderSyncer\bin\Debug\net8.0\OneWayFolderSyncer.deps.json
+C:\Users\vojte\VeeamSync\OneWayFolderSyncer\bin\Debug\net8.0\OneWayFolderSyncer.runtimeconfig.json
+C:\Users\vojte\VeeamSync\OneWayFolderSyncer\bin\Debug\net8.0\OneWayFolderSyncer.dll
+C:\Users\vojte\VeeamSync\OneWayFolderSyncer\bin\Debug\net8.0\OneWayFolderSyncer.pdb
+C:\Users\vojte\VeeamSync\OneWayFolderSyncer\obj\Debug\net8.0\OneWayFolderSyncer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vojte\VeeamSync\OneWayFolderSyncer\obj\Debug\net8.0\OneWayFolderSyncer.AssemblyInfoInputs.cache
+C:\Users\vojte\VeeamSync\OneWayFolderSyncer\obj\Debug\net8.0\OneWayFolderSyncer.AssemblyInfo.cs
+C:\Users\vojte\VeeamSync\OneWayFolderSyncer\obj\Debug\net8.0\OneWayFolderSyncer.csproj.CoreCompileInputs.cache
+C:\Users\vojte\VeeamSync\OneWayFolderSyncer\obj\Debug\net8.0\OneWayFolderSyncer.dll
+C:\Users\vojte\VeeamSync\OneWayFolderSyncer\obj\Debug\net8.0\refint\OneWayFolderSyncer.dll
+C:\Users\vojte\VeeamSync\OneWayFolderSyncer\obj\Debug\net8.0\OneWayFolderSyncer.pdb
+C:\Users\vojte\VeeamSync\OneWayFolderSyncer\obj\Debug\net8.0\OneWayFolderSyncer.genruntimeconfig.cache
+C:\Users\vojte\VeeamSync\OneWayFolderSyncer\obj\Debug\net8.0\ref\OneWayFolderSyncer.dll
