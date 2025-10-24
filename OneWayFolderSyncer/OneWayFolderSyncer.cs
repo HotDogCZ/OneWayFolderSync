@@ -5,6 +5,7 @@ using System.IO.Enumeration;
 using System.Linq;
 using System.Reflection;
 using System.Timers;
+using FolderSyncing;
 using Timer = System.Timers.Timer;
 
 namespace FolderSyncing
@@ -41,8 +42,7 @@ namespace FolderSyncing
 
         internal void StartSyncing()
         {
-            sourceDirectory.BuildIndex();
-            replicaDirectory.BuildIndex();
+            SyncReplicaWithSource();
             syncTimer.Start();
         }
 
@@ -56,50 +56,143 @@ namespace FolderSyncing
             Console.WriteLine("Syncing " + replicaFolderPath + " to match " + sourceFolderPath);
             sourceDirectory.BuildIndex();
             replicaDirectory.BuildIndex();
+            List<IndexedFile> unconfirmedReplicatedFiles = replicaDirectory
+                .GetIndexedFiles()
+                .ToList();
+
             // Replicate missing files
-            foreach (IndexedFile file in sourceDirectory.GetIndexedFiles())
+            List<SourceReplicaFilePair> potentiallyUpdatedFiles = new();
+
+            foreach (IndexedFile sourceFile in sourceDirectory.GetIndexedFiles())
             {
-                bool replicaExists = replicaDirectory.ContainsFile(file);
-                if (!replicaExists)
+                IndexedFile replicatedFile = replicaDirectory.GetFileById(sourceFile.fileId);
+                if (replicatedFile == null)
                 {
-                    ReplicateFile(file);
+                    // sourceFile is not in replica
+                    ReplicateFile(sourceFile);
+                }
+                else
+                {
+                    // sourceFile is in replica
+                    potentiallyUpdatedFiles.Add(new(sourceFile, replicatedFile));
+                }
+            }
+            // Update changed files
+            foreach (SourceReplicaFilePair updated in potentiallyUpdatedFiles)
+            {
+                IndexedFile replica = updated.replica;
+                IndexedFile source = updated.source;
+                // If files are different size -- definitely changed
+                if (replica.Size != source.Size)
+                {
+                    UpdateFile(source, replica);
+                    Console.WriteLine("Size has changed");
+                }
+
+                // Compare content hashes
+                if (!source.ConentHashEquals(replica))
+                {
+                    UpdateFile(source, replica);
+                    Console.WriteLine("Conent has changed");
                 }
             }
 
             // Delete irrelevant files
-            foreach (IndexedFile file in replicaDirectory.GetIndexedFiles())
+            List<IndexedFile> toRemove = new();
+            foreach (IndexedFile file in unconfirmedReplicatedFiles)
             {
                 bool sourceExists = sourceDirectory.ContainsFile(file);
                 if (!sourceExists)
                 {
                     DeleteFile(file);
                 }
+                toRemove.Remove(file);
             }
+            unconfirmedReplicatedFiles.RemoveAll((x) => toRemove.Contains(x));
 
-            // Update changed files
+            HandleDirectorySyncing(sourceDirectory, replicaDirectory);
+        }
+
+        private void HandleDirectorySyncing(
+            IndexedDirectory sourceDirectory,
+            IndexedDirectory replicaDirectory
+        )
+        {
+            List<SourceReplicaDirectoryPair> potentiallyUpdated = new();
+            foreach (IndexedDirectory sourceSubDir in sourceDirectory.GetIndexedSubdirs())
+            {
+                IndexedDirectory replicatedDirectory = replicaDirectory.GetDirById(
+                    replicaDirectory.directoryId
+                );
+                if (replicatedDirectory == null)
+                {
+                    ReplicateDirectory(sourceSubDir);
+                }
+                else
+                {
+                    potentiallyUpdated.Add(new(sourceSubDir, replicatedDirectory));
+                }
+            }
+            foreach (var dir in potentiallyUpdated)
+            {
+                HandleDirectorySyncing(dir.source, dir.replica);
+            }
+        }
+
+        private void UpdateFile(IndexedFile source, IndexedFile replica)
+        {
+            LogUpdatedFile(source, replica);
+            DeleteFile(replica);
+            ReplicateFile(source);
         }
 
         private void DeleteFile(IndexedFile file)
         {
-            File.Delete(file.filePath);
+            File.Delete(file.FilePath);
             LogDeletedFile(file);
         }
 
         private void ReplicateFile(IndexedFile file)
         {
-            File.Copy(file.filePath, Path.Combine(this.replicaFolderPath, file.fileName));
+            File.Copy(file.FilePath, SourcePathToReplicaPath(file.FilePath));
             LogReplicatedFile(file);
+        }
+
+        private void ReplicateDirectory(IndexedDirectory sourceSubDir)
+        {
+            LogReplicatedDirectory(sourceSubDir);
+            Directory.CreateDirectory(SourcePathToReplicaPath(sourceSubDir.DirectoryPath));
+            foreach (var file in sourceSubDir.GetIndexedFiles())
+            {
+                ReplicateFile(file);
+            }
+            foreach (var subdir in sourceSubDir.GetIndexedSubdirs())
+            {
+                ReplicateDirectory(subdir);
+            }
+        }
+
+        private void LogReplicatedDirectory(IndexedDirectory dir)
+        {
+            Console.WriteLine($"Replicated directory {dir.DirectoryPath} from source.");
         }
 
         private void LogReplicatedFile(IndexedFile file)
         {
-            Console.WriteLine("Replicated " + file.fileName + " from source.");
+            Console.WriteLine($"Replicated {file.FileName} from source.");
         }
 
         private void LogDeletedFile(IndexedFile file)
         {
             Console.WriteLine(
-                "Deleted " + file.fileName + " from replica -- file no longer exists in source."
+                $"Deleted {file.FileName} from replica -- file no longer exists in source."
+            );
+        }
+
+        private void LogUpdatedFile(IndexedFile source, IndexedFile replica)
+        {
+            Console.WriteLine(
+                $"Updated {replica.FileName} in replica to match {source.FileName} in source."
             );
         }
 
@@ -108,37 +201,37 @@ namespace FolderSyncing
             syncTimer.Stop();
             syncTimer.Dispose();
         }
-    }
 
-    internal class IndexedDirectory
+        internal string SourcePathToReplicaPath(string sourcePath)
+        {
+            // turns C:\user\source\foo\foo.txt -> foo.txt
+            string relativePath = Path.GetRelativePath(this.sourceFolderPath, sourcePath);
+            // return C:\user\replica\foo\foo.txt
+            return Path.Combine(this.replicaFolderPath, relativePath);
+        }
+    }
+}
+
+internal class SourceReplicaFilePair
+{
+    public IndexedFile source { get; }
+    public IndexedFile replica { get; }
+
+    public SourceReplicaFilePair(IndexedFile source, IndexedFile replica)
     {
-        private string directoryPath;
-        Dictionary<string, IndexedFile> indexedFiles = new();
-
-        internal IndexedDirectory(string directoryPath)
-        {
-            this.directoryPath = directoryPath;
-        }
-
-        internal void BuildIndex()
-        {
-            indexedFiles.Clear();
-            foreach (var file in Directory.GetFiles(directoryPath))
-            {
-                IndexedFile indexedFile = new(file);
-                indexedFiles.Add(indexedFile.fileName, indexedFile);
-            }
-        }
-
-        internal bool ContainsFile(IndexedFile file)
-        {
-            return indexedFiles.ContainsKey(file.fileName);
-        }
-
-        internal IndexedFile[] GetIndexedFiles()
-        {
-            return indexedFiles.Values.ToArray();
-        }
+        this.source = source;
+        this.replica = replica;
     }
+}
 
+internal class SourceReplicaDirectoryPair
+{
+    public IndexedDirectory source { get; }
+    public IndexedDirectory replica { get; }
+
+    public SourceReplicaDirectoryPair(IndexedDirectory source, IndexedDirectory replica)
+    {
+        this.source = source;
+        this.replica = replica;
+    }
 }

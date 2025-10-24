@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZfKV0ktTORU=",
+  "dgSpecHash": "nJ8nZKeiih8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\vojte\\VeeamSync\\OneWayFolderSyncer\\OneWayFolderSyncer.csproj",
+  "projectFilePath": "C:\\Users\\vojte\\OneWayFolderSync\\OneWayFolderSyncer\\OneWayFolderSyncer.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

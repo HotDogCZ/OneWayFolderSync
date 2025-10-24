@@ -8,19 +8,24 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\vojte\\.nuget\\packages\\": {}
+    "C:\\Users\\vojte\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vojte\\VeeamSync\\OneWayFolderSyncer\\OneWayFolderSyncer.csproj",
+      "projectUniqueName": "C:\\Users\\vojte\\OneWayFolderSync\\OneWayFolderSyncer\\OneWayFolderSyncer.csproj",
       "projectName": "OneWayFolderSyncer",
-      "projectPath": "C:\\Users\\vojte\\VeeamSync\\OneWayFolderSyncer\\OneWayFolderSyncer.csproj",
+      "projectPath": "C:\\Users\\vojte\\OneWayFolderSync\\OneWayFolderSyncer\\OneWayFolderSyncer.csproj",
       "packagesPath": "C:\\Users\\vojte\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vojte\\VeeamSync\\OneWayFolderSyncer\\obj\\",
+      "outputPath": "C:\\Users\\vojte\\OneWayFolderSync\\OneWayFolderSyncer\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
         "C:\\Users\\vojte\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -44,8 +49,9 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "direct"
-      }
+        "auditMode": "all"
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -66,7 +72,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

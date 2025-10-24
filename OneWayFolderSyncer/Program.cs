@@ -5,14 +5,17 @@ class Program
 {
     static void Main(string[] args)
     {
-        string replicaPath = "C:\\Users\\vojte\\VeeamSync\\replica";
-        string sourcePath = "C:\\Users\\vojte\\VeeamSync\\source";
-        string logPath = "C:\\Users\\vojte\\VeeamSync";
+        string projectRoot = Path.GetFullPath(
+            Path.Combine(AppContext.BaseDirectory, @"..\..\..\..")
+        );
+        string replicaPath = Path.Combine(projectRoot, "replica");
+        string sourcePath = Path.Combine(projectRoot, "source");
+        string logPath = Path.Combine(projectRoot, "log.txt");
         int syncPeriod = 5;
 
         OneWayFolderSyncer oneWayFolderSyncer = new(sourcePath, replicaPath, logPath, syncPeriod);
         oneWayFolderSyncer.StartSyncing();
-        Console.WriteLine("To stop synchronization press any enter.");
+        Console.WriteLine("To stop synchronization press enter.");
         Console.ReadLine();
         oneWayFolderSyncer.StopSyncing();
     }
