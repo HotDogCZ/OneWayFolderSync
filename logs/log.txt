@@ -1,2 +1,7 @@
 25.10.2025 23:01:11: Replicated gh - kopie.txt from source.
 25.10.2025 23:01:11: Replicated gh.txt from source.
+25.10.2025 23:44:24: Synchronization starts. Source: C:\Users\vojte\OneWayFolderSync\source. Replica: C:\Users\vojte\OneWayFolderSync\replica.
+26.10.2025 0:06:49: Synchronization starts. Source: C:\Users\vojte\OneWayFolderSync\source. Replica: C:\Users\vojte\OneWayFolderSync\replica.
+26.10.2025 0:06:55: Synchronization ended.
+26.10.2025 0:07:07: Synchronization starts. Source: C:\Users\vojte\OneWayFolderSync\source. Replica: C:\Users\vojte\OneWayFolderSync\replica.
+26.10.2025 0:07:25: Synchronization starts. Source: C:\Users\vojte\OneWayFolderSync\source. Replica: C:\Users\vojte\OneWayFolderSync\replica.

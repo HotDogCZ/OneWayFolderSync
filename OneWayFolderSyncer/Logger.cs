@@ -67,9 +67,11 @@ namespace FolderSyncing
             LogMessage($"Fully deleted directory {dir.directoryId}");
         }
 
-        internal static void LogStart(string sourcePath, string replicaPath)
+        internal static void LogStart(string sourcePath, string replicaPath, double interval)
         {
-            LogMessage($"Synchronization starts. Source: {sourcePath}. Replica: {replicaPath}.");
+            LogMessage(
+                $"Synchronization starts. Source: {sourcePath}. Replica: {replicaPath}. Synchroniazion period: {interval}ms."
+            );
         }
 
         internal static void LogStop()

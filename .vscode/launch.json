@@ -1,24 +1,31 @@
 {
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "C/C++ Runner: Debug Session",
-      "type": "cppdbg",
+      "name": "ConsoleApp",
+      "type": "coreclr",
       "request": "launch",
-      "args": [],
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/OneWayFolderSyncer/bin/Debug/net8.0/OneWayFolderSyncer.dll",
+      "args": [
+        "C:\\Users\\vojte\\OneWayFolderSync\\source",
+        "C:\\Users\\vojte\\OneWayFolderSync\\replica",
+        "5",
+        "C:\\Users\\vojte\\OneWayFolderSynclog.txt"
+      ],
+      "cwd": "${workspaceFolder}",
       "stopAtEntry": false,
-      "externalConsole": true,
-      "cwd": "c:/Users/vojte/OneWayFolderSync",
-      "program": "c:/Users/vojte/OneWayFolderSync/build/Debug/outDebug",
-      "MIMode": "gdb",
-      "miDebuggerPath": "gdb",
-      "setupCommands": [
-        {
-          "description": "Enable pretty-printing for gdb",
-          "text": "-enable-pretty-printing",
-          "ignoreFailures": true
-        }
-      ]
+      "console": "integratedTerminal"
+    },
+
+    {
+      "name": "C#: OneWayFolderSyncer${cwd} Debug",
+      "type": "dotnet",
+      "request": "launch",
+      "projectPath": "${workspaceFolder}/<relative-path-to-project-folder>OneWayFolderSyncer${cwd}.csproj"
     }
   ]
 }

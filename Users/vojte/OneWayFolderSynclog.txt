@@ -1,0 +1,2 @@
+26.10.2025 0:12:54: Synchronization starts. Source: C:/Users/vojte/OneWayFolderSync/source. Replica: C:Users/vojte/OneWayFolderSync/replica.
+26.10.2025 0:13:44: Synchronization starts. Source: C:/Users/vojte/OneWayFolderSync/source. Replica: C:Users/vojte/OneWayFolderSync/replica.
