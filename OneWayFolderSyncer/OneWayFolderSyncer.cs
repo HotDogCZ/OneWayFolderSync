@@ -5,7 +5,7 @@ using System.IO.Enumeration;
 using System.Linq;
 using System.Reflection;
 using System.Timers;
-using FolderSyncing;
+using Microsoft.VisualBasic.FileIO;
 using Timer = System.Timers.Timer;
 
 namespace FolderSyncing
@@ -17,8 +17,6 @@ namespace FolderSyncing
         private string logFilePath;
         private int syncPeriodSeconds;
         private Timer syncTimer;
-        private IndexedDirectory sourceDirectory;
-        private IndexedDirectory replicaDirectory;
 
         public OneWayFolderSyncer(
             string sourceFolderPath,
@@ -35,9 +33,6 @@ namespace FolderSyncing
             syncTimer = new(syncPeriodInSeconds * 1000d);
             syncTimer.Elapsed += onSyncTimerElapsed;
             syncTimer.AutoReset = true;
-
-            sourceDirectory = new(sourceFolderPath);
-            replicaDirectory = new(replicaFolderPath);
         }
 
         internal void StartSyncing()
@@ -54,8 +49,29 @@ namespace FolderSyncing
         private void SyncReplicaWithSource()
         {
             Console.WriteLine("Syncing " + replicaFolderPath + " to match " + sourceFolderPath);
-            sourceDirectory.BuildIndex();
-            replicaDirectory.BuildIndex();
+            SyncDirectory(new(sourceFolderPath));
+        }
+
+        private void SyncDirectory(IndexedDirectory currentSourceDirectory)
+        {
+            string replicaPath = SourcePathToReplicaPath(currentSourceDirectory.DirectoryPath);
+            IndexedDirectory currentReplicaDirectory = new IndexedDirectory(replicaPath);
+            currentSourceDirectory.BuildIndex();
+            currentReplicaDirectory.BuildIndex();
+            SyncFiles(currentSourceDirectory, currentReplicaDirectory);
+            SyncDirectories(currentSourceDirectory, currentReplicaDirectory);
+            // sync files on top level
+            //foreach directory - recursion
+
+            foreach (var dir in currentSourceDirectory.GetIndexedSubdirs())
+            {
+                SyncDirectory(dir);
+                Console.WriteLine($"Syncing {dir.directoryId}");
+            }
+        }
+
+        private void SyncFiles(IndexedDirectory sourceDirectory, IndexedDirectory replicaDirectory)
+        {
             List<IndexedFile> unconfirmedReplicatedFiles = replicaDirectory
                 .GetIndexedFiles()
                 .ToList();
@@ -74,7 +90,10 @@ namespace FolderSyncing
                 else
                 {
                     // sourceFile is in replica
+                    // It could have been updated.
                     potentiallyUpdatedFiles.Add(new(sourceFile, replicatedFile));
+                    // Its existence is confirmed - it is supposed to be in replica folder.
+                    unconfirmedReplicatedFiles.RemoveAll((x) => x.fileId == sourceFile.fileId);
                 }
             }
             // Update changed files
@@ -98,7 +117,6 @@ namespace FolderSyncing
             }
 
             // Delete irrelevant files
-            List<IndexedFile> toRemove = new();
             foreach (IndexedFile file in unconfirmedReplicatedFiles)
             {
                 bool sourceExists = sourceDirectory.ContainsFile(file);
@@ -106,36 +124,50 @@ namespace FolderSyncing
                 {
                     DeleteFile(file);
                 }
-                toRemove.Remove(file);
             }
-            unconfirmedReplicatedFiles.RemoveAll((x) => toRemove.Contains(x));
-
-            HandleDirectorySyncing(sourceDirectory, replicaDirectory);
         }
 
-        private void HandleDirectorySyncing(
+        private void SyncDirectories(
             IndexedDirectory sourceDirectory,
             IndexedDirectory replicaDirectory
         )
         {
             List<SourceReplicaDirectoryPair> potentiallyUpdated = new();
+            List<IndexedDirectory> unconfirmedReplicaDirectories = replicaDirectory
+                .GetIndexedSubdirs()
+                .ToList();
+            ;
+            // add missing directories
             foreach (IndexedDirectory sourceSubDir in sourceDirectory.GetIndexedSubdirs())
             {
                 IndexedDirectory replicatedDirectory = replicaDirectory.GetDirById(
-                    replicaDirectory.directoryId
+                    sourceSubDir.directoryId
                 );
                 if (replicatedDirectory == null)
                 {
                     ReplicateDirectory(sourceSubDir);
+                    replicaDirectory.IndexDirectory(sourceSubDir);
                 }
                 else
                 {
                     potentiallyUpdated.Add(new(sourceSubDir, replicatedDirectory));
+                    unconfirmedReplicaDirectories.RemoveAll(
+                        (x) => x.directoryId == sourceSubDir.directoryId
+                    );
                 }
             }
-            foreach (var dir in potentiallyUpdated)
+            // check if directory was updated
+            foreach (SourceReplicaDirectoryPair subDir in potentiallyUpdated)
             {
-                HandleDirectorySyncing(dir.source, dir.replica);
+                if (!subDir.source.ContentHashEquals(subDir.replica))
+                {
+                    SyncDirectory(subDir.source);
+                }
+            }
+
+            foreach (IndexedDirectory dir in unconfirmedReplicaDirectories)
+            {
+                DeleteDirectory(dir);
             }
         }
 
@@ -146,29 +178,79 @@ namespace FolderSyncing
             ReplicateFile(source);
         }
 
+        private void DeleteDirectory(IndexedDirectory dir)
+        {
+            try
+            {
+                LogDeletingDirectory(dir);
+                foreach (IndexedDirectory subdir in dir.GetIndexedSubdirs())
+                {
+                    DeleteDirectory(subdir);
+                }
+                foreach (IndexedFile file in dir.GetIndexedFiles())
+                {
+                    DeleteFile(file);
+                }
+                Directory.Delete(dir.DirectoryPath);
+                LogDeletedDirectory(dir);
+            }
+            catch (IOException e)
+            {
+                LogExcecption(e);
+            }
+        }
+
+        private void LogDeletingDirectory(IndexedDirectory dir)
+        {
+            Console.WriteLine($"Trying to delete directory {dir.directoryId}...");
+        }
+
+        private void LogDeletedDirectory(IndexedDirectory dir)
+        {
+            Console.WriteLine($"Fully deleted directory {dir.directoryId}");
+        }
+
         private void DeleteFile(IndexedFile file)
         {
-            File.Delete(file.FilePath);
-            LogDeletedFile(file);
+            try
+            {
+                File.Delete(file.FilePath);
+                LogDeletedFile(file);
+            }
+            catch (IOException e)
+            {
+                LogExcecption(e);
+            }
         }
 
         private void ReplicateFile(IndexedFile file)
         {
-            File.Copy(file.FilePath, SourcePathToReplicaPath(file.FilePath));
-            LogReplicatedFile(file);
+            try
+            {
+                File.Copy(file.FilePath, SourcePathToReplicaPath(file.FilePath));
+                LogReplicatedFile(file);
+            }
+            catch (IOException e)
+            {
+                LogExcecption(e);
+            }
+        }
+
+        public void LogExcecption(Exception e)
+        {
+            Console.WriteLine(e.Message, e.StackTrace);
         }
 
         private void ReplicateDirectory(IndexedDirectory sourceSubDir)
         {
-            LogReplicatedDirectory(sourceSubDir);
-            Directory.CreateDirectory(SourcePathToReplicaPath(sourceSubDir.DirectoryPath));
-            foreach (var file in sourceSubDir.GetIndexedFiles())
+            try
             {
-                ReplicateFile(file);
+                Directory.CreateDirectory(SourcePathToReplicaPath(sourceSubDir.DirectoryPath));
+                LogReplicatedDirectory(sourceSubDir);
             }
-            foreach (var subdir in sourceSubDir.GetIndexedSubdirs())
+            catch (IOException e)
             {
-                ReplicateDirectory(subdir);
+                LogExcecption(e);
             }
         }
 
@@ -209,29 +291,5 @@ namespace FolderSyncing
             // return C:\user\replica\foo\foo.txt
             return Path.Combine(this.replicaFolderPath, relativePath);
         }
-    }
-}
-
-internal class SourceReplicaFilePair
-{
-    public IndexedFile source { get; }
-    public IndexedFile replica { get; }
-
-    public SourceReplicaFilePair(IndexedFile source, IndexedFile replica)
-    {
-        this.source = source;
-        this.replica = replica;
-    }
-}
-
-internal class SourceReplicaDirectoryPair
-{
-    public IndexedDirectory source { get; }
-    public IndexedDirectory replica { get; }
-
-    public SourceReplicaDirectoryPair(IndexedDirectory source, IndexedDirectory replica)
-    {
-        this.source = source;
-        this.replica = replica;
     }
 }

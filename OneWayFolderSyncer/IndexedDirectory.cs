@@ -1,3 +1,6 @@
+using System.Security.Cryptography;
+using System.Text;
+
 namespace FolderSyncing
 {
     internal class IndexedDirectory
@@ -57,6 +60,40 @@ namespace FolderSyncing
         internal IndexedDirectory GetDirById(string directoryId)
         {
             return indexedDirectories.GetValueOrDefault(directoryId, null);
+        }
+
+        internal void IndexDirectory(IndexedDirectory sourceSubDir)
+        {
+            indexedDirectories.Add(sourceSubDir.directoryId, sourceSubDir);
+        }
+
+        internal bool ContentHashEquals(IndexedDirectory other)
+        {
+            byte[] thisHash = this.CalculateHash();
+            byte[] otherHash = other.CalculateHash();
+            return thisHash.SequenceEqual(otherHash);
+        }
+
+        /// <summary>
+        /// Calculaates hash according to all the files inside the directory.
+        /// Does not take subdirectiories into count - they are supposed to be checked later.
+        /// </summary>
+        /// <returns></returns>
+        private byte[] CalculateHash()
+        {
+            using (MD5 md5 = MD5.Create())
+            {
+                List<IndexedFile> files = indexedFiles.Values.ToList();
+                files.Sort((a, b) => string.Compare(a.FileName, b.FileName));
+                StringBuilder combined = new();
+                foreach (var file in files)
+                {
+                    combined.Append(file.FileName);
+                    combined.Append(file.CalculateContentHash());
+                }
+                byte[] combinedBytes = Encoding.ASCII.GetBytes(combined.ToString());
+                return md5.ComputeHash(combinedBytes);
+            }
         }
     }
 }
