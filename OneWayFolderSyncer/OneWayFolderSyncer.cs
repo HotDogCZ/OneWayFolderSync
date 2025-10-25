@@ -14,8 +14,6 @@ namespace FolderSyncing
     {
         private string sourceFolderPath;
         private string replicaFolderPath;
-        private string logFilePath;
-        private int syncPeriodSeconds;
         private Timer syncTimer;
 
         public OneWayFolderSyncer(
@@ -27,16 +25,17 @@ namespace FolderSyncing
         {
             this.sourceFolderPath = sourceFolderPath;
             this.replicaFolderPath = replicaFolderPath;
-            this.logFilePath = logFilePath;
-            this.syncPeriodSeconds = syncPeriodInSeconds;
 
             syncTimer = new(syncPeriodInSeconds * 1000d);
             syncTimer.Elapsed += onSyncTimerElapsed;
             syncTimer.AutoReset = true;
+
+            Logger.Initialize(logFilePath);
         }
 
         internal void StartSyncing()
         {
+            Logger.LogStart(sourceFolderPath, replicaFolderPath);
             SyncReplicaWithSource();
             syncTimer.Start();
         }
@@ -173,7 +172,7 @@ namespace FolderSyncing
 
         private void UpdateFile(IndexedFile source, IndexedFile replica)
         {
-            LogUpdatedFile(source, replica);
+            Logger.LogUpdatedFile(source, replica);
             DeleteFile(replica);
             ReplicateFile(source);
         }
@@ -182,7 +181,7 @@ namespace FolderSyncing
         {
             try
             {
-                LogDeletingDirectory(dir);
+                Logger.LogDeletingDirectory(dir);
                 foreach (IndexedDirectory subdir in dir.GetIndexedSubdirs())
                 {
                     DeleteDirectory(subdir);
@@ -192,22 +191,12 @@ namespace FolderSyncing
                     DeleteFile(file);
                 }
                 Directory.Delete(dir.DirectoryPath);
-                LogDeletedDirectory(dir);
+                Logger.LogDeletedDirectory(dir);
             }
             catch (IOException e)
             {
-                LogExcecption(e);
+                Logger.LogExcecption(e);
             }
-        }
-
-        private void LogDeletingDirectory(IndexedDirectory dir)
-        {
-            Console.WriteLine($"Trying to delete directory {dir.directoryId}...");
-        }
-
-        private void LogDeletedDirectory(IndexedDirectory dir)
-        {
-            Console.WriteLine($"Fully deleted directory {dir.directoryId}");
         }
 
         private void DeleteFile(IndexedFile file)
@@ -215,11 +204,11 @@ namespace FolderSyncing
             try
             {
                 File.Delete(file.FilePath);
-                LogDeletedFile(file);
+                Logger.LogDeletedFile(file);
             }
             catch (IOException e)
             {
-                LogExcecption(e);
+                Logger.LogExcecption(e);
             }
         }
 
@@ -228,17 +217,12 @@ namespace FolderSyncing
             try
             {
                 File.Copy(file.FilePath, SourcePathToReplicaPath(file.FilePath));
-                LogReplicatedFile(file);
+                Logger.LogReplicatedFile(file);
             }
             catch (IOException e)
             {
-                LogExcecption(e);
+                Logger.LogExcecption(e);
             }
-        }
-
-        public void LogExcecption(Exception e)
-        {
-            Console.WriteLine(e.Message, e.StackTrace);
         }
 
         private void ReplicateDirectory(IndexedDirectory sourceSubDir)
@@ -246,42 +230,19 @@ namespace FolderSyncing
             try
             {
                 Directory.CreateDirectory(SourcePathToReplicaPath(sourceSubDir.DirectoryPath));
-                LogReplicatedDirectory(sourceSubDir);
+                Logger.LogReplicatedDirectory(sourceSubDir);
             }
             catch (IOException e)
             {
-                LogExcecption(e);
+                Logger.LogExcecption(e);
             }
-        }
-
-        private void LogReplicatedDirectory(IndexedDirectory dir)
-        {
-            Console.WriteLine($"Replicated directory {dir.DirectoryPath} from source.");
-        }
-
-        private void LogReplicatedFile(IndexedFile file)
-        {
-            Console.WriteLine($"Replicated {file.FileName} from source.");
-        }
-
-        private void LogDeletedFile(IndexedFile file)
-        {
-            Console.WriteLine(
-                $"Deleted {file.FileName} from replica -- file no longer exists in source."
-            );
-        }
-
-        private void LogUpdatedFile(IndexedFile source, IndexedFile replica)
-        {
-            Console.WriteLine(
-                $"Updated {replica.FileName} in replica to match {source.FileName} in source."
-            );
         }
 
         internal void StopSyncing()
         {
             syncTimer.Stop();
             syncTimer.Dispose();
+            Logger.LogStop();
         }
 
         internal string SourcePathToReplicaPath(string sourcePath)

@@ -10,7 +10,7 @@ class Program
         );
         string replicaPath = Path.Combine(projectRoot, "replica");
         string sourcePath = Path.Combine(projectRoot, "source");
-        string logPath = Path.Combine(projectRoot, "log.txt");
+        string logPath = Path.Combine(projectRoot, "logs\\log.txt");
         int syncPeriod = 5;
 
         OneWayFolderSyncer oneWayFolderSyncer = new(sourcePath, replicaPath, logPath, syncPeriod);

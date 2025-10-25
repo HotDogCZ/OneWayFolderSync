@@ -1,0 +1,12 @@
+Replicated new.txt from source.
+Replicated bic.bmp from source.
+Replicated gh - kopie.txt from source.
+Replicated gh.txt from source.
+Replicated new.txt from source.
+Deleted new.txt from replica -- file no longer exists in source.
+25.10.2025 22:39:38Replicated bic.bmp from source.
+25.10.2025 22:39:38Replicated gh - kopie.txt from source.
+25.10.2025 22:39:38Replicated gh.txt from source.
+25.10.2025 22:53:10: Synchronization starts. Source: C:\Users\vojte\OneWayFolderSync\source. Replica: C:\Users\vojte\OneWayFolderSync\replica.
+25.10.2025 22:54:19: Synchronization starts. Source: C:\Users\vojte\OneWayFolderSync\source. Replica: C:\Users\vojte\OneWayFolderSync\replica.
+25.10.2025 22:58:34: Synchronization starts. Source: C:\Users\vojte\OneWayFolderSync\source. Replica: C:\Users\vojte\OneWayFolderSync\replica.
