@@ -6,7 +6,14 @@ namespace FolderSyncing
 
         public static void Initialize(string logFolderPath)
         {
-            logFilePath = logFolderPath;
+            if (File.Exists(logFolderPath))
+            {
+                logFilePath = logFolderPath;
+            }
+            else
+            {
+                logFilePath = Path.Combine(logFolderPath, "log.txt");
+            }
         }
 
         private static void LogMessage(string message)
@@ -70,7 +77,7 @@ namespace FolderSyncing
         internal static void LogStart(string sourcePath, string replicaPath, double interval)
         {
             LogMessage(
-                $"Synchronization starts. Source: {sourcePath}. Replica: {replicaPath}. Synchroniazion period: {interval}ms."
+                $"Synchronization starts. Source: {sourcePath}. Replica: {replicaPath}. Synchroniazion period: {interval / 1000d} seconds."
             );
         }
 

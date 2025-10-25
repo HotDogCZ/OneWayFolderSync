@@ -16,7 +16,6 @@ namespace FolderSyncing
         private string replicaFolderPath;
         private Timer syncTimer;
 
-
         public OneWayFolderSyncer(
             string sourceFolderPath,
             string replicaFolderPath,
@@ -24,28 +23,30 @@ namespace FolderSyncing
             int syncPeriodInSeconds
         )
         {
-            if (!Directory.Exists(sourceFolderPath))
+            this.sourceFolderPath = Path.GetFullPath(sourceFolderPath);
+            this.replicaFolderPath = Path.GetFullPath(replicaFolderPath);
+
+            if (!Directory.Exists(this.sourceFolderPath))
             {
                 throw new DirectoryNotFoundException(sourceFolderPath);
             }
-            if (!Directory.Exists(replicaFolderPath))
+            if (!Directory.Exists(this.replicaFolderPath))
             {
                 throw new DirectoryNotFoundException(replicaFolderPath);
             }
 
-            this.sourceFolderPath = sourceFolderPath;
-            this.replicaFolderPath = replicaFolderPath;
+
+            logFilePath = Path.GetFullPath(logFilePath);
+            Logger.Initialize(logFilePath);
 
             syncTimer = new(syncPeriodInSeconds * 1000d);
             syncTimer.Elapsed += onSyncTimerElapsed;
             syncTimer.AutoReset = true;
-
-            Logger.Initialize(logFilePath);
         }
 
         internal void StartSyncing()
         {
-            Logger.LogStart(sourceFolderPath, replicaFolderPath, syncTimer.);
+            Logger.LogStart(sourceFolderPath, replicaFolderPath, syncTimer.Interval);
             SyncReplicaWithSource();
             syncTimer.Start();
         }

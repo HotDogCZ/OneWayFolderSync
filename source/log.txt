@@ -1,0 +1,44 @@
+26.10.2025 1:49:54: Synchronization starts. Source: C:\Users\vojte\OneWayFolderSync\source\. Replica: C:\Users\vojte\OneWayFolderSync\replica\. Synchroniazion period: 2 seconds.
+26.10.2025 1:49:54: Replicated log.txt from source.
+26.10.2025 1:49:56: Updated log.txt in replica to match log.txt in source.
+26.10.2025 1:49:56: Deleted log.txt from replica -- file no longer exists in source.
+26.10.2025 1:49:56: Replicated log.txt from source.
+26.10.2025 1:49:56: Updated log.txt in replica to match log.txt in source.
+26.10.2025 1:49:56: Deleted log.txt from replica -- file no longer exists in source.
+26.10.2025 1:49:56: Replicated log.txt from source.
+26.10.2025 1:49:58: Updated log.txt in replica to match log.txt in source.
+26.10.2025 1:49:58: Deleted log.txt from replica -- file no longer exists in source.
+26.10.2025 1:49:58: Replicated log.txt from source.
+26.10.2025 1:49:58: Updated log.txt in replica to match log.txt in source.
+26.10.2025 1:49:58: Deleted log.txt from replica -- file no longer exists in source.
+26.10.2025 1:49:58: Replicated log.txt from source.
+26.10.2025 1:50:00: Updated log.txt in replica to match log.txt in source.
+26.10.2025 1:50:00: Deleted log.txt from replica -- file no longer exists in source.
+26.10.2025 1:50:00: Replicated log.txt from source.
+26.10.2025 1:50:00: Updated log.txt in replica to match log.txt in source.
+26.10.2025 1:50:00: Deleted log.txt from replica -- file no longer exists in source.
+26.10.2025 1:50:00: Replicated log.txt from source.
+26.10.2025 1:50:02: Updated log.txt in replica to match log.txt in source.
+26.10.2025 1:50:02: Deleted log.txt from replica -- file no longer exists in source.
+26.10.2025 1:50:02: Replicated log.txt from source.
+26.10.2025 1:50:02: Updated log.txt in replica to match log.txt in source.
+26.10.2025 1:50:02: Deleted log.txt from replica -- file no longer exists in source.
+26.10.2025 1:50:02: Replicated log.txt from source.
+26.10.2025 1:50:04: Updated log.txt in replica to match log.txt in source.
+26.10.2025 1:50:04: Deleted log.txt from replica -- file no longer exists in source.
+26.10.2025 1:50:04: Replicated log.txt from source.
+26.10.2025 1:50:04: Updated log.txt in replica to match log.txt in source.
+26.10.2025 1:50:04: Deleted log.txt from replica -- file no longer exists in source.
+26.10.2025 1:50:04: Replicated log.txt from source.
+26.10.2025 1:50:06: Updated log.txt in replica to match log.txt in source.
+26.10.2025 1:50:06: Deleted log.txt from replica -- file no longer exists in source.
+26.10.2025 1:50:06: Replicated log.txt from source.
+26.10.2025 1:50:06: Updated log.txt in replica to match log.txt in source.
+26.10.2025 1:50:06: Deleted log.txt from replica -- file no longer exists in source.
+26.10.2025 1:50:06: Replicated log.txt from source.
+26.10.2025 1:50:08: Updated log.txt in replica to match log.txt in source.
+26.10.2025 1:50:08: Deleted log.txt from replica -- file no longer exists in source.
+26.10.2025 1:50:08: Replicated log.txt from source.
+26.10.2025 1:50:08: Updated log.txt in replica to match log.txt in source.
+26.10.2025 1:50:08: Deleted log.txt from replica -- file no longer exists in source.
+26.10.2025 1:50:08: Replicated log.txt from source.

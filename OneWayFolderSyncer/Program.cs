@@ -5,6 +5,20 @@ class Program
 {
     static void Main(string[] args)
     {
+        if (args.Length == 1 && args[0] == "-h")
+        {
+            PrintHelp();
+            return;
+        }
+        else if (args.Length != 4)
+        {
+            Console.WriteLine(
+                $"Failed to run the program - expected 4 arguments got {args.Length}"
+            );
+            PrintHelp();
+            return;
+        }
+
         string sourcePath = args[0];
         string replicaPath = args[1];
         string syncPeriodArg = args[2];
@@ -39,5 +53,32 @@ class Program
         Console.WriteLine("To stop synchronization press enter.");
         Console.ReadLine();
         oneWayFolderSyncer.StopSyncing();
+    }
+
+    private static void PrintHelp()
+    {
+        string helpText =
+            @"
+Usage:
+  OneWayFolderSyncer <source_folder> <replica_folder> <sync_period_seconds> <log_path>
+
+Description:
+  Synchronizes the contents of the replica folder to match the source folder at regular intervals.
+  All changes in the source folder (additions, deletions, modifications) will be reflected 
+  in the replica folder.
+
+Arguments:
+  <source_folder>         Path to the folder that will be used as the source.
+  <replica_folder>        Path to the folder where the replica will be stored.
+  <sync_period_seconds>   How often synchronization should occur (in seconds).
+  <log_path>              Path to a log file (.txt) or a folder where the log will be stored.
+
+Options:
+  -h                      Show this help message and exit.
+
+Example:
+  OneWayFolderSyncer C:\Source C:\Replica 60 C:\Logs\replica_log.txt
+";
+        Console.WriteLine(helpText);
     }
 }
