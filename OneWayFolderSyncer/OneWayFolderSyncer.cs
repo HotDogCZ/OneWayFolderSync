@@ -35,7 +35,6 @@ namespace FolderSyncing
                 throw new DirectoryNotFoundException(replicaFolderPath);
             }
 
-
             logFilePath = Path.GetFullPath(logFilePath);
             Logger.Initialize(logFilePath);
 
@@ -70,13 +69,14 @@ namespace FolderSyncing
             currentReplicaDirectory.BuildIndex();
             SyncFiles(currentSourceDirectory, currentReplicaDirectory);
             SyncDirectories(currentSourceDirectory, currentReplicaDirectory);
+
             // sync files on top level
             //foreach directory - recursion
 
             foreach (var dir in currentSourceDirectory.GetIndexedSubdirs())
             {
-                SyncDirectory(dir);
                 Console.WriteLine($"Syncing {dir.directoryId}");
+                SyncDirectory(dir);
             }
         }
 
@@ -142,11 +142,11 @@ namespace FolderSyncing
             IndexedDirectory replicaDirectory
         )
         {
-            List<SourceReplicaDirectoryPair> potentiallyUpdated = new();
             List<IndexedDirectory> unconfirmedReplicaDirectories = replicaDirectory
                 .GetIndexedSubdirs()
                 .ToList();
             ;
+
             // add missing directories
             foreach (IndexedDirectory sourceSubDir in sourceDirectory.GetIndexedSubdirs())
             {
@@ -160,18 +160,9 @@ namespace FolderSyncing
                 }
                 else
                 {
-                    potentiallyUpdated.Add(new(sourceSubDir, replicatedDirectory));
                     unconfirmedReplicaDirectories.RemoveAll(
                         (x) => x.directoryId == sourceSubDir.directoryId
                     );
-                }
-            }
-            // check if directory was updated
-            foreach (SourceReplicaDirectoryPair subDir in potentiallyUpdated)
-            {
-                if (!subDir.source.ContentHashEquals(subDir.replica))
-                {
-                    SyncDirectory(subDir.source);
                 }
             }
 

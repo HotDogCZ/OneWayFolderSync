@@ -1,0 +1,5 @@
+replica/
+source/
+OneWayFolderSyncer/bin/
+OneWayFolderSyncer/ obj/
+logs/
