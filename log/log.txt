@@ -1,0 +1,1051 @@
+28.10.2025 0:27:49: Synchronization starts. Source: 'C:\Users\vojte\Desktop\source'. Replica: 'C:\Users\vojte\OneWayFolderSync\replica'. Synchroniazion period: 5 seconds. Modification detection method: 'MD5 file content hashing'.
+28.10.2025 0:27:50: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main' from source.
+28.10.2025 0:27:50: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets' from source.
+28.10.2025 0:27:50: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Packages' from source.
+28.10.2025 0:27:50: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\ProjectSettings' from source.
+28.10.2025 0:27:51: Replicated 'Animations.meta' from source.
+28.10.2025 0:27:51: Replicated 'CameraConfiner.cs' from source.
+28.10.2025 0:27:51: Replicated 'CameraConfiner.cs.meta' from source.
+28.10.2025 0:27:51: Replicated 'Cinemachine.meta' from source.
+28.10.2025 0:27:51: Replicated 'CinemachineCameraConfinerCustom.cs' from source.
+28.10.2025 0:27:51: Replicated 'CinemachineCameraConfinerCustom.cs.meta' from source.
+28.10.2025 0:27:51: Replicated 'creative.asset' from source.
+28.10.2025 0:27:51: Replicated 'creative.asset.meta' from source.
+28.10.2025 0:27:51: Replicated 'DamageIndicator.cs' from source.
+28.10.2025 0:27:51: Replicated 'DamageIndicator.cs.meta' from source.
+28.10.2025 0:27:51: Replicated 'Editor.meta' from source.
+28.10.2025 0:27:51: Replicated 'FishItemDisplayUI.cs' from source.
+28.10.2025 0:27:51: Replicated 'FishItemDisplayUI.cs.meta' from source.
+28.10.2025 0:27:51: Replicated 'Gizmos.meta' from source.
+28.10.2025 0:27:51: Replicated 'gradient.png' from source.
+28.10.2025 0:27:51: Replicated 'gradient.png.meta' from source.
+28.10.2025 0:27:51: Replicated 'Graphics.meta' from source.
+28.10.2025 0:27:51: Replicated 'Ground.physicsMaterial2D' from source.
+28.10.2025 0:27:51: Replicated 'Ground.physicsMaterial2D.meta' from source.
+28.10.2025 0:27:51: Replicated 'Joystick Pack.meta' from source.
+28.10.2025 0:27:51: Replicated 'lnad.png' from source.
+28.10.2025 0:27:51: Replicated 'lnad.png.meta' from source.
+28.10.2025 0:27:51: Replicated 'marchingSquares.meta' from source.
+28.10.2025 0:27:51: Replicated 'Obstacles.meta' from source.
+28.10.2025 0:27:51: Replicated 'ParalaxLayer.cs' from source.
+28.10.2025 0:27:51: Replicated 'ParalaxLayer.cs.meta' from source.
+28.10.2025 0:27:51: Replicated 'Performance.meta' from source.
+28.10.2025 0:27:51: Replicated 'PlayerStats.asset' from source.
+28.10.2025 0:27:51: Replicated 'PlayerStats.asset.meta' from source.
+28.10.2025 0:27:51: Replicated 'Plugins.meta' from source.
+28.10.2025 0:27:51: Replicated 'Scene.unity' from source.
+28.10.2025 0:27:51: Replicated 'Scene.unity.meta' from source.
+28.10.2025 0:27:51: Replicated 'SceneSettings.lighting' from source.
+28.10.2025 0:27:51: Replicated 'SceneSettings.lighting.meta' from source.
+28.10.2025 0:27:51: Replicated 'SellPointUI.cs' from source.
+28.10.2025 0:27:51: Replicated 'SellPointUI.cs.meta' from source.
+28.10.2025 0:27:51: Replicated 'Snímek obrazovky 2024-10-28 180923.png' from source.
+28.10.2025 0:27:51: Replicated 'Snímek obrazovky 2024-10-28 180923.png.meta' from source.
+28.10.2025 0:27:51: Replicated 'Stencil.mat' from source.
+28.10.2025 0:27:51: Replicated 'Stencil.mat.meta' from source.
+28.10.2025 0:27:51: Replicated 'TextMesh Pro.meta' from source.
+28.10.2025 0:27:51: Replicated 'TODO' from source.
+28.10.2025 0:27:51: Replicated 'TODO.meta' from source.
+28.10.2025 0:27:51: Replicated 'UI.meta' from source.
+28.10.2025 0:27:51: Replicated '_Scenes.meta' from source.
+28.10.2025 0:27:51: Replicated '_Scripts.meta' from source.
+28.10.2025 0:27:51: Replicated '_Species.meta' from source.
+28.10.2025 0:27:51: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\Animations' from source.
+28.10.2025 0:27:51: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\Cinemachine' from source.
+28.10.2025 0:27:51: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\Editor' from source.
+28.10.2025 0:27:51: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\Gizmos' from source.
+28.10.2025 0:27:51: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\Graphics' from source.
+28.10.2025 0:27:51: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\Joystick Pack' from source.
+28.10.2025 0:27:51: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\marchingSquares' from source.
+28.10.2025 0:27:51: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\Obstacles' from source.
+28.10.2025 0:27:51: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\Performance' from source.
+28.10.2025 0:27:51: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\TextMesh Pro' from source.
+28.10.2025 0:27:51: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\UI' from source.
+28.10.2025 0:27:51: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\_Scenes' from source.
+28.10.2025 0:27:51: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\_Scripts' from source.
+28.10.2025 0:27:51: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\_Species' from source.
+28.10.2025 0:27:51: Replicated 'Player.controller' from source.
+28.10.2025 0:27:51: Replicated 'Player.controller.meta' from source.
+28.10.2025 0:27:51: Replicated 'player.meta' from source.
+28.10.2025 0:27:51: Replicated 'walk.anim' from source.
+28.10.2025 0:27:51: Replicated 'walk.anim.meta' from source.
+28.10.2025 0:27:51: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\Animations\player' from source.
+28.10.2025 0:27:51: Replicated 'swim.anim' from source.
+28.10.2025 0:27:51: Replicated 'swim.anim.meta' from source.
+28.10.2025 0:27:51: Replicated 'Base.meta' from source.
+28.10.2025 0:27:51: Replicated 'CinemachineAPI.chm' from source.
+28.10.2025 0:27:51: Replicated 'CinemachineAPI.chm.meta' from source.
+28.10.2025 0:27:51: Replicated 'CINEMACHINE_install.pdf' from source.
+28.10.2025 0:27:51: Replicated 'CINEMACHINE_install.pdf.meta' from source.
+28.10.2025 0:27:51: Replicated 'Gizmos.meta' from source.
+28.10.2025 0:27:51: Replicated 'LICENSE' from source.
+28.10.2025 0:27:51: Replicated 'LICENSE.meta' from source.
+28.10.2025 0:27:51: Replicated 'PostFX.meta' from source.
+28.10.2025 0:27:51: Replicated 'Presets.meta' from source.
+28.10.2025 0:27:51: Replicated 'ReleaseNotes.txt' from source.
+28.10.2025 0:27:51: Replicated 'ReleaseNotes.txt.meta' from source.
+28.10.2025 0:27:51: Replicated 'Timeline.meta' from source.
+28.10.2025 0:27:51: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\Cinemachine\Base' from source.
+28.10.2025 0:27:51: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\Cinemachine\Gizmos' from source.
+28.10.2025 0:27:51: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\Cinemachine\PostFX' from source.
+28.10.2025 0:27:51: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\Cinemachine\Presets' from source.
+28.10.2025 0:27:51: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\Cinemachine\Timeline' from source.
+28.10.2025 0:27:51: Replicated 'Editor.meta' from source.
+28.10.2025 0:27:51: Replicated 'Runtime.meta' from source.
+28.10.2025 0:27:51: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\Cinemachine\Base\Editor' from source.
+28.10.2025 0:27:51: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\Cinemachine\Base\Runtime' from source.
+28.10.2025 0:27:51: Replicated 'Editors.meta' from source.
+28.10.2025 0:27:51: Replicated 'Menus.meta' from source.
+28.10.2025 0:27:51: Replicated 'PropertyDrawers.meta' from source.
+28.10.2025 0:27:51: Replicated 'Resources.meta' from source.
+28.10.2025 0:27:51: Replicated 'Utility.meta' from source.
+28.10.2025 0:27:51: Replicated 'Windows.meta' from source.
+28.10.2025 0:27:51: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\Cinemachine\Base\Editor\Editors' from source.
+28.10.2025 0:27:51: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\Cinemachine\Base\Editor\Menus' from source.
+28.10.2025 0:27:51: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\Cinemachine\Base\Editor\PropertyDrawers' from source.
+28.10.2025 0:27:51: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\Cinemachine\Base\Editor\Resources' from source.
+28.10.2025 0:27:51: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\Cinemachine\Base\Editor\Utility' from source.
+28.10.2025 0:27:51: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\Cinemachine\Base\Editor\Windows' from source.
+28.10.2025 0:27:51: Replicated 'CinemachineBasicMultiChannelPerlinEditor.cs' from source.
+28.10.2025 0:27:51: Replicated 'CinemachineBasicMultiChannelPerlinEditor.cs.meta' from source.
+28.10.2025 0:27:51: Replicated 'CinemachineBlenderSettingsEditor.cs' from source.
+28.10.2025 0:27:51: Replicated 'CinemachineBlenderSettingsEditor.cs.meta' from source.
+28.10.2025 0:27:51: Replicated 'CinemachineBlendListCameraEditor.cs' from source.
+28.10.2025 0:27:51: Replicated 'CinemachineBlendListCameraEditor.cs.meta' from source.
+28.10.2025 0:27:51: Replicated 'CinemachineBrainEditor.cs' from source.
+28.10.2025 0:27:51: Replicated 'CinemachineBrainEditor.cs.meta' from source.
+28.10.2025 0:27:51: Replicated 'CinemachineClearShotEditor.cs' from source.
+28.10.2025 0:27:51: Replicated 'CinemachineClearShotEditor.cs.meta' from source.
+28.10.2025 0:27:51: Replicated 'CinemachineColliderEditor.cs' from source.
+28.10.2025 0:27:51: Replicated 'CinemachineColliderEditor.cs.meta' from source.
+28.10.2025 0:27:51: Replicated 'CinemachineComposerEditor.cs' from source.
+28.10.2025 0:27:51: Replicated 'CinemachineComposerEditor.cs.meta' from source.
+28.10.2025 0:27:51: Replicated 'CinemachineConfinerEditor.cs' from source.
+28.10.2025 0:27:51: Replicated 'CinemachineConfinerEditor.cs.meta' from source.
+28.10.2025 0:27:51: Replicated 'CinemachineExternalCameraEditor.cs' from source.
+28.10.2025 0:27:51: Replicated 'CinemachineExternalCameraEditor.cs.meta' from source.
+28.10.2025 0:27:51: Replicated 'CinemachineFramingTransposerEditor.cs' from source.
+28.10.2025 0:27:51: Replicated 'CinemachineFramingTransposerEditor.cs.meta' from source.
+28.10.2025 0:27:51: Replicated 'CinemachineFreeLookEditor.cs' from source.
+28.10.2025 0:27:51: Replicated 'CinemachineFreeLookEditor.cs.meta' from source.
+28.10.2025 0:27:51: Replicated 'CinemachineGroupComposerEditor.cs' from source.
+28.10.2025 0:27:51: Replicated 'CinemachineGroupComposerEditor.cs.meta' from source.
+28.10.2025 0:27:51: Replicated 'CinemachineHardLockToTargetEditor.cs' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineHardLockToTargetEditor.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineHardLookAtEditor.cs' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineHardLookAtEditor.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineMixingCameraEditor.cs' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineMixingCameraEditor.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineOrbitalTransposerEditor.cs' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineOrbitalTransposerEditor.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'CinemachinePathEditor.cs' from source.
+28.10.2025 0:27:52: Replicated 'CinemachinePathEditor.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'CinemachinePOVEditor.cs' from source.
+28.10.2025 0:27:52: Replicated 'CinemachinePOVEditor.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineScreenComposerGuides.cs' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineScreenComposerGuides.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineSmoothPathEditor.cs' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineSmoothPathEditor.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineStateDrivenCameraEditor.cs' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineStateDrivenCameraEditor.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineTargetGroupEditor.cs' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineTargetGroupEditor.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineTrackedDollyEditor.cs' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineTrackedDollyEditor.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineTransposerEditor.cs' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineTransposerEditor.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineVirtualCameraBaseEditor.cs' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineVirtualCameraBaseEditor.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineVirtualCameraEditor.cs' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineVirtualCameraEditor.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineMenu.cs' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineMenu.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineBlendDefinitionPropertyDrawer.cs' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineBlendDefinitionPropertyDrawer.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineTagFieldPropertyDrawer.cs' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineTagFieldPropertyDrawer.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'GetSetDrawer.cs' from source.
+28.10.2025 0:27:52: Replicated 'GetSetDrawer.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'LensSettingsPropertyDrawer.cs' from source.
+28.10.2025 0:27:52: Replicated 'LensSettingsPropertyDrawer.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'MinDrawer.cs' from source.
+28.10.2025 0:27:52: Replicated 'MinDrawer.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'Cinemachine_header.tif' from source.
+28.10.2025 0:27:52: Replicated 'Cinemachine_header.tif.meta' from source.
+28.10.2025 0:27:52: Replicated 'cm_logo_sm.png' from source.
+28.10.2025 0:27:52: Replicated 'cm_logo_sm.png.meta' from source.
+28.10.2025 0:27:52: Replicated 'BaseEditor.cs' from source.
+28.10.2025 0:27:52: Replicated 'BaseEditor.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'EmbeddedAssetHelpers.cs' from source.
+28.10.2025 0:27:52: Replicated 'EmbeddedAssetHelpers.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'SaveDuringPlay.cs' from source.
+28.10.2025 0:27:52: Replicated 'SaveDuringPlay.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'ScriptableObjectUtility.cs' from source.
+28.10.2025 0:27:52: Replicated 'ScriptableObjectUtility.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'SerializedPropertyHelper.cs' from source.
+28.10.2025 0:27:52: Replicated 'SerializedPropertyHelper.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'AboutWindow.cs' from source.
+28.10.2025 0:27:52: Replicated 'AboutWindow.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineColliderPrefs.cs' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineColliderPrefs.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineSettings.cs' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineSettings.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'Behaviours.meta' from source.
+28.10.2025 0:27:52: Replicated 'Components.meta' from source.
+28.10.2025 0:27:52: Replicated 'Core.meta' from source.
+28.10.2025 0:27:52: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\Cinemachine\Base\Runtime\Behaviours' from source.
+28.10.2025 0:27:52: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\Cinemachine\Base\Runtime\Components' from source.
+28.10.2025 0:27:52: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\Cinemachine\Base\Runtime\Core' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineBlendListCamera.cs' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineBlendListCamera.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineBrain.cs' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineBrain.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineClearShot.cs' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineClearShot.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineCollider.cs' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineCollider.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineConfiner.cs' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineConfiner.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineDollyCart.cs' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineDollyCart.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineExternalCamera.cs' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineExternalCamera.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineFollowZoom.cs' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineFollowZoom.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineFreeLook.cs' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineFreeLook.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineMixingCamera.cs' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineMixingCamera.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'CinemachinePath.cs' from source.
+28.10.2025 0:27:52: Replicated 'CinemachinePath.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'CinemachinePipeline.cs' from source.
+28.10.2025 0:27:52: Replicated 'CinemachinePipeline.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineSmoother.cs' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineSmoother.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineSmoothPath.cs' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineSmoothPath.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineStateDrivenCamera.cs' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineStateDrivenCamera.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineTargetGroup.cs' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineTargetGroup.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineVirtualCamera.cs' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineVirtualCamera.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineBasicMultiChannelPerlin.cs' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineBasicMultiChannelPerlin.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineComposer.cs' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineComposer.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineFramingTransposer.cs' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineFramingTransposer.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineGroupComposer.cs' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineGroupComposer.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineHardLockToTarget.cs' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineHardLockToTarget.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineHardLookAt.cs' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineHardLookAt.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineOrbitalTransposer.cs' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineOrbitalTransposer.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'CinemachinePOV.cs' from source.
+28.10.2025 0:27:52: Replicated 'CinemachinePOV.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineSameAsFollowObject.cs' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineSameAsFollowObject.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineTrackedDolly.cs' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineTrackedDolly.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineTransposer.cs' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineTransposer.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'AxisState.cs' from source.
+28.10.2025 0:27:52: Replicated 'AxisState.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'CameraState.cs' from source.
+28.10.2025 0:27:52: Replicated 'CameraState.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineBlend.cs' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineBlend.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineBlenderSettings.cs' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineBlenderSettings.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineComponentBase.cs' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineComponentBase.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineCore.cs' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineCore.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineDebugLogger.cs' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineDebugLogger.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineExtension.cs' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineExtension.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'CinemachinePathBase.cs' from source.
+28.10.2025 0:27:52: Replicated 'CinemachinePathBase.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'CinemachinePropertyAttribute.cs' from source.
+28.10.2025 0:27:52: Replicated 'CinemachinePropertyAttribute.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineVirtualCameraBase.cs' from source.
+28.10.2025 0:27:52: Replicated 'CinemachineVirtualCameraBase.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'GaussianFilter.cs' from source.
+28.10.2025 0:27:52: Replicated 'GaussianFilter.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'ICinemachineCamera.cs' from source.
+28.10.2025 0:27:52: Replicated 'ICinemachineCamera.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'ICinemachineComponent.cs' from source.
+28.10.2025 0:27:52: Replicated 'ICinemachineComponent.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'LensSettings.cs' from source.
+28.10.2025 0:27:52: Replicated 'LensSettings.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'NoiseSettings.cs' from source.
+28.10.2025 0:27:52: Replicated 'NoiseSettings.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'Predictor.cs' from source.
+28.10.2025 0:27:52: Replicated 'Predictor.cs.meta' from source.
+28.10.2025 0:27:52: Replicated 'ReflectionHelpers.cs' from source.
+28.10.2025 0:27:52: Replicated 'ReflectionHelpers.cs.meta' from source.
+28.10.2025 0:27:53: Replicated 'SplineHelpers.cs' from source.
+28.10.2025 0:27:53: Replicated 'SplineHelpers.cs.meta' from source.
+28.10.2025 0:27:53: Replicated 'UnityVectorExtensions.cs' from source.
+28.10.2025 0:27:53: Replicated 'UnityVectorExtensions.cs.meta' from source.
+28.10.2025 0:27:53: Replicated 'Cinemachine.meta' from source.
+28.10.2025 0:27:53: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\Cinemachine\Gizmos\Cinemachine' from source.
+28.10.2025 0:27:53: Replicated 'cm_logo_lg.png' from source.
+28.10.2025 0:27:53: Replicated 'cm_logo_lg.png.meta' from source.
+28.10.2025 0:27:53: Replicated 'CinemachinePostFX.cs' from source.
+28.10.2025 0:27:53: Replicated 'CinemachinePostFX.cs.meta' from source.
+28.10.2025 0:27:53: Replicated 'CinemachinePostProcessing.cs' from source.
+28.10.2025 0:27:53: Replicated 'CinemachinePostProcessing.cs.meta' from source.
+28.10.2025 0:27:53: Replicated 'Editor.meta' from source.
+28.10.2025 0:27:53: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\Cinemachine\PostFX\Editor' from source.
+28.10.2025 0:27:53: Replicated 'CinemachinePostProcessingEditor.cs' from source.
+28.10.2025 0:27:53: Replicated 'CinemachinePostProcessingEditor.cs.meta' from source.
+28.10.2025 0:27:53: Replicated 'PostFXAutoImport.cs' from source.
+28.10.2025 0:27:53: Replicated 'PostFXAutoImport.cs.meta' from source.
+28.10.2025 0:27:53: Replicated 'Resources.meta' from source.
+28.10.2025 0:27:53: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\Cinemachine\PostFX\Editor\Resources' from source.
+28.10.2025 0:27:53: Replicated 'PostProcessLayer.png' from source.
+28.10.2025 0:27:53: Replicated 'PostProcessLayer.png.meta' from source.
+28.10.2025 0:27:53: Replicated 'Noise.meta' from source.
+28.10.2025 0:27:53: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\Cinemachine\Presets\Noise' from source.
+28.10.2025 0:27:53: Replicated 'Handheld_normal_extreme.asset' from source.
+28.10.2025 0:27:53: Replicated 'Handheld_normal_extreme.asset.meta' from source.
+28.10.2025 0:27:53: Replicated 'Handheld_normal_mild.asset' from source.
+28.10.2025 0:27:53: Replicated 'Handheld_normal_mild.asset.meta' from source.
+28.10.2025 0:27:53: Replicated 'Handheld_normal_strong.asset' from source.
+28.10.2025 0:27:53: Replicated 'Handheld_normal_strong.asset.meta' from source.
+28.10.2025 0:27:53: Replicated 'Handheld_tele_mild.asset' from source.
+28.10.2025 0:27:53: Replicated 'Handheld_tele_mild.asset.meta' from source.
+28.10.2025 0:27:53: Replicated 'Handheld_tele_strong.asset' from source.
+28.10.2025 0:27:53: Replicated 'Handheld_tele_strong.asset.meta' from source.
+28.10.2025 0:27:53: Replicated 'Handheld_wideangle_mild.asset' from source.
+28.10.2025 0:27:53: Replicated 'Handheld_wideangle_mild.asset.meta' from source.
+28.10.2025 0:27:53: Replicated 'Handheld_wideangle_strong.asset' from source.
+28.10.2025 0:27:53: Replicated 'Handheld_wideangle_strong.asset.meta' from source.
+28.10.2025 0:27:53: Replicated 'Vibration.asset' from source.
+28.10.2025 0:27:53: Replicated 'Vibration.asset.meta' from source.
+28.10.2025 0:27:53: Replicated 'CinemachineMixer.cs' from source.
+28.10.2025 0:27:53: Replicated 'CinemachineMixer.cs.meta' from source.
+28.10.2025 0:27:53: Replicated 'CinemachineShot.cs' from source.
+28.10.2025 0:27:53: Replicated 'CinemachineShot.cs.meta' from source.
+28.10.2025 0:27:53: Replicated 'CinemachineTrack.cs' from source.
+28.10.2025 0:27:53: Replicated 'CinemachineTrack.cs.meta' from source.
+28.10.2025 0:27:53: Replicated 'Editor.meta' from source.
+28.10.2025 0:27:53: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\Cinemachine\Timeline\Editor' from source.
+28.10.2025 0:27:53: Replicated 'CinemachineShotEditor.cs' from source.
+28.10.2025 0:27:53: Replicated 'CinemachineShotEditor.cs.meta' from source.
+28.10.2025 0:27:53: Replicated 'AutomateTestEditor.cs' from source.
+28.10.2025 0:27:53: Replicated 'AutomateTestEditor.cs.meta' from source.
+28.10.2025 0:27:53: Replicated 'ShowOnlyDrawer.cs' from source.
+28.10.2025 0:27:53: Replicated 'ShowOnlyDrawer.cs.meta' from source.
+28.10.2025 0:27:53: Replicated 'Cinemachine.meta' from source.
+28.10.2025 0:27:53: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\Gizmos\Cinemachine' from source.
+28.10.2025 0:27:53: Replicated 'cm_logo_lg.png' from source.
+28.10.2025 0:27:53: Replicated 'cm_logo_lg.png.meta' from source.
+28.10.2025 0:27:53: Replicated 'environement.meta' from source.
+28.10.2025 0:27:53: Replicated 'Fisherman.meta' from source.
+28.10.2025 0:27:53: Replicated 'Fishes.meta' from source.
+28.10.2025 0:27:53: Replicated 'greenPlant.PNG' from source.
+28.10.2025 0:27:53: Replicated 'greenPlant.PNG.meta' from source.
+28.10.2025 0:27:53: Replicated 'net.PNG' from source.
+28.10.2025 0:27:53: Replicated 'net.PNG.meta' from source.
+28.10.2025 0:27:53: Replicated 'Placeholder.meta' from source.
+28.10.2025 0:27:53: Replicated 'ui.meta' from source.
+28.10.2025 0:27:53: Replicated 'yellowPlant.PNG' from source.
+28.10.2025 0:27:53: Replicated 'yellowPlant.PNG.meta' from source.
+28.10.2025 0:27:53: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\Graphics\environement' from source.
+28.10.2025 0:27:53: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\Graphics\Fisherman' from source.
+28.10.2025 0:27:53: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\Graphics\Fishes' from source.
+28.10.2025 0:27:53: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\Graphics\Placeholder' from source.
+28.10.2025 0:27:53: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\Graphics\ui' from source.
+28.10.2025 0:27:53: Replicated 'boat.PNG' from source.
+28.10.2025 0:27:53: Replicated 'boat.PNG.meta' from source.
+28.10.2025 0:27:53: Replicated 'hut.PNG' from source.
+28.10.2025 0:27:53: Replicated 'hut.PNG.meta' from source.
+28.10.2025 0:27:53: Replicated 'land.PNG' from source.
+28.10.2025 0:27:53: Replicated 'land.PNG.meta' from source.
+28.10.2025 0:27:53: Replicated 'sellSign.png' from source.
+28.10.2025 0:27:53: Replicated 'sellSign.png.meta' from source.
+28.10.2025 0:27:53: Replicated 'shop.PNG' from source.
+28.10.2025 0:27:53: Replicated 'shop.PNG.meta' from source.
+28.10.2025 0:27:53: Replicated 'shopSign.png' from source.
+28.10.2025 0:27:53: Replicated 'shopSign.png.meta' from source.
+28.10.2025 0:27:53: Replicated 'spear.PNG' from source.
+28.10.2025 0:27:53: Replicated 'spear.PNG.meta' from source.
+28.10.2025 0:27:53: Replicated 'sunset.meta' from source.
+28.10.2025 0:27:53: Replicated 'Untitled_Artwork-1.png' from source.
+28.10.2025 0:27:53: Replicated 'Untitled_Artwork-1.png.meta' from source.
+28.10.2025 0:27:53: Replicated 'Untitled_Artwork-2.png' from source.
+28.10.2025 0:27:53: Replicated 'Untitled_Artwork-2.png.meta' from source.
+28.10.2025 0:27:53: Replicated 'Untitled_Artwork-3.png' from source.
+28.10.2025 0:27:53: Replicated 'Untitled_Artwork-3.png.meta' from source.
+28.10.2025 0:27:53: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\Graphics\environement\sunset' from source.
+28.10.2025 0:27:53: Replicated 'IMG_2723.PNG' from source.
+28.10.2025 0:27:53: Replicated 'IMG_2723.PNG.meta' from source.
+28.10.2025 0:27:53: Replicated 'IMG_2724.PNG' from source.
+28.10.2025 0:27:53: Replicated 'IMG_2724.PNG.meta' from source.
+28.10.2025 0:27:53: Replicated 'IMG_2725.PNG' from source.
+28.10.2025 0:27:53: Replicated 'IMG_2725.PNG.meta' from source.
+28.10.2025 0:27:53: Replicated 'IMG_2726.PNG' from source.
+28.10.2025 0:27:53: Replicated 'IMG_2726.PNG.meta' from source.
+28.10.2025 0:27:53: Replicated 'IMG_2727.PNG' from source.
+28.10.2025 0:27:53: Replicated 'IMG_2727.PNG.meta' from source.
+28.10.2025 0:27:53: Replicated 'IMG_2728.PNG' from source.
+28.10.2025 0:27:53: Replicated 'IMG_2728.PNG.meta' from source.
+28.10.2025 0:27:53: Replicated 'IMG_2729.PNG' from source.
+28.10.2025 0:27:53: Replicated 'IMG_2729.PNG.meta' from source.
+28.10.2025 0:27:53: Replicated 'IMG_2730.PNG' from source.
+28.10.2025 0:27:53: Replicated 'IMG_2730.PNG.meta' from source.
+28.10.2025 0:27:53: Replicated 'IMG_2731.PNG' from source.
+28.10.2025 0:27:53: Replicated 'IMG_2731.PNG.meta' from source.
+28.10.2025 0:27:53: Replicated 'IMG_2732.PNG' from source.
+28.10.2025 0:27:53: Replicated 'IMG_2732.PNG.meta' from source.
+28.10.2025 0:27:54: Replicated 'IMG_2733.PNG' from source.
+28.10.2025 0:27:54: Replicated 'IMG_2733.PNG.meta' from source.
+28.10.2025 0:27:54: Replicated 'BackArm.PNG' from source.
+28.10.2025 0:27:54: Replicated 'BackArm.PNG.meta' from source.
+28.10.2025 0:27:54: Replicated 'BackLeg.PNG' from source.
+28.10.2025 0:27:54: Replicated 'BackLeg.PNG.meta' from source.
+28.10.2025 0:27:54: Replicated 'Belt.PNG' from source.
+28.10.2025 0:27:54: Replicated 'Belt.PNG.meta' from source.
+28.10.2025 0:27:54: Replicated 'FrontArm.PNG' from source.
+28.10.2025 0:27:54: Replicated 'FrontArm.PNG.meta' from source.
+28.10.2025 0:27:54: Replicated 'FrontLeg.PNG' from source.
+28.10.2025 0:27:54: Replicated 'FrontLeg.PNG.meta' from source.
+28.10.2025 0:27:54: Replicated 'Head.PNG' from source.
+28.10.2025 0:27:54: Replicated 'Head.PNG.meta' from source.
+28.10.2025 0:27:54: Replicated 'Meter.PNG' from source.
+28.10.2025 0:27:54: Replicated 'Meter.PNG.meta' from source.
+28.10.2025 0:27:54: Replicated 'NeckGuard.PNG' from source.
+28.10.2025 0:27:54: Replicated 'NeckGuard.PNG.meta' from source.
+28.10.2025 0:27:54: Replicated 'Pack.PNG' from source.
+28.10.2025 0:27:54: Replicated 'Pack.PNG.meta' from source.
+28.10.2025 0:27:54: Replicated 'Torso.PNG' from source.
+28.10.2025 0:27:54: Replicated 'Torso.PNG.meta' from source.
+28.10.2025 0:27:54: Replicated 'angryFish.png' from source.
+28.10.2025 0:27:54: Replicated 'angryFish.png.meta' from source.
+28.10.2025 0:27:54: Replicated 'fish.png' from source.
+28.10.2025 0:27:54: Replicated 'fish.png.meta' from source.
+28.10.2025 0:27:54: Replicated 'greenGoby.PNG' from source.
+28.10.2025 0:27:54: Replicated 'greenGoby.PNG.meta' from source.
+28.10.2025 0:27:54: Replicated 'greenPredator.PNG' from source.
+28.10.2025 0:27:54: Replicated 'greenPredator.PNG.meta' from source.
+28.10.2025 0:27:54: Replicated 'school.png' from source.
+28.10.2025 0:27:54: Replicated 'school.png.meta' from source.
+28.10.2025 0:27:54: Replicated 'circle.png' from source.
+28.10.2025 0:27:54: Replicated 'circle.png.meta' from source.
+28.10.2025 0:27:54: Replicated 'square.png' from source.
+28.10.2025 0:27:54: Replicated 'square.png.meta' from source.
+28.10.2025 0:27:54: Replicated 'standing_character.png' from source.
+28.10.2025 0:27:54: Replicated 'standing_character.png.meta' from source.
+28.10.2025 0:27:54: Replicated 'up_character.png' from source.
+28.10.2025 0:27:54: Replicated 'up_character.png.meta' from source.
+28.10.2025 0:27:54: Replicated 'backpack.png' from source.
+28.10.2025 0:27:54: Replicated 'backpack.png.meta' from source.
+28.10.2025 0:27:54: Replicated 'iconback.png' from source.
+28.10.2025 0:27:54: Replicated 'iconback.png.meta' from source.
+28.10.2025 0:27:54: Replicated 'Image Sequence_001_0000.png' from source.
+28.10.2025 0:27:54: Replicated 'Image Sequence_001_0000.png.meta' from source.
+28.10.2025 0:27:54: Replicated 'oxygen.png' from source.
+28.10.2025 0:27:54: Replicated 'oxygen.png.meta' from source.
+28.10.2025 0:27:54: Replicated 'slice1.png' from source.
+28.10.2025 0:27:54: Replicated 'slice1.png.meta' from source.
+28.10.2025 0:27:54: Replicated 'slice1quest.png' from source.
+28.10.2025 0:27:54: Replicated 'slice1quest.png.meta' from source.
+28.10.2025 0:27:54: Replicated 'slice2fisherman.png' from source.
+28.10.2025 0:27:54: Replicated 'slice2fisherman.png.meta' from source.
+28.10.2025 0:27:54: Replicated 'Prefabs.meta' from source.
+28.10.2025 0:27:54: Replicated 'Scripts.meta' from source.
+28.10.2025 0:27:54: Replicated 'Sprites.meta' from source.
+28.10.2025 0:27:54: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\Joystick Pack\Prefabs' from source.
+28.10.2025 0:27:54: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\Joystick Pack\Scripts' from source.
+28.10.2025 0:27:54: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\Joystick Pack\Sprites' from source.
+28.10.2025 0:27:54: Replicated 'Dynamic Joystick.prefab' from source.
+28.10.2025 0:27:54: Replicated 'Dynamic Joystick.prefab.meta' from source.
+28.10.2025 0:27:54: Replicated 'Fixed Joystick.prefab' from source.
+28.10.2025 0:27:54: Replicated 'Fixed Joystick.prefab.meta' from source.
+28.10.2025 0:27:54: Replicated 'Floating Joystick.prefab' from source.
+28.10.2025 0:27:54: Replicated 'Floating Joystick.prefab.meta' from source.
+28.10.2025 0:27:54: Replicated 'Variable Joystick.prefab' from source.
+28.10.2025 0:27:54: Replicated 'Variable Joystick.prefab.meta' from source.
+28.10.2025 0:27:54: Replicated 'Base.meta' from source.
+28.10.2025 0:27:54: Replicated 'Editor.meta' from source.
+28.10.2025 0:27:54: Replicated 'Joysticks.meta' from source.
+28.10.2025 0:27:54: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\Joystick Pack\Scripts\Base' from source.
+28.10.2025 0:27:54: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\Joystick Pack\Scripts\Editor' from source.
+28.10.2025 0:27:54: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\Joystick Pack\Scripts\Joysticks' from source.
+28.10.2025 0:27:54: Replicated 'Joystick.cs' from source.
+28.10.2025 0:27:54: Replicated 'Joystick.cs.meta' from source.
+28.10.2025 0:27:54: Replicated 'DynamicJoystickEditor.cs' from source.
+28.10.2025 0:27:54: Replicated 'DynamicJoystickEditor.cs.meta' from source.
+28.10.2025 0:27:54: Replicated 'FloatingJoystickEditor.cs' from source.
+28.10.2025 0:27:54: Replicated 'FloatingJoystickEditor.cs.meta' from source.
+28.10.2025 0:27:54: Replicated 'JoystickEditor.cs' from source.
+28.10.2025 0:27:54: Replicated 'JoystickEditor.cs.meta' from source.
+28.10.2025 0:27:54: Replicated 'VariableJoystickEditor.cs' from source.
+28.10.2025 0:27:54: Replicated 'VariableJoystickEditor.cs.meta' from source.
+28.10.2025 0:27:54: Replicated 'DynamicJoystick.cs' from source.
+28.10.2025 0:27:54: Replicated 'DynamicJoystick.cs.meta' from source.
+28.10.2025 0:27:54: Replicated 'FixedJoystick.cs' from source.
+28.10.2025 0:27:54: Replicated 'FixedJoystick.cs.meta' from source.
+28.10.2025 0:27:54: Replicated 'FloatingJoystick.cs' from source.
+28.10.2025 0:27:54: Replicated 'FloatingJoystick.cs.meta' from source.
+28.10.2025 0:27:54: Replicated 'VariableJoystick.cs' from source.
+28.10.2025 0:27:54: Replicated 'VariableJoystick.cs.meta' from source.
+28.10.2025 0:27:54: Replicated 'All Axis Backgrounds.meta' from source.
+28.10.2025 0:27:54: Replicated 'Handles.meta' from source.
+28.10.2025 0:27:54: Replicated 'Horizontal Backgrounds.meta' from source.
+28.10.2025 0:27:54: Replicated 'Vertical Backgrounds.meta' from source.
+28.10.2025 0:27:54: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\Joystick Pack\Sprites\All Axis Backgrounds' from source.
+28.10.2025 0:27:54: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\Joystick Pack\Sprites\Handles' from source.
+28.10.2025 0:27:54: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\Joystick Pack\Sprites\Horizontal Backgrounds' from source.
+28.10.2025 0:27:54: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\Joystick Pack\Sprites\Vertical Backgrounds' from source.
+28.10.2025 0:27:54: Replicated 'AllAxis_Outline.png' from source.
+28.10.2025 0:27:54: Replicated 'AllAxis_Outline.png.meta' from source.
+28.10.2025 0:27:54: Replicated 'AllAxis_Outline_Arrows.png' from source.
+28.10.2025 0:27:54: Replicated 'AllAxis_Outline_Arrows.png.meta' from source.
+28.10.2025 0:27:54: Replicated 'AllAxis_Plain.png' from source.
+28.10.2025 0:27:54: Replicated 'AllAxis_Plain.png.meta' from source.
+28.10.2025 0:27:54: Replicated 'AllAxis_Plain_Arrows.png' from source.
+28.10.2025 0:27:54: Replicated 'AllAxis_Plain_Arrows.png.meta' from source.
+28.10.2025 0:27:54: Replicated 'AllAxis_Ridged.png' from source.
+28.10.2025 0:27:54: Replicated 'AllAxis_Ridged.png.meta' from source.
+28.10.2025 0:27:54: Replicated 'AllAxis_Ridged_Arrows.png' from source.
+28.10.2025 0:27:54: Replicated 'AllAxis_Ridged_Arrows.png.meta' from source.
+28.10.2025 0:27:54: Replicated 'Handle_Outline.png' from source.
+28.10.2025 0:27:54: Replicated 'Handle_Outline.png.meta' from source.
+28.10.2025 0:27:54: Replicated 'Handle_Outline_Arrows.png' from source.
+28.10.2025 0:27:54: Replicated 'Handle_Outline_Arrows.png.meta' from source.
+28.10.2025 0:27:54: Replicated 'Handle_Plain.png' from source.
+28.10.2025 0:27:54: Replicated 'Handle_Plain.png.meta' from source.
+28.10.2025 0:27:54: Replicated 'Handle_Plain_Arrows.png' from source.
+28.10.2025 0:27:54: Replicated 'Handle_Plain_Arrows.png.meta' from source.
+28.10.2025 0:27:54: Replicated 'Handle_Ridged.png' from source.
+28.10.2025 0:27:54: Replicated 'Handle_Ridged.png.meta' from source.
+28.10.2025 0:27:54: Replicated 'Handle_Ridged_Arrows.png' from source.
+28.10.2025 0:27:54: Replicated 'Handle_Ridged_Arrows.png.meta' from source.
+28.10.2025 0:27:54: Replicated 'Horizontal_Outline.png' from source.
+28.10.2025 0:27:54: Replicated 'Horizontal_Outline.png.meta' from source.
+28.10.2025 0:27:54: Replicated 'Horizontal_Outline_Arrows.png' from source.
+28.10.2025 0:27:54: Replicated 'Horizontal_Outline_Arrows.png.meta' from source.
+28.10.2025 0:27:54: Replicated 'Horizontal_Plain.png' from source.
+28.10.2025 0:27:54: Replicated 'Horizontal_Plain.png.meta' from source.
+28.10.2025 0:27:54: Replicated 'Horizontal_Plain_Arrows.png' from source.
+28.10.2025 0:27:54: Replicated 'Horizontal_Plain_Arrows.png.meta' from source.
+28.10.2025 0:27:54: Replicated 'Horizontal_Ridged.png' from source.
+28.10.2025 0:27:54: Replicated 'Horizontal_Ridged.png.meta' from source.
+28.10.2025 0:27:54: Replicated 'Horizontal_Ridged_Arrows.png' from source.
+28.10.2025 0:27:54: Replicated 'Horizontal_Ridged_Arrows.png.meta' from source.
+28.10.2025 0:27:54: Replicated 'Vertical_Outline.png' from source.
+28.10.2025 0:27:54: Replicated 'Vertical_Outline.png.meta' from source.
+28.10.2025 0:27:54: Replicated 'Vertical_Outline_Arrows.png' from source.
+28.10.2025 0:27:54: Replicated 'Vertical_Outline_Arrows.png.meta' from source.
+28.10.2025 0:27:54: Replicated 'Vertical_Plain.png' from source.
+28.10.2025 0:27:54: Replicated 'Vertical_Plain.png.meta' from source.
+28.10.2025 0:27:54: Replicated 'Vertical_Plain_Arrows.png' from source.
+28.10.2025 0:27:54: Replicated 'Vertical_Plain_Arrows.png.meta' from source.
+28.10.2025 0:27:54: Replicated 'Vertical_Ridged.png' from source.
+28.10.2025 0:27:54: Replicated 'Vertical_Ridged.png.meta' from source.
+28.10.2025 0:27:54: Replicated 'Vertical_Ridged_Arrows.png' from source.
+28.10.2025 0:27:54: Replicated 'Vertical_Ridged_Arrows.png.meta' from source.
+28.10.2025 0:27:54: Replicated '2D Flat.mat' from source.
+28.10.2025 0:27:54: Replicated '2D Flat.mat.meta' from source.
+28.10.2025 0:27:54: Replicated '2D Flat.shader' from source.
+28.10.2025 0:27:54: Replicated '2D Flat.shader.meta' from source.
+28.10.2025 0:27:54: Replicated 'Circle2D.cs' from source.
+28.10.2025 0:27:54: Replicated 'Circle2D.cs.meta' from source.
+28.10.2025 0:27:54: Replicated 'Voxel Grid.prefab' from source.
+28.10.2025 0:27:54: Replicated 'Voxel Grid.prefab.meta' from source.
+28.10.2025 0:27:54: Replicated 'Voxel.cs' from source.
+28.10.2025 0:27:54: Replicated 'Voxel.cs.meta' from source.
+28.10.2025 0:27:54: Replicated 'Voxel.prefab' from source.
+28.10.2025 0:27:54: Replicated 'Voxel.prefab.meta' from source.
+28.10.2025 0:27:54: Replicated 'VoxelGrid.cs' from source.
+28.10.2025 0:27:54: Replicated 'VoxelGrid.cs.meta' from source.
+28.10.2025 0:27:54: Replicated 'VoxelMap.cs' from source.
+28.10.2025 0:27:54: Replicated 'VoxelMap.cs.meta' from source.
+28.10.2025 0:27:54: Replicated 'VoxelStencil.cs' from source.
+28.10.2025 0:27:54: Replicated 'VoxelStencil.cs.meta' from source.
+28.10.2025 0:27:55: Replicated 'VoxelStencilCircle.cs' from source.
+28.10.2025 0:27:55: Replicated 'VoxelStencilCircle.cs.meta' from source.
+28.10.2025 0:27:55: Replicated 'Obstacle.prefab' from source.
+28.10.2025 0:27:55: Replicated 'Obstacle.prefab.meta' from source.
+28.10.2025 0:27:55: Replicated 'ObstacleShapes.meta' from source.
+28.10.2025 0:27:55: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\Obstacles\ObstacleShapes' from source.
+28.10.2025 0:27:55: Replicated 'obstacles.png' from source.
+28.10.2025 0:27:55: Replicated 'obstacles.png.meta' from source.
+28.10.2025 0:27:55: Replicated 'obstacles_1.prefab' from source.
+28.10.2025 0:27:55: Replicated 'obstacles_1.prefab.meta' from source.
+28.10.2025 0:27:55: Replicated 'obstacles_10.prefab' from source.
+28.10.2025 0:27:55: Replicated 'obstacles_10.prefab.meta' from source.
+28.10.2025 0:27:55: Replicated 'obstacles_11.prefab' from source.
+28.10.2025 0:27:55: Replicated 'obstacles_11.prefab.meta' from source.
+28.10.2025 0:27:55: Replicated 'obstacles_12.prefab' from source.
+28.10.2025 0:27:55: Replicated 'obstacles_12.prefab.meta' from source.
+28.10.2025 0:27:55: Replicated 'obstacles_13.prefab' from source.
+28.10.2025 0:27:55: Replicated 'obstacles_13.prefab.meta' from source.
+28.10.2025 0:27:55: Replicated 'obstacles_14.prefab' from source.
+28.10.2025 0:27:55: Replicated 'obstacles_14.prefab.meta' from source.
+28.10.2025 0:27:55: Replicated 'obstacles_15.prefab' from source.
+28.10.2025 0:27:55: Replicated 'obstacles_15.prefab.meta' from source.
+28.10.2025 0:27:55: Replicated 'obstacles_2.prefab' from source.
+28.10.2025 0:27:55: Replicated 'obstacles_2.prefab.meta' from source.
+28.10.2025 0:27:55: Replicated 'obstacles_3.prefab' from source.
+28.10.2025 0:27:55: Replicated 'obstacles_3.prefab.meta' from source.
+28.10.2025 0:27:55: Replicated 'obstacles_4.prefab' from source.
+28.10.2025 0:27:55: Replicated 'obstacles_4.prefab.meta' from source.
+28.10.2025 0:27:55: Replicated 'obstacles_5.prefab' from source.
+28.10.2025 0:27:55: Replicated 'obstacles_5.prefab.meta' from source.
+28.10.2025 0:27:55: Replicated 'obstacles_6.prefab' from source.
+28.10.2025 0:27:55: Replicated 'obstacles_6.prefab.meta' from source.
+28.10.2025 0:27:55: Replicated 'obstacles_8.prefab' from source.
+28.10.2025 0:27:55: Replicated 'obstacles_8.prefab.meta' from source.
+28.10.2025 0:27:55: Replicated 'obstacles_9.prefab' from source.
+28.10.2025 0:27:55: Replicated 'obstacles_9.prefab.meta' from source.
+28.10.2025 0:27:55: Replicated 'data.meta' from source.
+28.10.2025 0:27:55: Replicated 'PerformanceeTestManager.cs' from source.
+28.10.2025 0:27:55: Replicated 'PerformanceeTestManager.cs.meta' from source.
+28.10.2025 0:27:55: Replicated 'performance_graph.py' from source.
+28.10.2025 0:27:55: Replicated 'performance_graph.py.meta' from source.
+28.10.2025 0:27:55: Replicated 'plots.meta' from source.
+28.10.2025 0:27:55: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\Performance\plots' from source.
+28.10.2025 0:27:55: Replicated 'build100.png' from source.
+28.10.2025 0:27:55: Replicated 'build100.png.meta' from source.
+28.10.2025 0:27:55: Replicated 'build1000.png' from source.
+28.10.2025 0:27:55: Replicated 'build1000.png.meta' from source.
+28.10.2025 0:27:55: Replicated 'build200.png' from source.
+28.10.2025 0:27:55: Replicated 'build200.png.meta' from source.
+28.10.2025 0:27:55: Replicated 'build2100.png' from source.
+28.10.2025 0:27:55: Replicated 'build2100.png.meta' from source.
+28.10.2025 0:27:55: Replicated 'build220.png' from source.
+28.10.2025 0:27:55: Replicated 'build220.png.meta' from source.
+28.10.2025 0:27:55: Replicated 'build2200.png' from source.
+28.10.2025 0:27:55: Replicated 'build2200.png.meta' from source.
+28.10.2025 0:27:55: Replicated 'build250.png' from source.
+28.10.2025 0:27:55: Replicated 'build250.png.meta' from source.
+28.10.2025 0:27:55: Replicated 'build2500.png' from source.
+28.10.2025 0:27:55: Replicated 'build2500.png.meta' from source.
+28.10.2025 0:27:55: Replicated 'build500.png' from source.
+28.10.2025 0:27:55: Replicated 'build500.png.meta' from source.
+28.10.2025 0:27:55: Replicated 'Documentation.meta' from source.
+28.10.2025 0:27:55: Replicated 'Fonts.meta' from source.
+28.10.2025 0:27:55: Replicated 'Resources.meta' from source.
+28.10.2025 0:27:55: Replicated 'Shaders.meta' from source.
+28.10.2025 0:27:55: Replicated 'Sprites.meta' from source.
+28.10.2025 0:27:55: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\TextMesh Pro\Documentation' from source.
+28.10.2025 0:27:55: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\TextMesh Pro\Fonts' from source.
+28.10.2025 0:27:55: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\TextMesh Pro\Resources' from source.
+28.10.2025 0:27:55: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\TextMesh Pro\Shaders' from source.
+28.10.2025 0:27:55: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\TextMesh Pro\Sprites' from source.
+28.10.2025 0:27:55: Replicated 'TextMesh Pro User Guide 2016.pdf' from source.
+28.10.2025 0:27:55: Replicated 'TextMesh Pro User Guide 2016.pdf.meta' from source.
+28.10.2025 0:27:55: Replicated 'LiberationSans - OFL.txt' from source.
+28.10.2025 0:27:55: Replicated 'LiberationSans - OFL.txt.meta' from source.
+28.10.2025 0:27:55: Replicated 'LiberationSans.ttf' from source.
+28.10.2025 0:27:55: Replicated 'LiberationSans.ttf.meta' from source.
+28.10.2025 0:27:55: Replicated 'Fonts & Materials.meta' from source.
+28.10.2025 0:27:55: Replicated 'LineBreaking Following Characters.txt' from source.
+28.10.2025 0:27:55: Replicated 'LineBreaking Following Characters.txt.meta' from source.
+28.10.2025 0:27:55: Replicated 'LineBreaking Leading Characters.txt' from source.
+28.10.2025 0:27:55: Replicated 'LineBreaking Leading Characters.txt.meta' from source.
+28.10.2025 0:27:55: Replicated 'Sprite Assets.meta' from source.
+28.10.2025 0:27:55: Replicated 'Style Sheets.meta' from source.
+28.10.2025 0:27:55: Replicated 'TMP Settings.asset' from source.
+28.10.2025 0:27:55: Replicated 'TMP Settings.asset.meta' from source.
+28.10.2025 0:27:55: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\TextMesh Pro\Resources\Fonts & Materials' from source.
+28.10.2025 0:27:55: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\TextMesh Pro\Resources\Sprite Assets' from source.
+28.10.2025 0:27:55: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\TextMesh Pro\Resources\Style Sheets' from source.
+28.10.2025 0:27:55: Replicated 'LiberationSans SDF - Drop Shadow.mat' from source.
+28.10.2025 0:27:55: Replicated 'LiberationSans SDF - Drop Shadow.mat.meta' from source.
+28.10.2025 0:27:55: Replicated 'LiberationSans SDF - Fallback.asset' from source.
+28.10.2025 0:27:55: Replicated 'LiberationSans SDF - Fallback.asset.meta' from source.
+28.10.2025 0:27:55: Replicated 'LiberationSans SDF - Outline.mat' from source.
+28.10.2025 0:27:55: Replicated 'LiberationSans SDF - Outline.mat.meta' from source.
+28.10.2025 0:27:55: Replicated 'LiberationSans SDF.asset' from source.
+28.10.2025 0:27:55: Replicated 'LiberationSans SDF.asset.meta' from source.
+28.10.2025 0:27:55: Replicated 'EmojiOne.asset' from source.
+28.10.2025 0:27:55: Replicated 'EmojiOne.asset.meta' from source.
+28.10.2025 0:27:55: Replicated 'Default Style Sheet.asset' from source.
+28.10.2025 0:27:55: Replicated 'Default Style Sheet.asset.meta' from source.
+28.10.2025 0:27:55: Replicated 'TMPro.cginc' from source.
+28.10.2025 0:27:55: Replicated 'TMPro.cginc.meta' from source.
+28.10.2025 0:27:55: Replicated 'TMPro_Mobile.cginc' from source.
+28.10.2025 0:27:55: Replicated 'TMPro_Mobile.cginc.meta' from source.
+28.10.2025 0:27:55: Replicated 'TMPro_Properties.cginc' from source.
+28.10.2025 0:27:55: Replicated 'TMPro_Properties.cginc.meta' from source.
+28.10.2025 0:27:55: Replicated 'TMPro_Surface.cginc' from source.
+28.10.2025 0:27:55: Replicated 'TMPro_Surface.cginc.meta' from source.
+28.10.2025 0:27:55: Replicated 'TMP_Bitmap-Custom-Atlas.shader' from source.
+28.10.2025 0:27:55: Replicated 'TMP_Bitmap-Custom-Atlas.shader.meta' from source.
+28.10.2025 0:27:55: Replicated 'TMP_Bitmap-Mobile.shader' from source.
+28.10.2025 0:27:55: Replicated 'TMP_Bitmap-Mobile.shader.meta' from source.
+28.10.2025 0:27:55: Replicated 'TMP_Bitmap.shader' from source.
+28.10.2025 0:27:55: Replicated 'TMP_Bitmap.shader.meta' from source.
+28.10.2025 0:27:55: Replicated 'TMP_SDF Overlay.shader' from source.
+28.10.2025 0:27:55: Replicated 'TMP_SDF Overlay.shader.meta' from source.
+28.10.2025 0:27:55: Replicated 'TMP_SDF SSD.shader' from source.
+28.10.2025 0:27:55: Replicated 'TMP_SDF SSD.shader.meta' from source.
+28.10.2025 0:27:55: Replicated 'TMP_SDF-Mobile Masking.shader' from source.
+28.10.2025 0:27:55: Replicated 'TMP_SDF-Mobile Masking.shader.meta' from source.
+28.10.2025 0:27:55: Replicated 'TMP_SDF-Mobile Overlay.shader' from source.
+28.10.2025 0:27:55: Replicated 'TMP_SDF-Mobile Overlay.shader.meta' from source.
+28.10.2025 0:27:55: Replicated 'TMP_SDF-Mobile SSD.shader' from source.
+28.10.2025 0:27:55: Replicated 'TMP_SDF-Mobile SSD.shader.meta' from source.
+28.10.2025 0:27:55: Replicated 'TMP_SDF-Mobile.shader' from source.
+28.10.2025 0:27:55: Replicated 'TMP_SDF-Mobile.shader.meta' from source.
+28.10.2025 0:27:55: Replicated 'TMP_SDF-Surface-Mobile.shader' from source.
+28.10.2025 0:27:55: Replicated 'TMP_SDF-Surface-Mobile.shader.meta' from source.
+28.10.2025 0:27:55: Replicated 'TMP_SDF-Surface.shader' from source.
+28.10.2025 0:27:55: Replicated 'TMP_SDF-Surface.shader.meta' from source.
+28.10.2025 0:27:55: Replicated 'TMP_SDF.shader' from source.
+28.10.2025 0:27:55: Replicated 'TMP_SDF.shader.meta' from source.
+28.10.2025 0:27:55: Replicated 'TMP_Sprite.shader' from source.
+28.10.2025 0:27:55: Replicated 'TMP_Sprite.shader.meta' from source.
+28.10.2025 0:27:55: Replicated 'EmojiOne Attribution.txt' from source.
+28.10.2025 0:27:55: Replicated 'EmojiOne Attribution.txt.meta' from source.
+28.10.2025 0:27:55: Replicated 'EmojiOne.json' from source.
+28.10.2025 0:27:55: Replicated 'EmojiOne.json.meta' from source.
+28.10.2025 0:27:55: Replicated 'EmojiOne.png' from source.
+28.10.2025 0:27:55: Replicated 'EmojiOne.png.meta' from source.
+28.10.2025 0:27:55: Replicated 'FishItemDisplay.prefab' from source.
+28.10.2025 0:27:55: Replicated 'FishItemDisplay.prefab.meta' from source.
+28.10.2025 0:27:55: Replicated 'fonts.meta' from source.
+28.10.2025 0:27:55: Replicated 'Info.prefab' from source.
+28.10.2025 0:27:55: Replicated 'Info.prefab.meta' from source.
+28.10.2025 0:27:55: Replicated 'tutorial.meta' from source.
+28.10.2025 0:27:55: Replicated 'UpgradeElement.prefab' from source.
+28.10.2025 0:27:55: Replicated 'UpgradeElement.prefab.meta' from source.
+28.10.2025 0:27:55: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\UI\fonts' from source.
+28.10.2025 0:27:55: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\UI\tutorial' from source.
+28.10.2025 0:27:56: Replicated 'Anton-Regular SDF.asset' from source.
+28.10.2025 0:27:56: Replicated 'Anton-Regular SDF.asset.meta' from source.
+28.10.2025 0:27:56: Replicated 'Anton-Regular.ttf' from source.
+28.10.2025 0:27:56: Replicated 'Anton-Regular.ttf.meta' from source.
+28.10.2025 0:27:56: Replicated 'Oswald-VariableFont_wght Atlas outline.mat' from source.
+28.10.2025 0:27:56: Replicated 'Oswald-VariableFont_wght Atlas outline.mat.meta' from source.
+28.10.2025 0:27:56: Replicated 'Oswald-VariableFont_wght SDF.asset' from source.
+28.10.2025 0:27:56: Replicated 'Oswald-VariableFont_wght SDF.asset.meta' from source.
+28.10.2025 0:27:56: Replicated 'Oswald-VariableFont_wght.ttf' from source.
+28.10.2025 0:27:56: Replicated 'Oswald-VariableFont_wght.ttf.meta' from source.
+28.10.2025 0:27:56: Replicated 'Oswald_highlighted.asset' from source.
+28.10.2025 0:27:56: Replicated 'Oswald_highlighted.asset.meta' from source.
+28.10.2025 0:27:56: Replicated 'RussoOne-RegulaBackground.asset' from source.
+28.10.2025 0:27:56: Replicated 'RussoOne-RegulaBackground.asset.meta' from source.
+28.10.2025 0:27:56: Replicated 'RussoOne-Regular Outline.mat' from source.
+28.10.2025 0:27:56: Replicated 'RussoOne-Regular Outline.mat.meta' from source.
+28.10.2025 0:27:56: Replicated 'RussoOne-Regular SDF.asset' from source.
+28.10.2025 0:27:56: Replicated 'RussoOne-Regular SDF.asset.meta' from source.
+28.10.2025 0:27:56: Replicated 'Theroar-Ligature SDF.asset' from source.
+28.10.2025 0:27:56: Replicated 'Theroar-Ligature SDF.asset.meta' from source.
+28.10.2025 0:27:56: Replicated 'eKey.png' from source.
+28.10.2025 0:27:56: Replicated 'eKey.png.meta' from source.
+28.10.2025 0:27:56: Replicated 'movement.png' from source.
+28.10.2025 0:27:56: Replicated 'movement.png.meta' from source.
+28.10.2025 0:27:56: Replicated 'movetext.png' from source.
+28.10.2025 0:27:56: Replicated 'movetext.png.meta' from source.
+28.10.2025 0:27:56: Replicated 'slice10.png' from source.
+28.10.2025 0:27:56: Replicated 'slice10.png.meta' from source.
+28.10.2025 0:27:56: Replicated 'Snímek obrazovky 2025-05-10 022829.png' from source.
+28.10.2025 0:27:56: Replicated 'Snímek obrazovky 2025-05-10 022829.png.meta' from source.
+28.10.2025 0:27:56: Replicated 'Snímek obrazovky 2025-05-10 022844.png' from source.
+28.10.2025 0:27:56: Replicated 'Snímek obrazovky 2025-05-10 022844.png.meta' from source.
+28.10.2025 0:27:56: Replicated 'Snímek obrazovky 2025-05-10 024256.png' from source.
+28.10.2025 0:27:56: Replicated 'Snímek obrazovky 2025-05-10 024256.png.meta' from source.
+28.10.2025 0:27:56: Replicated 'Snímek obrazovky 2025-05-10 024438.png' from source.
+28.10.2025 0:27:56: Replicated 'Snímek obrazovky 2025-05-10 024438.png.meta' from source.
+28.10.2025 0:27:56: Replicated 'Snímek obrazovky 2025-05-10 025324.png' from source.
+28.10.2025 0:27:56: Replicated 'Snímek obrazovky 2025-05-10 025324.png.meta' from source.
+28.10.2025 0:27:56: Replicated 'Snímek obrazovky 2025-05-10 025337.png' from source.
+28.10.2025 0:27:56: Replicated 'Snímek obrazovky 2025-05-10 025337.png.meta' from source.
+28.10.2025 0:27:56: Replicated 'spaceBar.png' from source.
+28.10.2025 0:27:56: Replicated 'spaceBar.png.meta' from source.
+28.10.2025 0:27:56: Replicated 'swap.png' from source.
+28.10.2025 0:27:56: Replicated 'swap.png.meta' from source.
+28.10.2025 0:27:56: Replicated 'swapText.png' from source.
+28.10.2025 0:27:56: Replicated 'swapText.png.meta' from source.
+28.10.2025 0:27:56: Replicated 'use.png' from source.
+28.10.2025 0:27:56: Replicated 'use.png.meta' from source.
+28.10.2025 0:27:56: Replicated 'usetext.png' from source.
+28.10.2025 0:27:56: Replicated 'usetext.png.meta' from source.
+28.10.2025 0:27:56: Replicated 'wasdKeys.png' from source.
+28.10.2025 0:27:56: Replicated 'wasdKeys.png.meta' from source.
+28.10.2025 0:27:56: Replicated 'cave_gen.unity' from source.
+28.10.2025 0:27:56: Replicated 'cave_gen.unity.meta' from source.
+28.10.2025 0:27:56: Replicated 'Game.unity' from source.
+28.10.2025 0:27:56: Replicated 'Game.unity.meta' from source.
+28.10.2025 0:27:56: Replicated 'Menu.unity' from source.
+28.10.2025 0:27:56: Replicated 'Menu.unity.meta' from source.
+28.10.2025 0:27:56: Replicated 'Testing.unity' from source.
+28.10.2025 0:27:56: Replicated 'Testing.unity.meta' from source.
+28.10.2025 0:27:56: Replicated 'WorkScene.unity' from source.
+28.10.2025 0:27:56: Replicated 'WorkScene.unity.meta' from source.
+28.10.2025 0:27:56: Replicated '_Prefabs.meta' from source.
+28.10.2025 0:27:56: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\_Scenes\_Prefabs' from source.
+28.10.2025 0:27:56: Replicated 'Block.prefab' from source.
+28.10.2025 0:27:56: Replicated 'Block.prefab.meta' from source.
+28.10.2025 0:27:56: Replicated 'caveMaterial.mat' from source.
+28.10.2025 0:27:56: Replicated 'caveMaterial.mat.meta' from source.
+28.10.2025 0:27:56: Replicated 'Fish.meta' from source.
+28.10.2025 0:27:56: Replicated 'FoodObject.prefab' from source.
+28.10.2025 0:27:56: Replicated 'FoodObject.prefab.meta' from source.
+28.10.2025 0:27:56: Replicated 'Layer.prefab' from source.
+28.10.2025 0:27:56: Replicated 'Layer.prefab.meta' from source.
+28.10.2025 0:27:56: Replicated 'Player.prefab' from source.
+28.10.2025 0:27:56: Replicated 'Player.prefab.meta' from source.
+28.10.2025 0:27:56: Replicated 'SpeedTrail.prefab' from source.
+28.10.2025 0:27:56: Replicated 'SpeedTrail.prefab.meta' from source.
+28.10.2025 0:27:56: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\_Scenes\_Prefabs\Fish' from source.
+28.10.2025 0:27:56: Replicated 'Components.meta' from source.
+28.10.2025 0:27:56: Replicated 'Goby.prefab' from source.
+28.10.2025 0:27:56: Replicated 'Goby.prefab.meta' from source.
+28.10.2025 0:27:56: Replicated 'PickupPrefab.prefab' from source.
+28.10.2025 0:27:56: Replicated 'PickupPrefab.prefab.meta' from source.
+28.10.2025 0:27:56: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\_Scenes\_Prefabs\Fish\Components' from source.
+28.10.2025 0:27:56: Replicated 'CatchableIndictaror.prefab' from source.
+28.10.2025 0:27:56: Replicated 'CatchableIndictaror.prefab.meta' from source.
+28.10.2025 0:27:56: Replicated 'Environment.prefab' from source.
+28.10.2025 0:27:56: Replicated 'Environment.prefab.meta' from source.
+28.10.2025 0:27:56: Replicated 'Flee.prefab' from source.
+28.10.2025 0:27:56: Replicated 'Flee.prefab.meta' from source.
+28.10.2025 0:27:56: Replicated 'Flocking.prefab' from source.
+28.10.2025 0:27:56: Replicated 'Flocking.prefab.meta' from source.
+28.10.2025 0:27:56: Replicated 'HungerManagement.prefab' from source.
+28.10.2025 0:27:56: Replicated 'HungerManagement.prefab.meta' from source.
+28.10.2025 0:27:56: Replicated 'ObstacleAvoid.prefab' from source.
+28.10.2025 0:27:56: Replicated 'ObstacleAvoid.prefab.meta' from source.
+28.10.2025 0:27:56: Replicated 'Seek.prefab' from source.
+28.10.2025 0:27:56: Replicated 'Seek.prefab.meta' from source.
+28.10.2025 0:27:56: Replicated 'WallAvoid.prefab' from source.
+28.10.2025 0:27:56: Replicated 'WallAvoid.prefab.meta' from source.
+28.10.2025 0:27:56: Replicated 'first22_49.csv' from source.
+28.10.2025 0:27:56: Replicated 'first22_49.csv.meta' from source.
+28.10.2025 0:27:56: Replicated 'first22_53.csv' from source.
+28.10.2025 0:27:56: Replicated 'first22_53.csv.meta' from source.
+28.10.2025 0:27:56: Replicated 'Fishes.meta' from source.
+28.10.2025 0:27:56: Replicated 'Game.meta' from source.
+28.10.2025 0:27:56: Replicated 'Player.meta' from source.
+28.10.2025 0:27:56: Replicated 'UI.meta' from source.
+28.10.2025 0:27:56: Replicated 'Utils.meta' from source.
+28.10.2025 0:27:56: Replicated 'World.meta' from source.
+28.10.2025 0:27:56: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\_Scripts\Fishes' from source.
+28.10.2025 0:27:56: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\_Scripts\Game' from source.
+28.10.2025 0:27:56: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\_Scripts\Player' from source.
+28.10.2025 0:27:56: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\_Scripts\UI' from source.
+28.10.2025 0:27:56: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\_Scripts\Utils' from source.
+28.10.2025 0:27:56: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\_Scripts\World' from source.
+28.10.2025 0:27:56: Replicated 'BaseStats.cs' from source.
+28.10.2025 0:27:56: Replicated 'BaseStats.cs.meta' from source.
+28.10.2025 0:27:56: Replicated 'BattleBehaviour.cs' from source.
+28.10.2025 0:27:56: Replicated 'BattleBehaviour.cs.meta' from source.
+28.10.2025 0:27:56: Replicated 'Catchable.cs' from source.
+28.10.2025 0:27:56: Replicated 'Catchable.cs.meta' from source.
+28.10.2025 0:27:56: Replicated 'EntityStats.cs' from source.
+28.10.2025 0:27:56: Replicated 'EntityStats.cs.meta' from source.
+28.10.2025 0:27:56: Replicated 'Fish.cs' from source.
+28.10.2025 0:27:56: Replicated 'Fish.cs.meta' from source.
+28.10.2025 0:27:56: Replicated 'FishCollider.cs' from source.
+28.10.2025 0:27:56: Replicated 'FishCollider.cs.meta' from source.
+28.10.2025 0:27:56: Replicated 'FishingNet.cs' from source.
+28.10.2025 0:27:56: Replicated 'FishingNet.cs.meta' from source.
+28.10.2025 0:27:56: Replicated 'FishSpecie.cs' from source.
+28.10.2025 0:27:56: Replicated 'FishSpecie.cs.meta' from source.
+28.10.2025 0:27:56: Replicated 'FishStrategyPicking.cs' from source.
+28.10.2025 0:27:56: Replicated 'FishStrategyPicking.cs.meta' from source.
+28.10.2025 0:27:56: Replicated 'HierarchySystem.cs' from source.
+28.10.2025 0:27:56: Replicated 'HierarchySystem.cs.meta' from source.
+28.10.2025 0:27:56: Replicated 'HungerManagement.cs' from source.
+28.10.2025 0:27:56: Replicated 'HungerManagement.cs.meta' from source.
+28.10.2025 0:27:56: Replicated 'Movement.meta' from source.
+28.10.2025 0:27:56: Replicated 'SchoolManager.cs' from source.
+28.10.2025 0:27:56: Replicated 'SchoolManager.cs.meta' from source.
+28.10.2025 0:27:56: Replicated 'SinusiodMovement.cs' from source.
+28.10.2025 0:27:56: Replicated 'SinusiodMovement.cs.meta' from source.
+28.10.2025 0:27:56: Replicated 'SpeedTrail.cs' from source.
+28.10.2025 0:27:56: Replicated 'SpeedTrail.cs.meta' from source.
+28.10.2025 0:27:56: Replicated 'TutorialOnFishVisibility.cs' from source.
+28.10.2025 0:27:56: Replicated 'TutorialOnFishVisibility.cs.meta' from source.
+28.10.2025 0:27:56: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\_Scripts\Fishes\Movement' from source.
+28.10.2025 0:27:56: Replicated 'FishMovement.cs' from source.
+28.10.2025 0:27:56: Replicated 'FishMovement.cs.meta' from source.
+28.10.2025 0:27:56: Replicated 'FleeFromPredator.cs' from source.
+28.10.2025 0:27:56: Replicated 'FleeFromPredator.cs.meta' from source.
+28.10.2025 0:27:56: Replicated 'FleePlayer.cs' from source.
+28.10.2025 0:27:56: Replicated 'FleePlayer.cs.meta' from source.
+28.10.2025 0:27:56: Replicated 'Flocking.cs' from source.
+28.10.2025 0:27:56: Replicated 'Flocking.cs.meta' from source.
+28.10.2025 0:27:56: Replicated 'FoodSeekMovement.cs' from source.
+28.10.2025 0:27:56: Replicated 'FoodSeekMovement.cs.meta' from source.
+28.10.2025 0:27:56: Replicated 'ObstacleAvoid.cs' from source.
+28.10.2025 0:27:56: Replicated 'ObstacleAvoid.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'PathFollowSteering.cs' from source.
+28.10.2025 0:27:57: Replicated 'PathFollowSteering.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'PredatorFoodSeekMovement.cs' from source.
+28.10.2025 0:27:57: Replicated 'PredatorFoodSeekMovement.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'SeekPlayer.cs' from source.
+28.10.2025 0:27:57: Replicated 'SeekPlayer.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'UtilityScoreFunctions.cs' from source.
+28.10.2025 0:27:57: Replicated 'UtilityScoreFunctions.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'Wander.cs' from source.
+28.10.2025 0:27:57: Replicated 'Wander.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'Config.cs' from source.
+28.10.2025 0:27:57: Replicated 'Config.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'FishFollowCamera.cs' from source.
+28.10.2025 0:27:57: Replicated 'FishFollowCamera.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'GameOver.cs' from source.
+28.10.2025 0:27:57: Replicated 'GameOver.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'Backpack.cs' from source.
+28.10.2025 0:27:57: Replicated 'Backpack.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'Controller.cs' from source.
+28.10.2025 0:27:57: Replicated 'Controller.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'DeathCause.cs' from source.
+28.10.2025 0:27:57: Replicated 'DeathCause.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'FishingSpear.cs' from source.
+28.10.2025 0:27:57: Replicated 'FishingSpear.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'Health.cs' from source.
+28.10.2025 0:27:57: Replicated 'Health.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'Inventory.cs' from source.
+28.10.2025 0:27:57: Replicated 'Inventory.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'Oxygen.cs' from source.
+28.10.2025 0:27:57: Replicated 'Oxygen.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'Player.cs' from source.
+28.10.2025 0:27:57: Replicated 'Player.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'PlayerMovement.cs' from source.
+28.10.2025 0:27:57: Replicated 'PlayerMovement.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'PlayerStats.cs' from source.
+28.10.2025 0:27:57: Replicated 'PlayerStats.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'Stamina.cs' from source.
+28.10.2025 0:27:57: Replicated 'Stamina.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'TrackableStat.cs' from source.
+28.10.2025 0:27:57: Replicated 'TrackableStat.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'WaterPressure.cs' from source.
+28.10.2025 0:27:57: Replicated 'WaterPressure.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'ConfirmButtonByPress.cs' from source.
+28.10.2025 0:27:57: Replicated 'ConfirmButtonByPress.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'CopyButtonTint.cs' from source.
+28.10.2025 0:27:57: Replicated 'CopyButtonTint.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'MainMenu.cs' from source.
+28.10.2025 0:27:57: Replicated 'MainMenu.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'StatsDisplay.cs' from source.
+28.10.2025 0:27:57: Replicated 'StatsDisplay.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'ToastManager.cs' from source.
+28.10.2025 0:27:57: Replicated 'ToastManager.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'TutorialElement.cs' from source.
+28.10.2025 0:27:57: Replicated 'TutorialElement.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'TutorialElementUI.cs' from source.
+28.10.2025 0:27:57: Replicated 'TutorialElementUI.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'TutorialManager.cs' from source.
+28.10.2025 0:27:57: Replicated 'TutorialManager.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'UpgradesUIBuilder.cs' from source.
+28.10.2025 0:27:57: Replicated 'UpgradesUIBuilder.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'ButtonAction.cs' from source.
+28.10.2025 0:27:57: Replicated 'ButtonAction.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'ButtonActionEditor.cs' from source.
+28.10.2025 0:27:57: Replicated 'ButtonActionEditor.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'FileLogger.cs' from source.
+28.10.2025 0:27:57: Replicated 'FileLogger.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'MyMathUtils.cs' from source.
+28.10.2025 0:27:57: Replicated 'MyMathUtils.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'NumericRange.cs' from source.
+28.10.2025 0:27:57: Replicated 'NumericRange.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'PositionHistory.cs' from source.
+28.10.2025 0:27:57: Replicated 'PositionHistory.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'ShowOnlyAttribute.cs' from source.
+28.10.2025 0:27:57: Replicated 'ShowOnlyAttribute.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'Strings.cs' from source.
+28.10.2025 0:27:57: Replicated 'Strings.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'Tuple.cs' from source.
+28.10.2025 0:27:57: Replicated 'Tuple.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'AstarPathfinding.cs' from source.
+28.10.2025 0:27:57: Replicated 'AstarPathfinding.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'CaveDrillWalker.cs' from source.
+28.10.2025 0:27:57: Replicated 'CaveDrillWalker.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'CaveGeneration.cs' from source.
+28.10.2025 0:27:57: Replicated 'CaveGeneration.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'CaveMeshGenerator.cs' from source.
+28.10.2025 0:27:57: Replicated 'CaveMeshGenerator.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'ChunkLoader.cs' from source.
+28.10.2025 0:27:57: Replicated 'ChunkLoader.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'FishermanHut.cs' from source.
+28.10.2025 0:27:57: Replicated 'FishermanHut.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'FishPickup.cs' from source.
+28.10.2025 0:27:57: Replicated 'FishPickup.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'FoodObject.cs' from source.
+28.10.2025 0:27:57: Replicated 'FoodObject.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'GridNavemesh.cs' from source.
+28.10.2025 0:27:57: Replicated 'GridNavemesh.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'GridPartition.cs' from source.
+28.10.2025 0:27:57: Replicated 'GridPartition.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'InteractiveBuilding.cs' from source.
+28.10.2025 0:27:57: Replicated 'InteractiveBuilding.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'Item.cs' from source.
+28.10.2025 0:27:57: Replicated 'Item.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'MeshToPolygonCollider.cs' from source.
+28.10.2025 0:27:57: Replicated 'MeshToPolygonCollider.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'NaturalLife.cs' from source.
+28.10.2025 0:27:57: Replicated 'NaturalLife.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'Obstacle.cs' from source.
+28.10.2025 0:27:57: Replicated 'Obstacle.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'ObstacleObject.cs' from source.
+28.10.2025 0:27:57: Replicated 'ObstacleObject.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'Pathfinding.cs' from source.
+28.10.2025 0:27:57: Replicated 'Pathfinding.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'Resources.cs' from source.
+28.10.2025 0:27:57: Replicated 'Resources.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'SellPoint.cs' from source.
+28.10.2025 0:27:57: Replicated 'SellPoint.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'Spawner.cs' from source.
+28.10.2025 0:27:57: Replicated 'Spawner.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'StatUpgrade.cs' from source.
+28.10.2025 0:27:57: Replicated 'StatUpgrade.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'UpgradeElement.cs' from source.
+28.10.2025 0:27:57: Replicated 'UpgradeElement.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'UpgradesManager.cs' from source.
+28.10.2025 0:27:57: Replicated 'UpgradesManager.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'World.cs' from source.
+28.10.2025 0:27:57: Replicated 'World.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'WorldBlock.cs' from source.
+28.10.2025 0:27:57: Replicated 'WorldBlock.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'WorldGeneration.cs' from source.
+28.10.2025 0:27:57: Replicated 'WorldGeneration.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'WorldLayer.cs' from source.
+28.10.2025 0:27:57: Replicated 'WorldLayer.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'WorldPosition.cs' from source.
+28.10.2025 0:27:57: Replicated 'WorldPosition.cs.meta' from source.
+28.10.2025 0:27:57: Replicated 'AgressiveFish.prefab' from source.
+28.10.2025 0:27:57: Replicated 'AgressiveFish.prefab.meta' from source.
+28.10.2025 0:27:57: Replicated 'BasicFishStrategy.prefab' from source.
+28.10.2025 0:27:57: Replicated 'BasicFishStrategy.prefab.meta' from source.
+28.10.2025 0:27:57: Replicated 'Biggressive 1.asset' from source.
+28.10.2025 0:27:57: Replicated 'Biggressive 1.asset.meta' from source.
+28.10.2025 0:27:57: Replicated 'BigNormal 1.asset' from source.
+28.10.2025 0:27:57: Replicated 'BigNormal 1.asset.meta' from source.
+28.10.2025 0:27:57: Replicated 'BigSchool 1.asset' from source.
+28.10.2025 0:27:57: Replicated 'BigSchool 1.asset.meta' from source.
+28.10.2025 0:27:57: Replicated 'BlueAgressive.prefab' from source.
+28.10.2025 0:27:57: Replicated 'BlueAgressive.prefab.meta' from source.
+28.10.2025 0:27:57: Replicated 'BlueBasic.prefab' from source.
+28.10.2025 0:27:57: Replicated 'BlueBasic.prefab.meta' from source.
+28.10.2025 0:27:57: Replicated 'EasyAgressive.asset' from source.
+28.10.2025 0:27:57: Replicated 'EasyAgressive.asset.meta' from source.
+28.10.2025 0:27:57: Replicated 'EasyNormal.asset' from source.
+28.10.2025 0:27:57: Replicated 'EasyNormal.asset.meta' from source.
+28.10.2025 0:27:57: Replicated 'EasySchool.asset' from source.
+28.10.2025 0:27:57: Replicated 'EasySchool.asset.meta' from source.
+28.10.2025 0:27:57: Replicated 'MedAgressive.asset' from source.
+28.10.2025 0:27:57: Replicated 'MedAgressive.asset.meta' from source.
+28.10.2025 0:27:57: Replicated 'MedNormal.asset' from source.
+28.10.2025 0:27:57: Replicated 'MedNormal.asset.meta' from source.
+28.10.2025 0:27:57: Replicated 'MedSchool.asset' from source.
+28.10.2025 0:27:57: Replicated 'MedSchool.asset.meta' from source.
+28.10.2025 0:27:57: Replicated 'SchoolOfGobies.prefab' from source.
+28.10.2025 0:27:57: Replicated 'SchoolOfGobies.prefab.meta' from source.
+28.10.2025 0:27:57: Replicated 'stats.meta' from source.
+28.10.2025 0:27:57: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Assets\_Species\stats' from source.
+28.10.2025 0:27:57: Replicated 'BaseStats.asset' from source.
+28.10.2025 0:27:57: Replicated 'BaseStats.asset.meta' from source.
+28.10.2025 0:28:14: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\Packages' from source.
+28.10.2025 0:28:14: Replicated directory 'C:\Users\vojte\Desktop\source\fishermans-quest-main\ProjectSettings' from source.
