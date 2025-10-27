@@ -5,6 +5,10 @@ All changes in the source folder (additions, deletions, modifications) will be r
 
 ---
 
+## Fodler structure 
+OneWayFolderSyncer\ - the whole project structure
+bin\ - a release build of the application
+
 ## Features
 
 - One-way synchronization from source to replica.
