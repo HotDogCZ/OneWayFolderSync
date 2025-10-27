@@ -14,7 +14,20 @@ static class Program
             PrintHelp();
             return;
         }
-        SyncConfig syncConfig = ParseArguments(args);
+        SyncConfig syncConfig = null;
+        try
+        {
+            syncConfig = ParseArguments(args);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine("[ERROR] " + e.Message);
+            Console.WriteLine(
+                "OneWayFolderSyncer <source_folder> <replica_folder> <sync_period_seconds> <log_path> [comparison_strategy]  "
+            );
+            Console.WriteLine("Use -h to show help.");
+            return;
+        }
         OneWayFolderSyncer oneWayFolderSyncer = new(syncConfig);
 
         oneWayFolderSyncer.StartSyncing();
@@ -75,7 +88,7 @@ static class Program
         string helpText =
             @"
 Usage:
-  OneWayFolderSyncer <source_folder> <replica_folder> <sync_period_seconds> <log_path>
+  OneWayFolderSyncer <source_folder> <replica_folder> <sync_period_seconds> <log_path> [comparison_strategy] 
 
 Description:
   Synchronizes the contents of the replica folder to match the source folder at regular intervals.

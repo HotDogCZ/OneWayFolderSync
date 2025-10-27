@@ -8,6 +8,18 @@
       "group": "build",
       "problemMatcher": [],
       "label": "build"
+    },
+    {
+      "label": "build Release",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/OneWayFolderSyncer/OneWayFolderSyncer.csproj",
+        "-c",
+        "Release"
+      ],
+      "problemMatcher": "$msCompile"
     }
   ]
 }

@@ -144,6 +144,12 @@ namespace FolderSyncing.Core
                 return replicatedFilesToDelete;
             }
 
+            /// <summary>
+            /// File is updated by deleting adn coppying it again.
+            /// File could also be updated by reading the bytes and udpating only the changed aprt of file.
+            /// </summary>
+            /// <param name="source">Files to replicate.</param>
+            /// <param name="replica">Path where the copy will be pasted.</param>
             private void UpdateFile(IndexedFile source, IndexedFile replica)
             {
                 FileSystemManipulation.DeleteFile(replica);

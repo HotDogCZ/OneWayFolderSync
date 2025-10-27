@@ -5,8 +5,6 @@ namespace FolderSyncing.Core
 
     public class IndexedFile : IHashable
     {
-        private readonly IFileIdStrategy fileIdStrategy;
-        private readonly IModifiedStrategy modifiedStrategy;
         public string FileId => fileIdStrategy.GetFileId(this);
         public long Size => fileInfo.Length;
 
@@ -15,7 +13,8 @@ namespace FolderSyncing.Core
         public string FileName => fileInfo.Name;
 
         public DateTime LastModified => fileInfo.LastWriteTimeUtc;
-
+        private readonly IFileIdStrategy fileIdStrategy;
+        private readonly IModifiedStrategy modifiedStrategy;
         private readonly FileInfo fileInfo;
         private string cachedContentHash = "";
 

@@ -42,23 +42,25 @@ namespace FolderSyncing.Utils
 
         public static void LogReplicatedDirectory(IndexedDirectory dir)
         {
-            LogMessage($"Replicated directory {dir.DirectoryPath} from source.");
+            LogMessage($"Replicated directory '{dir.DirectoryPath}' from source.");
         }
 
         public static void LogReplicatedFile(IndexedFile file)
         {
-            LogMessage($"Replicated {file.FileName} from source.");
+            LogMessage($"Replicated '{file.FileName}' from source.");
         }
 
         public static void LogDeletedFile(IndexedFile file)
         {
-            LogMessage($"Deleted {file.FileName} from replica -- file no longer exists in source.");
+            LogMessage(
+                $"Deleted '{file.FileName}' from replica -- file no longer exists in source."
+            );
         }
 
         public static void LogUpdatedFile(IndexedFile source, IndexedFile replica)
         {
             LogMessage(
-                $"Updated {replica.FileName} in replica to match {source.FileName} in source."
+                $"Updated '{replica.FileName}' in replica to match '{source.FileName}' in source."
             );
         }
 
@@ -69,12 +71,12 @@ namespace FolderSyncing.Utils
 
         public static void LogDeletingDirectory(IndexedDirectory dir)
         {
-            LogMessage($"Trying to delete directory {dir.DirectoryId}...");
+            LogMessage($"Trying to delete directory '{dir.DirectoryId}'...");
         }
 
         public static void LogDeletedDirectory(IndexedDirectory dir)
         {
-            LogMessage($"Fully deleted directory {dir.DirectoryId}");
+            LogMessage($"Successfully deleted directory '{dir.DirectoryId}'");
         }
 
         internal static void LogStart(
@@ -120,7 +122,7 @@ namespace FolderSyncing.Utils
         internal static void LogRenamed(string fileToRename, string newPath)
         {
             LogMessage(
-                $"Renamed {fileToRename} to {Path.GetFileName(newPath)} - the content matches."
+                $"Renamed '{fileToRename}' to '{Path.GetFileName(newPath)}' - the content matches."
             );
         }
     }

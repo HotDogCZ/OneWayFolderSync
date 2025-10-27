@@ -1,0 +1,15 @@
+C:\Users\vojte\OneWayFolderSync\OneWayFolderSyncer\bin\Release\net8.0\OneWayFolderSyncer.exe
+C:\Users\vojte\OneWayFolderSync\OneWayFolderSyncer\bin\Release\net8.0\OneWayFolderSyncer.deps.json
+C:\Users\vojte\OneWayFolderSync\OneWayFolderSyncer\bin\Release\net8.0\OneWayFolderSyncer.runtimeconfig.json
+C:\Users\vojte\OneWayFolderSync\OneWayFolderSyncer\bin\Release\net8.0\OneWayFolderSyncer.dll
+C:\Users\vojte\OneWayFolderSync\OneWayFolderSyncer\bin\Release\net8.0\OneWayFolderSyncer.pdb
+C:\Users\vojte\OneWayFolderSync\OneWayFolderSyncer\obj\Release\net8.0\OneWayFolderSyncer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vojte\OneWayFolderSync\OneWayFolderSyncer\obj\Release\net8.0\OneWayFolderSyncer.AssemblyInfoInputs.cache
+C:\Users\vojte\OneWayFolderSync\OneWayFolderSyncer\obj\Release\net8.0\OneWayFolderSyncer.AssemblyInfo.cs
+C:\Users\vojte\OneWayFolderSync\OneWayFolderSyncer\obj\Release\net8.0\OneWayFolderSyncer.csproj.CoreCompileInputs.cache
+C:\Users\vojte\OneWayFolderSync\OneWayFolderSyncer\obj\Release\net8.0\OneWayFolderSyncer.sourcelink.json
+C:\Users\vojte\OneWayFolderSync\OneWayFolderSyncer\obj\Release\net8.0\OneWayFolderSyncer.dll
+C:\Users\vojte\OneWayFolderSync\OneWayFolderSyncer\obj\Release\net8.0\refint\OneWayFolderSyncer.dll
+C:\Users\vojte\OneWayFolderSync\OneWayFolderSyncer\obj\Release\net8.0\OneWayFolderSyncer.pdb
+C:\Users\vojte\OneWayFolderSync\OneWayFolderSyncer\obj\Release\net8.0\OneWayFolderSyncer.genruntimeconfig.cache
+C:\Users\vojte\OneWayFolderSync\OneWayFolderSyncer\obj\Release\net8.0\ref\OneWayFolderSyncer.dll

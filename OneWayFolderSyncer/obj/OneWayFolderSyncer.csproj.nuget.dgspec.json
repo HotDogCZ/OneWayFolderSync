@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\vojte\\OneWayFolderSync\\OneWayFolderSyncer\\OneWayFolderSyncer.csproj": {}
+    "C:\\Users\\vojte\\OneWayFolderSync\\OneWayFolderSyncer\\OneWayFolderSyncer.csproj": {}
   },
   "projects": {
-    "c:\\Users\\vojte\\OneWayFolderSync\\OneWayFolderSyncer\\OneWayFolderSyncer.csproj": {
+    "C:\\Users\\vojte\\OneWayFolderSync\\OneWayFolderSyncer\\OneWayFolderSyncer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\vojte\\OneWayFolderSync\\OneWayFolderSyncer\\OneWayFolderSyncer.csproj",
+        "projectUniqueName": "C:\\Users\\vojte\\OneWayFolderSync\\OneWayFolderSyncer\\OneWayFolderSyncer.csproj",
         "projectName": "OneWayFolderSyncer",
-        "projectPath": "c:\\Users\\vojte\\OneWayFolderSync\\OneWayFolderSyncer\\OneWayFolderSyncer.csproj",
+        "projectPath": "C:\\Users\\vojte\\OneWayFolderSync\\OneWayFolderSyncer\\OneWayFolderSyncer.csproj",
         "packagesPath": "C:\\Users\\vojte\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\vojte\\OneWayFolderSync\\OneWayFolderSyncer\\obj\\",
+        "outputPath": "C:\\Users\\vojte\\OneWayFolderSync\\OneWayFolderSyncer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vojte\\AppData\\Roaming\\NuGet\\NuGet.Config",

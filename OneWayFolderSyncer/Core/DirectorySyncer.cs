@@ -21,6 +21,10 @@ namespace FolderSyncing.Core
                 fileSyncer = new(oneWayFolderSyncer);
             }
 
+            /// <summary>
+            /// Sync files and directories of a directory in replica to exactly match the one in source.
+            /// </summary>
+            /// <param name="currentSourceDirectory"></param>
             public void SyncDirectory(IndexedDirectory currentSourceDirectory)
             {
                 string replicaPath = oneWayFolderSyncer.MirrorPathToReplica(
@@ -41,11 +45,13 @@ namespace FolderSyncing.Core
 
                 foreach (var dir in currentSourceDirectory.GetIndexedSubdirs())
                 {
-                    Console.WriteLine($"Syncing {dir.DirectoryId}");
                     SyncDirectory(dir);
                 }
             }
 
+            /// <summary>
+            /// Synces directories by creating missing ones, deleting old ones and resolves renmaed directories.
+            /// </summary>
             private void SyncDirectories(
                 IndexedDirectory sourceDirectory,
                 IndexedDirectory replicaDirectory
@@ -69,6 +75,9 @@ namespace FolderSyncing.Core
                 }
             }
 
+            /// <summary>
+            /// Creates missing directories or finds the ones that were renamed and match the content.
+            /// </summary>
             private void MakeMissingDirectories(
                 IEnumerable<IndexedDirectory> sourceSubdirs,
                 IndexedDirectory replicaDirectory,
@@ -103,6 +112,9 @@ namespace FolderSyncing.Core
                 }
             }
 
+            /// <summary>
+            /// Finds directioreis in replica that no longer are in source.
+            /// </summary>
             private static List<IndexedDirectory> FindInvalidDirectories(
                 IndexedDirectory sourceDirectory,
                 IndexedDirectory replicaDirectory
@@ -121,6 +133,11 @@ namespace FolderSyncing.Core
                 return toDelete;
             }
 
+            /// <summary>
+            /// Finds a directory in replica with same content as the sourceSubDir.
+            /// </summary>
+            /// <param name="adepts"> Files that could have been renamed.</param>
+            /// <returns></returns>
             private IndexedDirectory FindDirectoryWithSameContent(
                 IndexedDirectory sourceSubDir,
                 List<IndexedDirectory> adepts

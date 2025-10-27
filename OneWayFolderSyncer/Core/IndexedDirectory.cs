@@ -4,18 +4,16 @@ namespace FolderSyncing.Core
 
     public class IndexedDirectory : IHashable
     {
-        private readonly DirectoryInfo directoryInfo;
-
-        private readonly Dictionary<string, IndexedFile> indexedFiles = new();
-        private readonly Dictionary<string, IndexedDirectory> indexedDirectories = new();
-        private string cachedContentHash = "";
-
         public string DirectoryId => fileIdStrategy.GetDirectoryId(this);
         public string DirectoryPath => directoryInfo.FullName;
         public string DirectoryName => directoryInfo.Name;
         public DateTime LastModified => directoryInfo.LastWriteTimeUtc;
+        private readonly DirectoryInfo directoryInfo;
+        private readonly Dictionary<string, IndexedFile> indexedFiles = new();
+        private readonly Dictionary<string, IndexedDirectory> indexedDirectories = new();
         private readonly IFileIdStrategy fileIdStrategy;
         private readonly IModifiedStrategy modifiedStrategy;
+        private string cachedContentHash = "";
 
         internal IndexedDirectory(
             string directoryPath,

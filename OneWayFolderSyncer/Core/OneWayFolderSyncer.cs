@@ -62,7 +62,6 @@ namespace FolderSyncing.Core
 
         private void SyncReplicaWithSource()
         {
-            Console.WriteLine("Syncing " + replicaFolderPath + " to match " + sourceFolderPath);
             directorySyncer.SyncDirectory(new(sourceFolderPath, fileIdStrategy, modifiedStrategy));
         }
 
