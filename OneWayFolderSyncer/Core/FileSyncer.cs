@@ -1,5 +1,7 @@
-namespace FolderSyncing
+namespace FolderSyncing.Core
 {
+    using FolderSyncing.Utils;
+
     public partial class OneWayFolderSyncer
     {
         private sealed class FileSyncer
@@ -111,19 +113,12 @@ namespace FolderSyncing
                 // Update changed files
                 foreach (SourceReplicaFilePair updated in filesToUpdate)
                 {
-                    IndexedFile replica = updated.replica;
-                    IndexedFile source = updated.source;
+                    IndexedFile replica = updated.Replica;
+                    IndexedFile source = updated.Source;
                     // If files are different size -- definitely changed
-                    if (replica.Size != source.Size)
+                    if (replica.Size != source.Size || source.HasChanged(replica))
                     {
                         UpdateFile(source, replica);
-                        Console.WriteLine("Size has changed");
-                    }
-                    else if (source.HasChanged(replica))
-                    {
-                        // Compare content hashes
-                        UpdateFile(source, replica);
-                        Console.WriteLine("Conent has changed");
                     }
                 }
             }
@@ -149,6 +144,13 @@ namespace FolderSyncing
                 return replicatedFilesToDelete;
             }
 
+            private void UpdateFile(IndexedFile source, IndexedFile replica)
+            {
+                FileSystemManipulation.DeleteFile(replica);
+                ReplicateFile(source);
+                Logger.LogUpdatedFile(source, replica);
+            }
+
             private static IndexedFile FindFileWithSameContent(
                 IndexedFile targetFile,
                 List<IndexedFile> adepts
@@ -162,13 +164,6 @@ namespace FolderSyncing
                     }
                 }
                 return null;
-            }
-
-            private void UpdateFile(IndexedFile source, IndexedFile replica)
-            {
-                FileSystemManipulation.DeleteFile(replica);
-                ReplicateFile(source);
-                Logger.LogUpdatedFile(source, replica);
             }
         }
     }

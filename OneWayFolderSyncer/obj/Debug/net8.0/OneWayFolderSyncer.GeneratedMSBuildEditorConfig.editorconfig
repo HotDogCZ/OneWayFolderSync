@@ -11,5 +11,3 @@ build_property.RootNamespace = OneWayFolderSyncer
 build_property.ProjectDir = c:\Users\vojte\OneWayFolderSync\OneWayFolderSyncer\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
-build_property.EffectiveAnalysisLevelStyle = 8.0
-build_property.EnableCodeStyleSeverity = 

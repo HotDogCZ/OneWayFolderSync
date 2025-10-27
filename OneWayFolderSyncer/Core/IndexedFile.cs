@@ -1,18 +1,10 @@
-using System.Diagnostics;
-using System.Net.Http.Headers;
-using System.Runtime.CompilerServices;
-using System.Security.Cryptography;
-using Microsoft.VisualBasic;
-
-namespace FolderSyncing
+namespace FolderSyncing.Core
 {
+    using System.Security.Cryptography;
+    using FolderSyncing.Strategies;
+
     public class IndexedFile : IHashable
     {
-        /// <summary>
-        /// For now the name of file is used as identifier - this causes issues with renamed files.
-        /// Alternative could be windows-specific fileID retrieved by GetFileInformationByHandle
-        /// or using contentHash as id
-        /// </summary>
         private readonly IFileIdStrategy fileIdStrategy;
         private readonly IModifiedStrategy modifiedStrategy;
         public string FileId => fileIdStrategy.GetFileId(this);
@@ -52,8 +44,6 @@ namespace FolderSyncing
                 using (FileStream fileStream = File.OpenRead(FilePath))
                 {
                     byte[] hashBytes = md5.ComputeHash(fileStream);
-                    Console.WriteLine("Hash calc");
-
                     return Convert.ToBase64String(hashBytes);
                 }
             }
@@ -70,9 +60,6 @@ namespace FolderSyncing
 
         public bool ContentHashEquals(IHashable other)
         {
-            Console.WriteLine(
-                $"Other: {((IndexedFile)other).FileName}  {other.GetContentHash()}. This: {((IndexedFile)this).FileName}  {this.GetContentHash()}"
-            );
             return GetContentHash() != other.GetContentHash();
         }
     }

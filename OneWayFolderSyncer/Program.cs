@@ -1,8 +1,12 @@
-﻿using System;
-using FolderSyncing;
+﻿using FolderSyncing.Core;
+using FolderSyncing.Strategies;
+using FolderSyncing.Utils;
 
-class Program
+static class Program
 {
+    public const string TIME_STRATEGY = "modifiedtime";
+    public const string HASH_STRATEGY = "modifiedhash";
+
     static void Main(string[] args)
     {
         if (args.Length == 1 && args[0] == "-h")
@@ -10,82 +14,60 @@ class Program
             PrintHelp();
             return;
         }
-        else if (args.Length != 4 && args.Length != 5 && args.Length != 0) // TODO REMOVE zero case
-        {
-            Console.WriteLine(
-                $"Failed to run the program - expected 4 or 5 arguments got {args.Length}"
-            );
-            PrintHelp();
-            return;
-        }
-        string sourcePath;
-        string replicaPath;
-        string syncPeriodArg;
-        string logPath;
-        string strategyArg;
-
-        if (args.Length == 0)
-        {
-            sourcePath = @"C:\Users\vojte\OneWayFolderSync\source";
-            replicaPath = @"C:\Users\vojte\OneWayFolderSync\replica";
-            syncPeriodArg = "5";
-            logPath = @"C:\Users\vojte\OneWayFolderSync\log.txt";
-        }
-        else
-        {
-            sourcePath = args[0];
-            replicaPath = args[1];
-            syncPeriodArg = args[2];
-            logPath = args[3];
-            strategyArg = args.Length >= 5 ? args[4].ToLower() : "modifiedhash";
-        }
-
-        int syncPeriod = 10;
-
-        try
-        {
-            syncPeriod = int.Parse(syncPeriodArg);
-        }
-        catch (Exception e)
-        {
-            Console.Error.WriteLine($"Invalid argument '{args[0]}' for SyncPeriod. {e.Message}");
-            Console.Error.WriteLine($"Default value '{syncPeriod}' will be used.");
-        }
-
-        IModifiedStrategy modifiedStrategy;
-        switch (strategyArg)
-        {
-            case "modifiedtime":
-            {
-                modifiedStrategy = new ModifiedTimeStrategy();
-                break;
-            }
-        }
-
-        OneWayFolderSyncer oneWayFolderSyncer;
-        try
-        {
-            oneWayFolderSyncer = new(
-                sourcePath,
-                replicaPath,
-                logPath,
-                syncPeriod,
-                new FileNameBasedIdStrategy(),
-                new ModifiedContentHashStrategy()
-            );
-        }
-        catch (DirectoryNotFoundException e)
-        {
-            Console.Error.WriteLine(
-                "[ERROR] Source/Replica/Log directory does not exist. " + e.Message
-            );
-            return;
-        }
+        SyncConfig syncConfig = ParseArguments(args);
+        OneWayFolderSyncer oneWayFolderSyncer = new(syncConfig);
 
         oneWayFolderSyncer.StartSyncing();
         Console.WriteLine("To stop synchronization press enter.");
         Console.ReadLine();
         oneWayFolderSyncer.StopSyncing();
+    }
+
+    private static SyncConfig ParseArguments(string[] args)
+    {
+        if (args.Length != 4 && args.Length != 5)
+            throw new ArgumentException($"Expected 4 or 5 arguments, got {args.Length}");
+
+        string sourcePath = args[0];
+        string replicaPath = args[1];
+        string syncPeriodArg = args[2];
+        string logPath = args[3];
+        string strategyArg = args.Length == 5 ? args[4].ToLower() : HASH_STRATEGY;
+
+        if (!Directory.Exists(sourcePath))
+            throw new DirectoryNotFoundException($"Source directory '{sourcePath}' not found.");
+        if (!Directory.Exists(replicaPath))
+            throw new DirectoryNotFoundException($"Replica directory '{replicaPath}' not found.");
+        if (!Directory.Exists(Path.GetDirectoryName(logPath)))
+            throw new DirectoryNotFoundException($"Log path '{logPath}' is invalid.");
+
+        if (!int.TryParse(syncPeriodArg, out int syncPeriod) || syncPeriod <= 0)
+            throw new ArgumentException($"Invalid synchronization period '{syncPeriodArg}'.");
+
+        IModifiedStrategy modifiedStrategy;
+        switch (strategyArg)
+        {
+            case TIME_STRATEGY:
+                modifiedStrategy = new ModifiedTimeStrategy();
+                break;
+            case HASH_STRATEGY:
+                modifiedStrategy = new ModifiedContentHashStrategy();
+                break;
+            default:
+                throw new ArgumentException(
+                    $"Invalid comparison strategy '{strategyArg}'. Use '{TIME_STRATEGY}' or '{HASH_STRATEGY}'."
+                );
+        }
+
+        IFileIdStrategy defaultFileIdStrategy = new FileNameBasedIdStrategy();
+        return new SyncConfig(
+            sourcePath,
+            replicaPath,
+            logPath,
+            syncPeriod,
+            modifiedStrategy,
+            defaultFileIdStrategy
+        );
     }
 
     private static void PrintHelp()

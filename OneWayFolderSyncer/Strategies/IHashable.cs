@@ -1,4 +1,4 @@
-namespace FolderSyncing
+namespace FolderSyncing.Strategies
 {
     public interface IHashable
     {

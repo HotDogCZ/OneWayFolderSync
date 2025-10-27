@@ -1,5 +1,8 @@
-namespace FolderSyncing
+namespace FolderSyncing.Utils
 {
+    using FolderSyncing.Core;
+    using FolderSyncing.Strategies;
+
     internal static class Logger
     {
         private static string logFilePath = "";
@@ -74,10 +77,19 @@ namespace FolderSyncing
             LogMessage($"Fully deleted directory {dir.DirectoryId}");
         }
 
-        internal static void LogStart(string sourcePath, string replicaPath, double interval)
+        internal static void LogStart(
+            string sourcePath,
+            string replicaPath,
+            double interval,
+            IModifiedStrategy modifiedStrategy
+        )
         {
             LogMessage(
-                $"Synchronization starts. Source: {sourcePath}. Replica: {replicaPath}. Synchroniazion period: {interval / 1000d} seconds."
+                "Synchronization starts. "
+                    + $"Source: '{sourcePath}'. "
+                    + $"Replica: '{replicaPath}'. "
+                    + $"Synchroniazion period: {interval / 1000d} seconds. "
+                    + $"Modification detection method: '{modifiedStrategy.MethodDescription()}'."
             );
         }
 

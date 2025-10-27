@@ -1,8 +1,10 @@
-namespace FolderSyncing
+namespace FolderSyncing.Strategies
 {
+    using FolderSyncing.Core;
+
     public interface IModifiedStrategy
     {
         public bool FileHasChanged(IndexedFile source, IndexedFile replica);
-        public bool DirHasChanged(IndexedDirectory source, IndexedDirectory replica);
+        public string MethodDescription();
     }
 }

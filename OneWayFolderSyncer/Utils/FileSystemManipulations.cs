@@ -1,5 +1,7 @@
-namespace FolderSyncing
+namespace FolderSyncing.Utils
 {
+    using FolderSyncing.Core;
+
     internal static class FileSystemManipulation
     {
         public static void RenameDirectory(

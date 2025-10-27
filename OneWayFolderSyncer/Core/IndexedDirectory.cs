@@ -1,9 +1,7 @@
-using System.Security.Cryptography;
-using System.Security.Principal;
-using System.Text;
-
-namespace FolderSyncing
+namespace FolderSyncing.Core
 {
+    using FolderSyncing.Strategies;
+
     public class IndexedDirectory : IHashable
     {
         private readonly DirectoryInfo directoryInfo;
@@ -18,9 +16,6 @@ namespace FolderSyncing
         public DateTime LastModified => directoryInfo.LastWriteTimeUtc;
         private readonly IFileIdStrategy fileIdStrategy;
         private readonly IModifiedStrategy modifiedStrategy;
-
-        public bool HasChanged(IndexedDirectory other) =>
-            modifiedStrategy.DirHasChanged(this, other);
 
         internal IndexedDirectory(
             string directoryPath,
@@ -100,7 +95,6 @@ namespace FolderSyncing
                 .OrderBy(f => f.Value.DirectoryName)
                 .Select(f => f.Value.GetContentHash() + f.Value.DirectoryName);
             string combinedHash = string.Join("", fileConentHashes.Concat(directoryConentHashes));
-            Console.WriteLine("Hash calc");
             return combinedHash;
         }
 

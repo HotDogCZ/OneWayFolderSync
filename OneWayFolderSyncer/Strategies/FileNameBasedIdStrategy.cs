@@ -1,8 +1,11 @@
-namespace FolderSyncing
+namespace FolderSyncing.Strategies
 {
+    using FolderSyncing.Core;
+
     /// <summary>
     /// Strategy that uses the name of file to uniquely identfiy each file.
-    /// This strategy will not be able to detect when a file is renamed -> it will be deleted and coppied again
+    /// When a file is renmaed we loose the idea -
+    ///  the corresponing file can be found by content or a volume file ID could be used.
     /// </summary>
     public class FileNameBasedIdStrategy : IFileIdStrategy
     {

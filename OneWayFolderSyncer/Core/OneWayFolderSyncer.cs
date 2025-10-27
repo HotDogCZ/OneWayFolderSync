@@ -1,15 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.IO.Enumeration;
-using System.Linq;
-using System.Reflection;
-using System.Timers;
-using Microsoft.VisualBasic.FileIO;
-using Timer = System.Timers.Timer;
-
-namespace FolderSyncing
+namespace FolderSyncing.Core
 {
+    using FolderSyncing.Strategies;
+    using FolderSyncing.Utils;
+    using Timer = System.Timers.Timer;
+
     public partial class OneWayFolderSyncer
     {
         private readonly string sourceFolderPath;
@@ -32,18 +26,6 @@ namespace FolderSyncing
             this.replicaFolderPath = Path.GetFullPath(replicaFolderPath);
             logFilePath = Path.GetFullPath(logFilePath);
 
-            if (!Directory.Exists(this.sourceFolderPath))
-            {
-                throw new DirectoryNotFoundException(sourceFolderPath);
-            }
-            if (!Directory.Exists(this.replicaFolderPath))
-            {
-                throw new DirectoryNotFoundException(replicaFolderPath);
-            }
-            if (!Directory.Exists(Path.GetDirectoryName(logFilePath)))
-            {
-                throw new DirectoryNotFoundException(logFilePath);
-            }
             this.fileIdStrategy = fileIdStrategy;
             this.modifiedStrategy = modifiedStrategy;
 
@@ -56,9 +38,24 @@ namespace FolderSyncing
             directorySyncer = new(this);
         }
 
+        public OneWayFolderSyncer(SyncConfig config)
+            : this(
+                config.SourcePath,
+                config.ReplicaPath,
+                config.LogPath,
+                config.SyncPeriod,
+                config.FileIdStrategy,
+                config.ModifiedStrategy
+            ) { }
+
         public void StartSyncing()
         {
-            Logger.LogStart(sourceFolderPath, replicaFolderPath, syncTimer.Interval);
+            Logger.LogStart(
+                sourceFolderPath,
+                replicaFolderPath,
+                syncTimer.Interval,
+                modifiedStrategy
+            );
             SyncReplicaWithSource();
             syncTimer.Start();
         }

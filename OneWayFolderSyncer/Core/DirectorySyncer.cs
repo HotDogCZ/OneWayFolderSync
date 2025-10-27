@@ -1,5 +1,8 @@
-namespace FolderSyncing
+namespace FolderSyncing.Core
 {
+    using FolderSyncing.Strategies;
+    using FolderSyncing.Utils;
+
     public partial class OneWayFolderSyncer
     {
         private sealed class DirectorySyncer
