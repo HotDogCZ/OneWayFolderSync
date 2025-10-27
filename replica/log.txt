@@ -9,8 +9,7 @@
 26.10.2025 1:49:58: Updated log.txt in replica to match log.txt in source.
 26.10.2025 1:49:58: Deleted log.txt from replica -- file no longer exists in source.
 26.10.2025 1:49:58: Replicated log.txt from source.
-26.10.2025 1:49:58: Updated log.txt in replica to match log.txt in source.
-26.10.2025 1:49:58: Deleted log.txt from replica -- file no longer exists in source.
+26.10.2025 -- file no longer exists in source.
 26.10.2025 1:49:58: Replicated log.txt from source.
 26.10.2025 1:50:00: Updated log.txt in replica to match log.txt in source.
 26.10.2025 1:50:00: Deleted log.txt from replica -- file no longer exists in source.

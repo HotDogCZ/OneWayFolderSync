@@ -3,12 +3,13 @@ using System.Text;
 
 namespace FolderSyncing
 {
-    public class IndexedDirectory
+    public class IndexedDirectory : IHashable
     {
         private DirectoryInfo directoryInfo;
 
         Dictionary<string, IndexedFile> indexedFiles = new();
         Dictionary<string, IndexedDirectory> indexedDirectories = new();
+        private readonly string contentHash;
 
         public string directoryId => fileIdStrategy.GetDirectoryId(this);
 
@@ -21,6 +22,7 @@ namespace FolderSyncing
             this.directoryInfo = new(directoryPath);
             this.fileIdStrategy = fileIdStrategy;
             this.directoryName = directoryInfo.Name;
+            this.contentHash = CalculateContentHash();
         }
 
         internal void BuildIndex()
@@ -71,28 +73,33 @@ namespace FolderSyncing
             indexedDirectories.Add(sourceSubDir.directoryId, sourceSubDir);
         }
 
-        public string CalculateContentHash()
+        private string CalculateContentHash()
         {
             var fileConentHashes = indexedFiles
                 .OrderBy(f => f.Value.FileName)
-                .Select(f =>
-                    Convert.ToBase64String(f.Value.CalculateContentHash()) + f.Value.FileName
-                );
+                .Select(f => f.Value.GetContentHash() + f.Value.FileName);
+
             var directoryConentHashes = indexedDirectories
                 .OrderBy(f => f.Value.directoryName)
-                .Select(f => f.Value.CalculateContentHash() + f.Value.directoryName);
+                .Select(f => f.Value.GetContentHash() + f.Value.directoryName);
             string combinedHash = string.Join("", fileConentHashes.Concat(directoryConentHashes));
             return combinedHash;
         }
 
-        internal bool ContentHashEquals(IndexedDirectory adept)
-        {
-            return CalculateContentHash() == adept.CalculateContentHash();
-        }
 
         internal bool ContainsDirectory(IndexedDirectory dir)
         {
             return GetDirById(dir.directoryId) != null;
+        }
+
+        public string GetContentHash()
+        {
+            return contentHash;
+        }
+
+        public bool ContentHashEquals(IHashable other)
+        {
+            return GetContentHash() == other.GetContentHash();
         }
     }
 }

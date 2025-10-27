@@ -1,10 +1,11 @@
 using System.Diagnostics;
+using System.Net.Http.Headers;
 using System.Runtime.CompilerServices;
 using System.Security.Cryptography;
 
 namespace FolderSyncing
 {
-    public class IndexedFile
+    public class IndexedFile : IHashable
     {
         /// <summary>
         /// For now the name of file is used as identifier - this causes issues with renamed files.
@@ -20,36 +21,42 @@ namespace FolderSyncing
         public string FileName => fileInfo.Name;
 
         private readonly FileInfo fileInfo;
+        private readonly string contentHash;
 
         public IndexedFile(string sourceFilePath, IFileIdStrategy fileIdStrategy)
         {
             this.fileInfo = new FileInfo(sourceFilePath);
             this.fileIdStrategy = fileIdStrategy;
+            contentHash = CalculateContentHash();
         }
 
-        public byte[] CalculateContentHash()
+        public string CalculateContentHash()
         {
             using (MD5 md5 = MD5.Create())
             {
                 using (FileStream fileStream = File.OpenRead(FilePath))
                 {
                     byte[] hashBytes = md5.ComputeHash(fileStream);
-                    return hashBytes;
+                    return Convert.ToBase64String(hashBytes);
                 }
             }
         }
 
-        internal bool ConentHashEquals(IndexedFile other)
+        public string GetContentHash()
         {
-            byte[] thisHash = CalculateContentHash();
-            byte[] otherHash = other.CalculateContentHash();
-            for (int i = 0; i < thisHash.Length; i++)
-            {
-                if (thisHash[i] != otherHash[i])
-                    return false;
-            }
-            return true;
+            return contentHash;
         }
+
+        public bool ContentHashEquals(IHashable other)
+        {
+            return GetContentHash() == other.GetContentHash();
+        }
+    }
+
+    public interface IHashable
+    {
+        internal string GetContentHash();
+        internal bool ContentHashEquals(IHashable other);
     }
 
     public interface IFileIdStrategy
@@ -72,24 +79,6 @@ namespace FolderSyncing
         public string GetDirectoryId(IndexedDirectory dir)
         {
             return dir.directoryName;
-        }
-    }
-
-    /// <summary>
-    /// Uses combination of name and coennt of the file to uniquely indetify.
-    /// When a file is renamed - look for a file that is not valid but has same conent -
-    /// If such file exists we renmae that file and keep using it.
-    /// </summary>
-    public class ContentBasedIdStrategy : IFileIdStrategy
-    {
-        public string GetDirectoryId(IndexedDirectory dir)
-        {
-            return dir.directoryName;
-        }
-
-        public string GetFileId(IndexedFile file)
-        {
-            return Convert.ToBase64String(file.CalculateContentHash()) + file.FileName;
         }
     }
 }

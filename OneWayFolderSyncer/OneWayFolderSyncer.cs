@@ -143,10 +143,9 @@ namespace FolderSyncing
                     UpdateFile(source, replica);
                     Console.WriteLine("Size has changed");
                 }
-
-                // Compare content hashes
-                if (!source.ConentHashEquals(replica))
+                else if (!source.ContentHashEquals(replica))
                 {
+                    // Compare content hashes
                     UpdateFile(source, replica);
                     Console.WriteLine("Conent has changed");
                 }
@@ -183,7 +182,7 @@ namespace FolderSyncing
         {
             foreach (var adept in adepts)
             {
-                if (adept.ConentHashEquals(targetFile))
+                if (adept.ContentHashEquals(targetFile))
                 {
                     return adept;
                 }
