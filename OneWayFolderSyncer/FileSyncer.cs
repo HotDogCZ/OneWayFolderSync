@@ -71,7 +71,7 @@ namespace FolderSyncing
                 List<SourceReplicaFilePair> filesToUpdate = new();
                 foreach (IndexedFile sourceFile in sourceFiles)
                 {
-                    IndexedFile replicatedFile = replicaDirectory.GetFileById(sourceFile.fileId);
+                    IndexedFile replicatedFile = replicaDirectory.GetFileById(sourceFile.FileId);
                     if (replicatedFile != null)
                     {
                         // sourceFile is in replica
@@ -139,7 +139,7 @@ namespace FolderSyncing
                 List<IndexedFile> replicatedFilesToDelete = new();
                 foreach (IndexedFile file in replicaDirectory.GetIndexedFiles())
                 {
-                    IndexedFile sourceFile = sourceDirectory.GetFileById(file.fileId);
+                    IndexedFile sourceFile = sourceDirectory.GetFileById(file.FileId);
                     if (sourceFile == null)
                     {
                         replicatedFilesToDelete.Add(file);

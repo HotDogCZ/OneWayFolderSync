@@ -15,7 +15,7 @@ namespace FolderSyncing
         /// </summary>
         private readonly IFileIdStrategy fileIdStrategy;
         private readonly IModifiedStrategy modifiedStrategy;
-        public string fileId => fileIdStrategy.GetFileId(this);
+        public string FileId => fileIdStrategy.GetFileId(this);
         public long Size => fileInfo.Length;
 
         public string FilePath => fileInfo.FullName;
@@ -25,7 +25,7 @@ namespace FolderSyncing
         public DateTime LastModified => fileInfo.LastWriteTimeUtc;
 
         private readonly FileInfo fileInfo;
-        private readonly string cachedContentHash;
+        private string cachedContentHash = "";
 
         public bool HasChanged(IndexedFile other) => modifiedStrategy.FileHasChanged(this, other);
 
@@ -38,6 +38,7 @@ namespace FolderSyncing
             this.fileInfo = new FileInfo(sourceFilePath);
             this.fileIdStrategy = fileIdStrategy;
             this.modifiedStrategy = modifiedStrategy;
+
             if (modifiedStrategy is ModifiedContentHashStrategy)
             {
                 cachedContentHash = CalculateContentHash();
@@ -60,73 +61,19 @@ namespace FolderSyncing
 
         public string GetContentHash()
         {
+            if (string.IsNullOrEmpty(cachedContentHash))
+            {
+                cachedContentHash = CalculateContentHash();
+            }
             return cachedContentHash;
         }
 
         public bool ContentHashEquals(IHashable other)
         {
-            return GetContentHash() == other.GetContentHash();
-        }
-    }
-
-    public interface IModifiedStrategy
-    {
-        public bool FileHasChanged(IndexedFile source, IndexedFile replica);
-        public bool DirHasChanged(IndexedDirectory source, IndexedDirectory replica);
-    }
-
-    public class ModifiedContentHashStrategy : IModifiedStrategy
-    {
-        public bool DirHasChanged(IndexedDirectory source, IndexedDirectory replica)
-        {
-            return source.ContentHashEquals(replica);
-        }
-
-        public bool FileHasChanged(IndexedFile source, IndexedFile replica)
-        {
-            return source.ContentHashEquals(replica);
-        }
-    }
-
-    public class ModifiedTimeStrategy : IModifiedStrategy
-    {
-        public bool DirHasChanged(IndexedDirectory source, IndexedDirectory replica)
-        {
-            return source.LastModified == replica.LastModified;
-        }
-
-        public bool FileHasChanged(IndexedFile source, IndexedFile replica)
-        {
-            return source.LastModified != replica.LastModified;
-        }
-    }
-
-    public interface IHashable
-    {
-        internal string GetContentHash();
-        internal bool ContentHashEquals(IHashable other);
-    }
-
-    public interface IFileIdStrategy
-    {
-        public string GetFileId(IndexedFile file);
-        public string GetDirectoryId(IndexedDirectory dir);
-    }
-
-    /// <summary>
-    /// Strategy that uses the name of file to uniquely identfiy each file.
-    /// This strategy will not be able to detect when a file is renamed -> it will be deleted and coppied again
-    /// </summary>
-    public class FileNameBasedIdStrategy : IFileIdStrategy
-    {
-        public string GetFileId(IndexedFile file)
-        {
-            return file.FileName;
-        }
-
-        public string GetDirectoryId(IndexedDirectory dir)
-        {
-            return dir.DirectoryName;
+            Console.WriteLine(
+                $"Other: {((IndexedFile)other).FileName}  {other.GetContentHash()}. This: {((IndexedFile)this).FileName}  {this.GetContentHash()}"
+            );
+            return GetContentHash() != other.GetContentHash();
         }
     }
 }

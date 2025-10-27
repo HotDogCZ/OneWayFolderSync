@@ -10,10 +10,10 @@ class Program
             PrintHelp();
             return;
         }
-        else if (args.Length != 4 && args.Length != 0) // TODO REMOVE zero case
+        else if (args.Length != 4 && args.Length != 5 && args.Length != 0) // TODO REMOVE zero case
         {
             Console.WriteLine(
-                $"Failed to run the program - expected 4 arguments got {args.Length}"
+                $"Failed to run the program - expected 4 or 5 arguments got {args.Length}"
             );
             PrintHelp();
             return;
@@ -22,6 +22,8 @@ class Program
         string replicaPath;
         string syncPeriodArg;
         string logPath;
+        string strategyArg;
+
         if (args.Length == 0)
         {
             sourcePath = @"C:\Users\vojte\OneWayFolderSync\source";
@@ -35,6 +37,7 @@ class Program
             replicaPath = args[1];
             syncPeriodArg = args[2];
             logPath = args[3];
+            strategyArg = args.Length >= 5 ? args[4].ToLower() : "modifiedhash";
         }
 
         int syncPeriod = 10;
@@ -49,6 +52,16 @@ class Program
             Console.Error.WriteLine($"Default value '{syncPeriod}' will be used.");
         }
 
+        IModifiedStrategy modifiedStrategy;
+        switch (strategyArg)
+        {
+            case "modifiedtime":
+            {
+                modifiedStrategy = new ModifiedTimeStrategy();
+                break;
+            }
+        }
+
         OneWayFolderSyncer oneWayFolderSyncer;
         try
         {
@@ -58,7 +71,7 @@ class Program
                 logPath,
                 syncPeriod,
                 new FileNameBasedIdStrategy(),
-                new ModifiedTimeStrategy()
+                new ModifiedContentHashStrategy()
             );
         }
         catch (DirectoryNotFoundException e)
@@ -92,12 +105,16 @@ Arguments:
   <replica_folder>        Path to the folder where the replica will be stored.
   <sync_period_seconds>   How often synchronization should occur (in seconds).
   <log_path>              Path to a log file (.txt) or a folder where the log will be stored.
+  [comparison_strategy]   (Optional) Method used to detect modified files:
+                            'modifiedtime' - compares last modified timestamps - might not be reliable in some cases.
+                            'modifiedhash' - compares file content hashes (default) - can be slower.
 
 Options:
   -h                      Show this help message and exit.
 
 Example:
   OneWayFolderSyncer C:\Source C:\Replica 60 C:\Logs\replica_log.txt
+  OneWayFolderSyncer C:\Source C:\Replica 60 C:\Logs\replica_log.txt modifiedtime
 ";
         Console.WriteLine(helpText);
     }

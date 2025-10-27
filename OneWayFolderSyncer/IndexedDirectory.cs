@@ -10,7 +10,7 @@ namespace FolderSyncing
 
         private readonly Dictionary<string, IndexedFile> indexedFiles = new();
         private readonly Dictionary<string, IndexedDirectory> indexedDirectories = new();
-        private readonly string contentHash;
+        private string cachedContentHash = "";
 
         public string DirectoryId => fileIdStrategy.GetDirectoryId(this);
         public string DirectoryPath => directoryInfo.FullName;
@@ -32,9 +32,9 @@ namespace FolderSyncing
             this.fileIdStrategy = fileIdStrategy;
             this.modifiedStrategy = modifiedStrategy;
 
-            if(modifiedStrategy is ModifiedContentHashStrategy)
+            if (modifiedStrategy is ModifiedContentHashStrategy)
             {
-                this.contentHash = CalculateContentHash();
+                this.cachedContentHash = CalculateContentHash();
             }
         }
 
@@ -46,7 +46,7 @@ namespace FolderSyncing
             foreach (var file in directoryInfo.GetFiles())
             {
                 IndexedFile indexedFile = new(file.FullName, fileIdStrategy, modifiedStrategy);
-                indexedFiles.Add(indexedFile.fileId, indexedFile);
+                indexedFiles.Add(indexedFile.FileId, indexedFile);
             }
             foreach (var dir in directoryInfo.GetDirectories())
             {
@@ -62,7 +62,7 @@ namespace FolderSyncing
 
         internal bool ContainsFile(IndexedFile file)
         {
-            return indexedFiles.ContainsKey(file.fileId);
+            return indexedFiles.ContainsKey(file.FileId);
         }
 
         internal IndexedFile GetFileById(string id)
@@ -111,7 +111,11 @@ namespace FolderSyncing
 
         public string GetContentHash()
         {
-            return contentHash;
+            if (string.IsNullOrEmpty(cachedContentHash))
+            {
+                cachedContentHash = CalculateContentHash();
+            }
+            return cachedContentHash;
         }
 
         public bool ContentHashEquals(IHashable other)

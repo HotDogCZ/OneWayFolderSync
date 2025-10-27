@@ -10,3 +10,646 @@ Deleted new.txt from replica -- file no longer exists in source.
 25.10.2025 22:53:10: Synchronization starts. Source: C:\Users\vojte\OneWayFolderSync\source. Replica: C:\Users\vojte\OneWayFolderSync\replica.
 25.10.2025 22:54:19: Synchronization starts. Source: C:\Users\vojte\OneWayFolderSync\source. Replica: C:\Users\vojte\OneWayFolderSync\replica.
 25.10.2025 22:58:34: Synchronization starts. Source: C:\Users\vojte\OneWayFolderSync\source. Replica: C:\Users\vojte\OneWayFolderSync\replica.
+27.10.2025 12:35:27: Synchronization starts. Source: C:\Users\vojte\OneWayFolderSync\source. Replica: C:\Users\vojte\OneWayFolderSync\replica. Synchroniazion period: 5 seconds.
+27.10.2025 12:35:27: Deleted diver (4).jpg.lnk from replica -- file no longer exists in source.
+27.10.2025 12:35:27: Replicated diver (4).jpg.lnk from source.
+27.10.2025 12:35:27: Updated diver (4).jpg.lnk in replica to match diver (4).jpg.lnk in source.
+27.10.2025 12:35:27: Deleted Fishes.meta from replica -- file no longer exists in source.
+27.10.2025 12:35:27: Replicated Fishes.meta from source.
+27.10.2025 12:35:27: Updated Fishes.meta in replica to match Fishes.meta in source.
+27.10.2025 12:35:27: Deleted Game.meta from replica -- file no longer exists in source.
+27.10.2025 12:35:27: Replicated Game.meta from source.
+27.10.2025 12:35:27: Updated Game.meta in replica to match Game.meta in source.
+27.10.2025 12:35:27: Deleted Player.meta from replica -- file no longer exists in source.
+27.10.2025 12:35:27: Replicated Player.meta from source.
+27.10.2025 12:35:27: Updated Player.meta in replica to match Player.meta in source.
+27.10.2025 12:35:27: Deleted UI.meta from replica -- file no longer exists in source.
+27.10.2025 12:35:27: Replicated UI.meta from source.
+27.10.2025 12:35:27: Updated UI.meta in replica to match UI.meta in source.
+27.10.2025 12:35:27: Deleted Utils.meta from replica -- file no longer exists in source.
+27.10.2025 12:35:27: Replicated Utils.meta from source.
+27.10.2025 12:35:27: Updated Utils.meta in replica to match Utils.meta in source.
+27.10.2025 12:35:27: Deleted ConfirmButtonByPress.cs from replica -- file no longer exists in source.
+27.10.2025 12:35:27: Replicated ConfirmButtonByPress.cs from source.
+27.10.2025 12:35:27: Updated ConfirmButtonByPress.cs in replica to match ConfirmButtonByPress.cs in source.
+27.10.2025 12:35:27: Deleted ConfirmButtonByPress.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:35:27: Replicated ConfirmButtonByPress.cs.meta from source.
+27.10.2025 12:35:27: Updated ConfirmButtonByPress.cs.meta in replica to match ConfirmButtonByPress.cs.meta in source.
+27.10.2025 12:35:27: Deleted CopyButtonTint.cs from replica -- file no longer exists in source.
+27.10.2025 12:35:27: Replicated CopyButtonTint.cs from source.
+27.10.2025 12:35:27: Updated CopyButtonTint.cs in replica to match CopyButtonTint.cs in source.
+27.10.2025 12:35:27: Deleted CopyButtonTint.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:35:27: Replicated CopyButtonTint.cs.meta from source.
+27.10.2025 12:35:27: Updated CopyButtonTint.cs.meta in replica to match CopyButtonTint.cs.meta in source.
+27.10.2025 12:35:27: Deleted MainMenu.cs from replica -- file no longer exists in source.
+27.10.2025 12:35:27: Replicated MainMenu.cs from source.
+27.10.2025 12:35:27: Updated MainMenu.cs in replica to match MainMenu.cs in source.
+27.10.2025 12:35:27: Deleted MainMenu.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:35:27: Replicated MainMenu.cs.meta from source.
+27.10.2025 12:35:27: Updated MainMenu.cs.meta in replica to match MainMenu.cs.meta in source.
+27.10.2025 12:35:27: Deleted StatsDisplay.cs from replica -- file no longer exists in source.
+27.10.2025 12:35:27: Replicated StatsDisplay.cs from source.
+27.10.2025 12:35:27: Updated StatsDisplay.cs in replica to match StatsDisplay.cs in source.
+27.10.2025 12:35:27: Deleted StatsDisplay.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:35:27: Replicated StatsDisplay.cs.meta from source.
+27.10.2025 12:35:27: Updated StatsDisplay.cs.meta in replica to match StatsDisplay.cs.meta in source.
+27.10.2025 12:35:27: Deleted ToastManager.cs from replica -- file no longer exists in source.
+27.10.2025 12:35:27: Replicated ToastManager.cs from source.
+27.10.2025 12:35:27: Updated ToastManager.cs in replica to match ToastManager.cs in source.
+27.10.2025 12:35:27: Deleted ToastManager.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:35:27: Replicated ToastManager.cs.meta from source.
+27.10.2025 12:35:27: Updated ToastManager.cs.meta in replica to match ToastManager.cs.meta in source.
+27.10.2025 12:35:27: Deleted TutorialElement.cs from replica -- file no longer exists in source.
+27.10.2025 12:35:27: Replicated TutorialElement.cs from source.
+27.10.2025 12:35:27: Updated TutorialElement.cs in replica to match TutorialElement.cs in source.
+27.10.2025 12:35:27: Deleted TutorialElement.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:35:27: Replicated TutorialElement.cs.meta from source.
+27.10.2025 12:35:27: Updated TutorialElement.cs.meta in replica to match TutorialElement.cs.meta in source.
+27.10.2025 12:35:27: Deleted TutorialElementUI.cs from replica -- file no longer exists in source.
+27.10.2025 12:35:27: Replicated TutorialElementUI.cs from source.
+27.10.2025 12:35:27: Updated TutorialElementUI.cs in replica to match TutorialElementUI.cs in source.
+27.10.2025 12:35:27: Deleted TutorialElementUI.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:35:27: Replicated TutorialElementUI.cs.meta from source.
+27.10.2025 12:35:27: Updated TutorialElementUI.cs.meta in replica to match TutorialElementUI.cs.meta in source.
+27.10.2025 12:35:27: Deleted TutorialManager.cs from replica -- file no longer exists in source.
+27.10.2025 12:35:27: Replicated TutorialManager.cs from source.
+27.10.2025 12:35:27: Updated TutorialManager.cs in replica to match TutorialManager.cs in source.
+27.10.2025 12:35:27: Deleted TutorialManager.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:35:27: Replicated TutorialManager.cs.meta from source.
+27.10.2025 12:35:27: Updated TutorialManager.cs.meta in replica to match TutorialManager.cs.meta in source.
+27.10.2025 12:35:27: Deleted UpgradesUIBuilder.cs from replica -- file no longer exists in source.
+27.10.2025 12:35:27: Replicated UpgradesUIBuilder.cs from source.
+27.10.2025 12:35:27: Updated UpgradesUIBuilder.cs in replica to match UpgradesUIBuilder.cs in source.
+27.10.2025 12:35:27: Deleted UpgradesUIBuilder.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:35:27: Replicated UpgradesUIBuilder.cs.meta from source.
+27.10.2025 12:35:27: Updated UpgradesUIBuilder.cs.meta in replica to match UpgradesUIBuilder.cs.meta in source.
+27.10.2025 12:35:27: Deleted ButtonAction.cs from replica -- file no longer exists in source.
+27.10.2025 12:35:27: Replicated ButtonAction.cs from source.
+27.10.2025 12:35:27: Updated ButtonAction.cs in replica to match ButtonAction.cs in source.
+27.10.2025 12:35:27: Deleted ButtonAction.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:35:27: Replicated ButtonAction.cs.meta from source.
+27.10.2025 12:35:27: Updated ButtonAction.cs.meta in replica to match ButtonAction.cs.meta in source.
+27.10.2025 12:35:27: Deleted ButtonActionEditor.cs from replica -- file no longer exists in source.
+27.10.2025 12:35:27: Replicated ButtonActionEditor.cs from source.
+27.10.2025 12:35:27: Updated ButtonActionEditor.cs in replica to match ButtonActionEditor.cs in source.
+27.10.2025 12:35:27: Deleted ButtonActionEditor.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:35:27: Replicated ButtonActionEditor.cs.meta from source.
+27.10.2025 12:35:27: Updated ButtonActionEditor.cs.meta in replica to match ButtonActionEditor.cs.meta in source.
+27.10.2025 12:35:27: Deleted FileLogger.cs from replica -- file no longer exists in source.
+27.10.2025 12:35:27: Replicated FileLogger.cs from source.
+27.10.2025 12:35:27: Updated FileLogger.cs in replica to match FileLogger.cs in source.
+27.10.2025 12:35:27: Deleted FileLogger.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:35:27: Replicated FileLogger.cs.meta from source.
+27.10.2025 12:35:27: Updated FileLogger.cs.meta in replica to match FileLogger.cs.meta in source.
+27.10.2025 12:35:27: Deleted MyMathUtils.cs from replica -- file no longer exists in source.
+27.10.2025 12:35:27: Replicated MyMathUtils.cs from source.
+27.10.2025 12:35:27: Updated MyMathUtils.cs in replica to match MyMathUtils.cs in source.
+27.10.2025 12:35:27: Deleted MyMathUtils.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:35:27: Replicated MyMathUtils.cs.meta from source.
+27.10.2025 12:35:27: Updated MyMathUtils.cs.meta in replica to match MyMathUtils.cs.meta in source.
+27.10.2025 12:35:27: Deleted NumericRange.cs from replica -- file no longer exists in source.
+27.10.2025 12:35:27: Replicated NumericRange.cs from source.
+27.10.2025 12:35:27: Updated NumericRange.cs in replica to match NumericRange.cs in source.
+27.10.2025 12:35:27: Deleted NumericRange.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:35:27: Replicated NumericRange.cs.meta from source.
+27.10.2025 12:35:27: Updated NumericRange.cs.meta in replica to match NumericRange.cs.meta in source.
+27.10.2025 12:35:27: Deleted PositionHistory.cs from replica -- file no longer exists in source.
+27.10.2025 12:35:27: Replicated PositionHistory.cs from source.
+27.10.2025 12:35:27: Updated PositionHistory.cs in replica to match PositionHistory.cs in source.
+27.10.2025 12:35:27: Deleted PositionHistory.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:35:27: Replicated PositionHistory.cs.meta from source.
+27.10.2025 12:35:27: Updated PositionHistory.cs.meta in replica to match PositionHistory.cs.meta in source.
+27.10.2025 12:35:27: Deleted ShowOnlyAttribute.cs from replica -- file no longer exists in source.
+27.10.2025 12:35:27: Replicated ShowOnlyAttribute.cs from source.
+27.10.2025 12:35:27: Updated ShowOnlyAttribute.cs in replica to match ShowOnlyAttribute.cs in source.
+27.10.2025 12:35:27: Deleted ShowOnlyAttribute.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:35:27: Replicated ShowOnlyAttribute.cs.meta from source.
+27.10.2025 12:35:27: Updated ShowOnlyAttribute.cs.meta in replica to match ShowOnlyAttribute.cs.meta in source.
+27.10.2025 12:35:27: Deleted Strings.cs from replica -- file no longer exists in source.
+27.10.2025 12:35:27: Replicated Strings.cs from source.
+27.10.2025 12:35:27: Updated Strings.cs in replica to match Strings.cs in source.
+27.10.2025 12:35:27: Deleted Strings.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:35:27: Replicated Strings.cs.meta from source.
+27.10.2025 12:35:27: Updated Strings.cs.meta in replica to match Strings.cs.meta in source.
+27.10.2025 12:35:27: Deleted Tuple.cs from replica -- file no longer exists in source.
+27.10.2025 12:35:27: Replicated Tuple.cs from source.
+27.10.2025 12:35:27: Updated Tuple.cs in replica to match Tuple.cs in source.
+27.10.2025 12:35:27: Deleted Tuple.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:35:27: Replicated Tuple.cs.meta from source.
+27.10.2025 12:35:27: Updated Tuple.cs.meta in replica to match Tuple.cs.meta in source.
+27.10.2025 12:35:32: Deleted diver (4).jpg.lnk from replica -- file no longer exists in source.
+27.10.2025 12:35:32: Replicated diver (4).jpg.lnk from source.
+27.10.2025 12:35:32: Updated diver (4).jpg.lnk in replica to match diver (4).jpg.lnk in source.
+27.10.2025 12:35:32: Deleted Fishes.meta from replica -- file no longer exists in source.
+27.10.2025 12:35:32: Replicated Fishes.meta from source.
+27.10.2025 12:35:32: Updated Fishes.meta in replica to match Fishes.meta in source.
+27.10.2025 12:35:32: Deleted Game.meta from replica -- file no longer exists in source.
+27.10.2025 12:35:32: Replicated Game.meta from source.
+27.10.2025 12:35:32: Updated Game.meta in replica to match Game.meta in source.
+27.10.2025 12:35:32: Deleted Player.meta from replica -- file no longer exists in source.
+27.10.2025 12:35:32: Replicated Player.meta from source.
+27.10.2025 12:35:32: Updated Player.meta in replica to match Player.meta in source.
+27.10.2025 12:35:32: Deleted UI.meta from replica -- file no longer exists in source.
+27.10.2025 12:35:32: Replicated UI.meta from source.
+27.10.2025 12:35:32: Updated UI.meta in replica to match UI.meta in source.
+27.10.2025 12:35:32: Deleted Utils.meta from replica -- file no longer exists in source.
+27.10.2025 12:35:32: Replicated Utils.meta from source.
+27.10.2025 12:35:32: Updated Utils.meta in replica to match Utils.meta in source.
+27.10.2025 12:35:32: Deleted ConfirmButtonByPress.cs from replica -- file no longer exists in source.
+27.10.2025 12:35:32: Replicated ConfirmButtonByPress.cs from source.
+27.10.2025 12:35:32: Updated ConfirmButtonByPress.cs in replica to match ConfirmButtonByPress.cs in source.
+27.10.2025 12:35:32: Deleted ConfirmButtonByPress.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:35:32: Replicated ConfirmButtonByPress.cs.meta from source.
+27.10.2025 12:35:32: Updated ConfirmButtonByPress.cs.meta in replica to match ConfirmButtonByPress.cs.meta in source.
+27.10.2025 12:35:32: Deleted CopyButtonTint.cs from replica -- file no longer exists in source.
+27.10.2025 12:35:32: Replicated CopyButtonTint.cs from source.
+27.10.2025 12:35:32: Updated CopyButtonTint.cs in replica to match CopyButtonTint.cs in source.
+27.10.2025 12:35:32: Deleted CopyButtonTint.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:35:32: Replicated CopyButtonTint.cs.meta from source.
+27.10.2025 12:35:32: Updated CopyButtonTint.cs.meta in replica to match CopyButtonTint.cs.meta in source.
+27.10.2025 12:35:32: Deleted MainMenu.cs from replica -- file no longer exists in source.
+27.10.2025 12:35:32: Replicated MainMenu.cs from source.
+27.10.2025 12:35:32: Updated MainMenu.cs in replica to match MainMenu.cs in source.
+27.10.2025 12:35:32: Deleted MainMenu.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:35:32: Replicated MainMenu.cs.meta from source.
+27.10.2025 12:35:32: Updated MainMenu.cs.meta in replica to match MainMenu.cs.meta in source.
+27.10.2025 12:35:32: Deleted StatsDisplay.cs from replica -- file no longer exists in source.
+27.10.2025 12:35:32: Replicated StatsDisplay.cs from source.
+27.10.2025 12:35:32: Updated StatsDisplay.cs in replica to match StatsDisplay.cs in source.
+27.10.2025 12:35:32: Deleted StatsDisplay.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:35:32: Replicated StatsDisplay.cs.meta from source.
+27.10.2025 12:35:32: Updated StatsDisplay.cs.meta in replica to match StatsDisplay.cs.meta in source.
+27.10.2025 12:35:32: Deleted ToastManager.cs from replica -- file no longer exists in source.
+27.10.2025 12:35:32: Replicated ToastManager.cs from source.
+27.10.2025 12:35:32: Updated ToastManager.cs in replica to match ToastManager.cs in source.
+27.10.2025 12:35:32: Deleted ToastManager.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:35:32: Replicated ToastManager.cs.meta from source.
+27.10.2025 12:35:32: Updated ToastManager.cs.meta in replica to match ToastManager.cs.meta in source.
+27.10.2025 12:35:32: Deleted TutorialElement.cs from replica -- file no longer exists in source.
+27.10.2025 12:35:32: Replicated TutorialElement.cs from source.
+27.10.2025 12:35:32: Updated TutorialElement.cs in replica to match TutorialElement.cs in source.
+27.10.2025 12:35:32: Deleted TutorialElement.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:35:32: Replicated TutorialElement.cs.meta from source.
+27.10.2025 12:35:32: Updated TutorialElement.cs.meta in replica to match TutorialElement.cs.meta in source.
+27.10.2025 12:35:32: Deleted TutorialElementUI.cs from replica -- file no longer exists in source.
+27.10.2025 12:35:32: Replicated TutorialElementUI.cs from source.
+27.10.2025 12:35:32: Updated TutorialElementUI.cs in replica to match TutorialElementUI.cs in source.
+27.10.2025 12:35:32: Deleted TutorialElementUI.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:35:32: Replicated TutorialElementUI.cs.meta from source.
+27.10.2025 12:35:32: Updated TutorialElementUI.cs.meta in replica to match TutorialElementUI.cs.meta in source.
+27.10.2025 12:35:32: Deleted TutorialManager.cs from replica -- file no longer exists in source.
+27.10.2025 12:35:32: Replicated TutorialManager.cs from source.
+27.10.2025 12:35:32: Updated TutorialManager.cs in replica to match TutorialManager.cs in source.
+27.10.2025 12:35:32: Deleted TutorialManager.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:35:32: Replicated TutorialManager.cs.meta from source.
+27.10.2025 12:35:32: Updated TutorialManager.cs.meta in replica to match TutorialManager.cs.meta in source.
+27.10.2025 12:35:32: Deleted UpgradesUIBuilder.cs from replica -- file no longer exists in source.
+27.10.2025 12:35:32: Replicated UpgradesUIBuilder.cs from source.
+27.10.2025 12:35:32: Updated UpgradesUIBuilder.cs in replica to match UpgradesUIBuilder.cs in source.
+27.10.2025 12:35:32: Deleted UpgradesUIBuilder.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:35:32: Replicated UpgradesUIBuilder.cs.meta from source.
+27.10.2025 12:35:32: Updated UpgradesUIBuilder.cs.meta in replica to match UpgradesUIBuilder.cs.meta in source.
+27.10.2025 12:35:32: Deleted ButtonAction.cs from replica -- file no longer exists in source.
+27.10.2025 12:35:32: Replicated ButtonAction.cs from source.
+27.10.2025 12:35:32: Updated ButtonAction.cs in replica to match ButtonAction.cs in source.
+27.10.2025 12:35:32: Deleted ButtonAction.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:35:32: Replicated ButtonAction.cs.meta from source.
+27.10.2025 12:35:32: Updated ButtonAction.cs.meta in replica to match ButtonAction.cs.meta in source.
+27.10.2025 12:35:32: Deleted ButtonActionEditor.cs from replica -- file no longer exists in source.
+27.10.2025 12:35:32: Replicated ButtonActionEditor.cs from source.
+27.10.2025 12:35:32: Updated ButtonActionEditor.cs in replica to match ButtonActionEditor.cs in source.
+27.10.2025 12:35:32: Deleted ButtonActionEditor.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:35:32: Replicated ButtonActionEditor.cs.meta from source.
+27.10.2025 12:35:32: Updated ButtonActionEditor.cs.meta in replica to match ButtonActionEditor.cs.meta in source.
+27.10.2025 12:35:32: Deleted FileLogger.cs from replica -- file no longer exists in source.
+27.10.2025 12:35:32: Replicated FileLogger.cs from source.
+27.10.2025 12:35:32: Updated FileLogger.cs in replica to match FileLogger.cs in source.
+27.10.2025 12:35:32: Deleted FileLogger.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:35:32: Replicated FileLogger.cs.meta from source.
+27.10.2025 12:35:32: Updated FileLogger.cs.meta in replica to match FileLogger.cs.meta in source.
+27.10.2025 12:35:32: Deleted MyMathUtils.cs from replica -- file no longer exists in source.
+27.10.2025 12:35:32: Replicated MyMathUtils.cs from source.
+27.10.2025 12:35:32: Updated MyMathUtils.cs in replica to match MyMathUtils.cs in source.
+27.10.2025 12:35:32: Deleted MyMathUtils.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:35:32: Replicated MyMathUtils.cs.meta from source.
+27.10.2025 12:35:32: Updated MyMathUtils.cs.meta in replica to match MyMathUtils.cs.meta in source.
+27.10.2025 12:35:32: Deleted NumericRange.cs from replica -- file no longer exists in source.
+27.10.2025 12:35:32: Replicated NumericRange.cs from source.
+27.10.2025 12:35:32: Updated NumericRange.cs in replica to match NumericRange.cs in source.
+27.10.2025 12:35:32: Deleted NumericRange.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:35:32: Replicated NumericRange.cs.meta from source.
+27.10.2025 12:35:32: Updated NumericRange.cs.meta in replica to match NumericRange.cs.meta in source.
+27.10.2025 12:35:32: Deleted PositionHistory.cs from replica -- file no longer exists in source.
+27.10.2025 12:35:32: Replicated PositionHistory.cs from source.
+27.10.2025 12:35:32: Updated PositionHistory.cs in replica to match PositionHistory.cs in source.
+27.10.2025 12:35:32: Deleted PositionHistory.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:35:32: Replicated PositionHistory.cs.meta from source.
+27.10.2025 12:35:32: Updated PositionHistory.cs.meta in replica to match PositionHistory.cs.meta in source.
+27.10.2025 12:35:32: Deleted ShowOnlyAttribute.cs from replica -- file no longer exists in source.
+27.10.2025 12:35:32: Replicated ShowOnlyAttribute.cs from source.
+27.10.2025 12:35:32: Updated ShowOnlyAttribute.cs in replica to match ShowOnlyAttribute.cs in source.
+27.10.2025 12:35:32: Deleted ShowOnlyAttribute.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:35:32: Replicated ShowOnlyAttribute.cs.meta from source.
+27.10.2025 12:35:32: Updated ShowOnlyAttribute.cs.meta in replica to match ShowOnlyAttribute.cs.meta in source.
+27.10.2025 12:35:32: Deleted Strings.cs from replica -- file no longer exists in source.
+27.10.2025 12:35:32: Replicated Strings.cs from source.
+27.10.2025 12:35:32: Updated Strings.cs in replica to match Strings.cs in source.
+27.10.2025 12:35:32: Deleted Strings.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:35:32: Replicated Strings.cs.meta from source.
+27.10.2025 12:35:32: Updated Strings.cs.meta in replica to match Strings.cs.meta in source.
+27.10.2025 12:35:32: Deleted Tuple.cs from replica -- file no longer exists in source.
+27.10.2025 12:35:32: Replicated Tuple.cs from source.
+27.10.2025 12:35:32: Updated Tuple.cs in replica to match Tuple.cs in source.
+27.10.2025 12:35:32: Deleted Tuple.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:35:32: Replicated Tuple.cs.meta from source.
+27.10.2025 12:35:32: Updated Tuple.cs.meta in replica to match Tuple.cs.meta in source.
+27.10.2025 12:35:34: Synchronization ended.
+27.10.2025 12:47:53: Synchronization starts. Source: C:\Users\vojte\OneWayFolderSync\source. Replica: C:\Users\vojte\OneWayFolderSync\replica. Synchroniazion period: 5 seconds.
+27.10.2025 12:49:09: Synchronization starts. Source: C:\Users\vojte\OneWayFolderSync\source. Replica: C:\Users\vojte\OneWayFolderSync\replica. Synchroniazion period: 5 seconds.
+27.10.2025 12:49:09: Deleted diver (4).jpg.lnk from replica -- file no longer exists in source.
+27.10.2025 12:49:09: Replicated diver (4).jpg.lnk from source.
+27.10.2025 12:49:09: Updated diver (4).jpg.lnk in replica to match diver (4).jpg.lnk in source.
+27.10.2025 12:49:09: Deleted testing.txt from replica -- file no longer exists in source.
+27.10.2025 12:49:09: Replicated testing.txt from source.
+27.10.2025 12:49:09: Updated testing.txt in replica to match testing.txt in source.
+27.10.2025 12:49:09: Deleted Fishes.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:09: Replicated Fishes.meta from source.
+27.10.2025 12:49:09: Updated Fishes.meta in replica to match Fishes.meta in source.
+27.10.2025 12:49:09: Deleted Game.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:09: Replicated Game.meta from source.
+27.10.2025 12:49:09: Updated Game.meta in replica to match Game.meta in source.
+27.10.2025 12:49:09: Deleted Player.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:09: Replicated Player.meta from source.
+27.10.2025 12:49:09: Updated Player.meta in replica to match Player.meta in source.
+27.10.2025 12:49:09: Deleted UI.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:09: Replicated UI.meta from source.
+27.10.2025 12:49:09: Updated UI.meta in replica to match UI.meta in source.
+27.10.2025 12:49:09: Deleted Utils.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:09: Replicated Utils.meta from source.
+27.10.2025 12:49:09: Updated Utils.meta in replica to match Utils.meta in source.
+27.10.2025 12:49:09: Deleted ConfirmButtonByPress.cs from replica -- file no longer exists in source.
+27.10.2025 12:49:09: Replicated ConfirmButtonByPress.cs from source.
+27.10.2025 12:49:09: Updated ConfirmButtonByPress.cs in replica to match ConfirmButtonByPress.cs in source.
+27.10.2025 12:49:09: Deleted ConfirmButtonByPress.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:09: Replicated ConfirmButtonByPress.cs.meta from source.
+27.10.2025 12:49:09: Updated ConfirmButtonByPress.cs.meta in replica to match ConfirmButtonByPress.cs.meta in source.
+27.10.2025 12:49:09: Deleted CopyButtonTint.cs from replica -- file no longer exists in source.
+27.10.2025 12:49:09: Replicated CopyButtonTint.cs from source.
+27.10.2025 12:49:09: Updated CopyButtonTint.cs in replica to match CopyButtonTint.cs in source.
+27.10.2025 12:49:09: Deleted CopyButtonTint.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:09: Replicated CopyButtonTint.cs.meta from source.
+27.10.2025 12:49:09: Updated CopyButtonTint.cs.meta in replica to match CopyButtonTint.cs.meta in source.
+27.10.2025 12:49:09: Deleted MainMenu.cs from replica -- file no longer exists in source.
+27.10.2025 12:49:09: Replicated MainMenu.cs from source.
+27.10.2025 12:49:09: Updated MainMenu.cs in replica to match MainMenu.cs in source.
+27.10.2025 12:49:09: Deleted MainMenu.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:09: Replicated MainMenu.cs.meta from source.
+27.10.2025 12:49:09: Updated MainMenu.cs.meta in replica to match MainMenu.cs.meta in source.
+27.10.2025 12:49:09: Deleted StatsDisplay.cs from replica -- file no longer exists in source.
+27.10.2025 12:49:09: Replicated StatsDisplay.cs from source.
+27.10.2025 12:49:09: Updated StatsDisplay.cs in replica to match StatsDisplay.cs in source.
+27.10.2025 12:49:09: Deleted StatsDisplay.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:09: Replicated StatsDisplay.cs.meta from source.
+27.10.2025 12:49:09: Updated StatsDisplay.cs.meta in replica to match StatsDisplay.cs.meta in source.
+27.10.2025 12:49:09: Deleted ToastManager.cs from replica -- file no longer exists in source.
+27.10.2025 12:49:09: Replicated ToastManager.cs from source.
+27.10.2025 12:49:09: Updated ToastManager.cs in replica to match ToastManager.cs in source.
+27.10.2025 12:49:09: Deleted ToastManager.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:09: Replicated ToastManager.cs.meta from source.
+27.10.2025 12:49:09: Updated ToastManager.cs.meta in replica to match ToastManager.cs.meta in source.
+27.10.2025 12:49:09: Deleted TutorialElement.cs from replica -- file no longer exists in source.
+27.10.2025 12:49:09: Replicated TutorialElement.cs from source.
+27.10.2025 12:49:09: Updated TutorialElement.cs in replica to match TutorialElement.cs in source.
+27.10.2025 12:49:09: Deleted TutorialElement.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:09: Replicated TutorialElement.cs.meta from source.
+27.10.2025 12:49:09: Updated TutorialElement.cs.meta in replica to match TutorialElement.cs.meta in source.
+27.10.2025 12:49:09: Deleted TutorialElementUI.cs from replica -- file no longer exists in source.
+27.10.2025 12:49:09: Replicated TutorialElementUI.cs from source.
+27.10.2025 12:49:09: Updated TutorialElementUI.cs in replica to match TutorialElementUI.cs in source.
+27.10.2025 12:49:09: Deleted TutorialElementUI.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:09: Replicated TutorialElementUI.cs.meta from source.
+27.10.2025 12:49:09: Updated TutorialElementUI.cs.meta in replica to match TutorialElementUI.cs.meta in source.
+27.10.2025 12:49:09: Deleted TutorialManager.cs from replica -- file no longer exists in source.
+27.10.2025 12:49:09: Replicated TutorialManager.cs from source.
+27.10.2025 12:49:09: Updated TutorialManager.cs in replica to match TutorialManager.cs in source.
+27.10.2025 12:49:09: Deleted TutorialManager.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:09: Replicated TutorialManager.cs.meta from source.
+27.10.2025 12:49:09: Updated TutorialManager.cs.meta in replica to match TutorialManager.cs.meta in source.
+27.10.2025 12:49:09: Deleted UpgradesUIBuilder.cs from replica -- file no longer exists in source.
+27.10.2025 12:49:09: Replicated UpgradesUIBuilder.cs from source.
+27.10.2025 12:49:09: Updated UpgradesUIBuilder.cs in replica to match UpgradesUIBuilder.cs in source.
+27.10.2025 12:49:09: Deleted UpgradesUIBuilder.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:09: Replicated UpgradesUIBuilder.cs.meta from source.
+27.10.2025 12:49:09: Updated UpgradesUIBuilder.cs.meta in replica to match UpgradesUIBuilder.cs.meta in source.
+27.10.2025 12:49:09: Deleted ButtonAction.cs from replica -- file no longer exists in source.
+27.10.2025 12:49:09: Replicated ButtonAction.cs from source.
+27.10.2025 12:49:09: Updated ButtonAction.cs in replica to match ButtonAction.cs in source.
+27.10.2025 12:49:09: Deleted ButtonAction.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:09: Replicated ButtonAction.cs.meta from source.
+27.10.2025 12:49:09: Updated ButtonAction.cs.meta in replica to match ButtonAction.cs.meta in source.
+27.10.2025 12:49:09: Deleted ButtonActionEditor.cs from replica -- file no longer exists in source.
+27.10.2025 12:49:09: Replicated ButtonActionEditor.cs from source.
+27.10.2025 12:49:09: Updated ButtonActionEditor.cs in replica to match ButtonActionEditor.cs in source.
+27.10.2025 12:49:09: Deleted ButtonActionEditor.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:09: Replicated ButtonActionEditor.cs.meta from source.
+27.10.2025 12:49:09: Updated ButtonActionEditor.cs.meta in replica to match ButtonActionEditor.cs.meta in source.
+27.10.2025 12:49:09: Deleted FileLogger.cs from replica -- file no longer exists in source.
+27.10.2025 12:49:09: Replicated FileLogger.cs from source.
+27.10.2025 12:49:09: Updated FileLogger.cs in replica to match FileLogger.cs in source.
+27.10.2025 12:49:09: Deleted FileLogger.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:09: Replicated FileLogger.cs.meta from source.
+27.10.2025 12:49:09: Updated FileLogger.cs.meta in replica to match FileLogger.cs.meta in source.
+27.10.2025 12:49:09: Deleted MyMathUtils.cs from replica -- file no longer exists in source.
+27.10.2025 12:49:09: Replicated MyMathUtils.cs from source.
+27.10.2025 12:49:09: Updated MyMathUtils.cs in replica to match MyMathUtils.cs in source.
+27.10.2025 12:49:09: Deleted MyMathUtils.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:09: Replicated MyMathUtils.cs.meta from source.
+27.10.2025 12:49:09: Updated MyMathUtils.cs.meta in replica to match MyMathUtils.cs.meta in source.
+27.10.2025 12:49:09: Deleted NumericRange.cs from replica -- file no longer exists in source.
+27.10.2025 12:49:09: Replicated NumericRange.cs from source.
+27.10.2025 12:49:09: Updated NumericRange.cs in replica to match NumericRange.cs in source.
+27.10.2025 12:49:09: Deleted NumericRange.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:09: Replicated NumericRange.cs.meta from source.
+27.10.2025 12:49:09: Updated NumericRange.cs.meta in replica to match NumericRange.cs.meta in source.
+27.10.2025 12:49:09: Deleted PositionHistory.cs from replica -- file no longer exists in source.
+27.10.2025 12:49:09: Replicated PositionHistory.cs from source.
+27.10.2025 12:49:09: Updated PositionHistory.cs in replica to match PositionHistory.cs in source.
+27.10.2025 12:49:09: Deleted PositionHistory.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:09: Replicated PositionHistory.cs.meta from source.
+27.10.2025 12:49:09: Updated PositionHistory.cs.meta in replica to match PositionHistory.cs.meta in source.
+27.10.2025 12:49:09: Deleted ShowOnlyAttribute.cs from replica -- file no longer exists in source.
+27.10.2025 12:49:09: Replicated ShowOnlyAttribute.cs from source.
+27.10.2025 12:49:09: Updated ShowOnlyAttribute.cs in replica to match ShowOnlyAttribute.cs in source.
+27.10.2025 12:49:09: Deleted ShowOnlyAttribute.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:09: Replicated ShowOnlyAttribute.cs.meta from source.
+27.10.2025 12:49:09: Updated ShowOnlyAttribute.cs.meta in replica to match ShowOnlyAttribute.cs.meta in source.
+27.10.2025 12:49:09: Deleted Strings.cs from replica -- file no longer exists in source.
+27.10.2025 12:49:09: Replicated Strings.cs from source.
+27.10.2025 12:49:09: Updated Strings.cs in replica to match Strings.cs in source.
+27.10.2025 12:49:09: Deleted Strings.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:09: Replicated Strings.cs.meta from source.
+27.10.2025 12:49:09: Updated Strings.cs.meta in replica to match Strings.cs.meta in source.
+27.10.2025 12:49:09: Deleted Tuple.cs from replica -- file no longer exists in source.
+27.10.2025 12:49:09: Replicated Tuple.cs from source.
+27.10.2025 12:49:09: Updated Tuple.cs in replica to match Tuple.cs in source.
+27.10.2025 12:49:09: Deleted Tuple.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:09: Replicated Tuple.cs.meta from source.
+27.10.2025 12:49:09: Updated Tuple.cs.meta in replica to match Tuple.cs.meta in source.
+27.10.2025 12:49:14: Deleted diver (4).jpg.lnk from replica -- file no longer exists in source.
+27.10.2025 12:49:14: Replicated diver (4).jpg.lnk from source.
+27.10.2025 12:49:14: Updated diver (4).jpg.lnk in replica to match diver (4).jpg.lnk in source.
+27.10.2025 12:49:14: Deleted testing.txt from replica -- file no longer exists in source.
+27.10.2025 12:49:14: Replicated testing.txt from source.
+27.10.2025 12:49:14: Updated testing.txt in replica to match testing.txt in source.
+27.10.2025 12:49:14: Deleted Fishes.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:14: Replicated Fishes.meta from source.
+27.10.2025 12:49:14: Updated Fishes.meta in replica to match Fishes.meta in source.
+27.10.2025 12:49:14: Deleted Game.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:14: Replicated Game.meta from source.
+27.10.2025 12:49:14: Updated Game.meta in replica to match Game.meta in source.
+27.10.2025 12:49:14: Deleted Player.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:14: Replicated Player.meta from source.
+27.10.2025 12:49:14: Updated Player.meta in replica to match Player.meta in source.
+27.10.2025 12:49:14: Deleted UI.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:14: Replicated UI.meta from source.
+27.10.2025 12:49:14: Updated UI.meta in replica to match UI.meta in source.
+27.10.2025 12:49:14: Deleted Utils.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:14: Replicated Utils.meta from source.
+27.10.2025 12:49:14: Updated Utils.meta in replica to match Utils.meta in source.
+27.10.2025 12:49:14: Deleted ConfirmButtonByPress.cs from replica -- file no longer exists in source.
+27.10.2025 12:49:14: Replicated ConfirmButtonByPress.cs from source.
+27.10.2025 12:49:14: Updated ConfirmButtonByPress.cs in replica to match ConfirmButtonByPress.cs in source.
+27.10.2025 12:49:14: Deleted ConfirmButtonByPress.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:14: Replicated ConfirmButtonByPress.cs.meta from source.
+27.10.2025 12:49:14: Updated ConfirmButtonByPress.cs.meta in replica to match ConfirmButtonByPress.cs.meta in source.
+27.10.2025 12:49:14: Deleted CopyButtonTint.cs from replica -- file no longer exists in source.
+27.10.2025 12:49:14: Replicated CopyButtonTint.cs from source.
+27.10.2025 12:49:14: Updated CopyButtonTint.cs in replica to match CopyButtonTint.cs in source.
+27.10.2025 12:49:14: Deleted CopyButtonTint.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:14: Replicated CopyButtonTint.cs.meta from source.
+27.10.2025 12:49:14: Updated CopyButtonTint.cs.meta in replica to match CopyButtonTint.cs.meta in source.
+27.10.2025 12:49:14: Deleted MainMenu.cs from replica -- file no longer exists in source.
+27.10.2025 12:49:14: Replicated MainMenu.cs from source.
+27.10.2025 12:49:14: Updated MainMenu.cs in replica to match MainMenu.cs in source.
+27.10.2025 12:49:14: Deleted MainMenu.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:14: Replicated MainMenu.cs.meta from source.
+27.10.2025 12:49:14: Updated MainMenu.cs.meta in replica to match MainMenu.cs.meta in source.
+27.10.2025 12:49:14: Deleted StatsDisplay.cs from replica -- file no longer exists in source.
+27.10.2025 12:49:14: Replicated StatsDisplay.cs from source.
+27.10.2025 12:49:14: Updated StatsDisplay.cs in replica to match StatsDisplay.cs in source.
+27.10.2025 12:49:14: Deleted StatsDisplay.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:14: Replicated StatsDisplay.cs.meta from source.
+27.10.2025 12:49:14: Updated StatsDisplay.cs.meta in replica to match StatsDisplay.cs.meta in source.
+27.10.2025 12:49:14: Deleted ToastManager.cs from replica -- file no longer exists in source.
+27.10.2025 12:49:14: Replicated ToastManager.cs from source.
+27.10.2025 12:49:14: Updated ToastManager.cs in replica to match ToastManager.cs in source.
+27.10.2025 12:49:14: Deleted ToastManager.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:14: Replicated ToastManager.cs.meta from source.
+27.10.2025 12:49:14: Updated ToastManager.cs.meta in replica to match ToastManager.cs.meta in source.
+27.10.2025 12:49:14: Deleted TutorialElement.cs from replica -- file no longer exists in source.
+27.10.2025 12:49:14: Replicated TutorialElement.cs from source.
+27.10.2025 12:49:14: Updated TutorialElement.cs in replica to match TutorialElement.cs in source.
+27.10.2025 12:49:14: Deleted TutorialElement.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:14: Replicated TutorialElement.cs.meta from source.
+27.10.2025 12:49:14: Updated TutorialElement.cs.meta in replica to match TutorialElement.cs.meta in source.
+27.10.2025 12:49:14: Deleted TutorialElementUI.cs from replica -- file no longer exists in source.
+27.10.2025 12:49:14: Replicated TutorialElementUI.cs from source.
+27.10.2025 12:49:14: Updated TutorialElementUI.cs in replica to match TutorialElementUI.cs in source.
+27.10.2025 12:49:14: Deleted TutorialElementUI.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:14: Replicated TutorialElementUI.cs.meta from source.
+27.10.2025 12:49:14: Updated TutorialElementUI.cs.meta in replica to match TutorialElementUI.cs.meta in source.
+27.10.2025 12:49:14: Deleted TutorialManager.cs from replica -- file no longer exists in source.
+27.10.2025 12:49:14: Replicated TutorialManager.cs from source.
+27.10.2025 12:49:14: Updated TutorialManager.cs in replica to match TutorialManager.cs in source.
+27.10.2025 12:49:14: Deleted TutorialManager.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:14: Replicated TutorialManager.cs.meta from source.
+27.10.2025 12:49:14: Updated TutorialManager.cs.meta in replica to match TutorialManager.cs.meta in source.
+27.10.2025 12:49:14: Deleted UpgradesUIBuilder.cs from replica -- file no longer exists in source.
+27.10.2025 12:49:14: Replicated UpgradesUIBuilder.cs from source.
+27.10.2025 12:49:14: Updated UpgradesUIBuilder.cs in replica to match UpgradesUIBuilder.cs in source.
+27.10.2025 12:49:14: Deleted UpgradesUIBuilder.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:14: Replicated UpgradesUIBuilder.cs.meta from source.
+27.10.2025 12:49:14: Updated UpgradesUIBuilder.cs.meta in replica to match UpgradesUIBuilder.cs.meta in source.
+27.10.2025 12:49:14: Deleted ButtonAction.cs from replica -- file no longer exists in source.
+27.10.2025 12:49:14: Replicated ButtonAction.cs from source.
+27.10.2025 12:49:14: Updated ButtonAction.cs in replica to match ButtonAction.cs in source.
+27.10.2025 12:49:14: Deleted ButtonAction.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:14: Replicated ButtonAction.cs.meta from source.
+27.10.2025 12:49:14: Updated ButtonAction.cs.meta in replica to match ButtonAction.cs.meta in source.
+27.10.2025 12:49:14: Deleted ButtonActionEditor.cs from replica -- file no longer exists in source.
+27.10.2025 12:49:14: Replicated ButtonActionEditor.cs from source.
+27.10.2025 12:49:14: Updated ButtonActionEditor.cs in replica to match ButtonActionEditor.cs in source.
+27.10.2025 12:49:14: Deleted ButtonActionEditor.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:14: Replicated ButtonActionEditor.cs.meta from source.
+27.10.2025 12:49:14: Updated ButtonActionEditor.cs.meta in replica to match ButtonActionEditor.cs.meta in source.
+27.10.2025 12:49:14: Deleted FileLogger.cs from replica -- file no longer exists in source.
+27.10.2025 12:49:14: Replicated FileLogger.cs from source.
+27.10.2025 12:49:14: Updated FileLogger.cs in replica to match FileLogger.cs in source.
+27.10.2025 12:49:14: Deleted FileLogger.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:14: Replicated FileLogger.cs.meta from source.
+27.10.2025 12:49:14: Updated FileLogger.cs.meta in replica to match FileLogger.cs.meta in source.
+27.10.2025 12:49:14: Deleted MyMathUtils.cs from replica -- file no longer exists in source.
+27.10.2025 12:49:14: Replicated MyMathUtils.cs from source.
+27.10.2025 12:49:14: Updated MyMathUtils.cs in replica to match MyMathUtils.cs in source.
+27.10.2025 12:49:14: Deleted MyMathUtils.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:14: Replicated MyMathUtils.cs.meta from source.
+27.10.2025 12:49:14: Updated MyMathUtils.cs.meta in replica to match MyMathUtils.cs.meta in source.
+27.10.2025 12:49:14: Deleted NumericRange.cs from replica -- file no longer exists in source.
+27.10.2025 12:49:14: Replicated NumericRange.cs from source.
+27.10.2025 12:49:14: Updated NumericRange.cs in replica to match NumericRange.cs in source.
+27.10.2025 12:49:14: Deleted NumericRange.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:14: Replicated NumericRange.cs.meta from source.
+27.10.2025 12:49:14: Updated NumericRange.cs.meta in replica to match NumericRange.cs.meta in source.
+27.10.2025 12:49:14: Deleted PositionHistory.cs from replica -- file no longer exists in source.
+27.10.2025 12:49:14: Replicated PositionHistory.cs from source.
+27.10.2025 12:49:14: Updated PositionHistory.cs in replica to match PositionHistory.cs in source.
+27.10.2025 12:49:14: Deleted PositionHistory.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:14: Replicated PositionHistory.cs.meta from source.
+27.10.2025 12:49:14: Updated PositionHistory.cs.meta in replica to match PositionHistory.cs.meta in source.
+27.10.2025 12:49:14: Deleted ShowOnlyAttribute.cs from replica -- file no longer exists in source.
+27.10.2025 12:49:14: Replicated ShowOnlyAttribute.cs from source.
+27.10.2025 12:49:14: Updated ShowOnlyAttribute.cs in replica to match ShowOnlyAttribute.cs in source.
+27.10.2025 12:49:14: Deleted ShowOnlyAttribute.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:14: Replicated ShowOnlyAttribute.cs.meta from source.
+27.10.2025 12:49:14: Updated ShowOnlyAttribute.cs.meta in replica to match ShowOnlyAttribute.cs.meta in source.
+27.10.2025 12:49:14: Deleted Strings.cs from replica -- file no longer exists in source.
+27.10.2025 12:49:14: Replicated Strings.cs from source.
+27.10.2025 12:49:14: Updated Strings.cs in replica to match Strings.cs in source.
+27.10.2025 12:49:14: Deleted Strings.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:14: Replicated Strings.cs.meta from source.
+27.10.2025 12:49:14: Updated Strings.cs.meta in replica to match Strings.cs.meta in source.
+27.10.2025 12:49:14: Deleted Tuple.cs from replica -- file no longer exists in source.
+27.10.2025 12:49:14: Replicated Tuple.cs from source.
+27.10.2025 12:49:14: Updated Tuple.cs in replica to match Tuple.cs in source.
+27.10.2025 12:49:14: Deleted Tuple.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:14: Replicated Tuple.cs.meta from source.
+27.10.2025 12:49:14: Updated Tuple.cs.meta in replica to match Tuple.cs.meta in source.
+27.10.2025 12:49:19: Deleted diver (4).jpg.lnk from replica -- file no longer exists in source.
+27.10.2025 12:49:19: Replicated diver (4).jpg.lnk from source.
+27.10.2025 12:49:19: Updated diver (4).jpg.lnk in replica to match diver (4).jpg.lnk in source.
+27.10.2025 12:49:19: Deleted testing.txt from replica -- file no longer exists in source.
+27.10.2025 12:49:19: Replicated testing.txt from source.
+27.10.2025 12:49:19: Updated testing.txt in replica to match testing.txt in source.
+27.10.2025 12:49:19: Deleted Fishes.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:19: Replicated Fishes.meta from source.
+27.10.2025 12:49:19: Updated Fishes.meta in replica to match Fishes.meta in source.
+27.10.2025 12:49:19: Deleted Game.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:19: Replicated Game.meta from source.
+27.10.2025 12:49:19: Updated Game.meta in replica to match Game.meta in source.
+27.10.2025 12:49:19: Deleted Player.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:19: Replicated Player.meta from source.
+27.10.2025 12:49:19: Updated Player.meta in replica to match Player.meta in source.
+27.10.2025 12:49:19: Deleted UI.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:19: Replicated UI.meta from source.
+27.10.2025 12:49:19: Updated UI.meta in replica to match UI.meta in source.
+27.10.2025 12:49:19: Deleted Utils.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:19: Replicated Utils.meta from source.
+27.10.2025 12:49:19: Updated Utils.meta in replica to match Utils.meta in source.
+27.10.2025 12:49:19: Deleted ConfirmButtonByPress.cs from replica -- file no longer exists in source.
+27.10.2025 12:49:19: Replicated ConfirmButtonByPress.cs from source.
+27.10.2025 12:49:19: Updated ConfirmButtonByPress.cs in replica to match ConfirmButtonByPress.cs in source.
+27.10.2025 12:49:19: Deleted ConfirmButtonByPress.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:19: Replicated ConfirmButtonByPress.cs.meta from source.
+27.10.2025 12:49:19: Updated ConfirmButtonByPress.cs.meta in replica to match ConfirmButtonByPress.cs.meta in source.
+27.10.2025 12:49:19: Deleted CopyButtonTint.cs from replica -- file no longer exists in source.
+27.10.2025 12:49:19: Replicated CopyButtonTint.cs from source.
+27.10.2025 12:49:19: Updated CopyButtonTint.cs in replica to match CopyButtonTint.cs in source.
+27.10.2025 12:49:19: Deleted CopyButtonTint.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:19: Replicated CopyButtonTint.cs.meta from source.
+27.10.2025 12:49:19: Updated CopyButtonTint.cs.meta in replica to match CopyButtonTint.cs.meta in source.
+27.10.2025 12:49:19: Deleted MainMenu.cs from replica -- file no longer exists in source.
+27.10.2025 12:49:19: Replicated MainMenu.cs from source.
+27.10.2025 12:49:19: Updated MainMenu.cs in replica to match MainMenu.cs in source.
+27.10.2025 12:49:19: Deleted MainMenu.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:19: Replicated MainMenu.cs.meta from source.
+27.10.2025 12:49:19: Updated MainMenu.cs.meta in replica to match MainMenu.cs.meta in source.
+27.10.2025 12:49:19: Deleted StatsDisplay.cs from replica -- file no longer exists in source.
+27.10.2025 12:49:19: Replicated StatsDisplay.cs from source.
+27.10.2025 12:49:19: Updated StatsDisplay.cs in replica to match StatsDisplay.cs in source.
+27.10.2025 12:49:19: Deleted StatsDisplay.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:19: Replicated StatsDisplay.cs.meta from source.
+27.10.2025 12:49:19: Updated StatsDisplay.cs.meta in replica to match StatsDisplay.cs.meta in source.
+27.10.2025 12:49:19: Deleted ToastManager.cs from replica -- file no longer exists in source.
+27.10.2025 12:49:19: Replicated ToastManager.cs from source.
+27.10.2025 12:49:19: Updated ToastManager.cs in replica to match ToastManager.cs in source.
+27.10.2025 12:49:19: Deleted ToastManager.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:19: Replicated ToastManager.cs.meta from source.
+27.10.2025 12:49:19: Updated ToastManager.cs.meta in replica to match ToastManager.cs.meta in source.
+27.10.2025 12:49:19: Deleted TutorialElement.cs from replica -- file no longer exists in source.
+27.10.2025 12:49:19: Replicated TutorialElement.cs from source.
+27.10.2025 12:49:19: Updated TutorialElement.cs in replica to match TutorialElement.cs in source.
+27.10.2025 12:49:19: Deleted TutorialElement.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:19: Replicated TutorialElement.cs.meta from source.
+27.10.2025 12:49:19: Updated TutorialElement.cs.meta in replica to match TutorialElement.cs.meta in source.
+27.10.2025 12:49:19: Deleted TutorialElementUI.cs from replica -- file no longer exists in source.
+27.10.2025 12:49:19: Replicated TutorialElementUI.cs from source.
+27.10.2025 12:49:19: Updated TutorialElementUI.cs in replica to match TutorialElementUI.cs in source.
+27.10.2025 12:49:19: Deleted TutorialElementUI.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:19: Replicated TutorialElementUI.cs.meta from source.
+27.10.2025 12:49:19: Updated TutorialElementUI.cs.meta in replica to match TutorialElementUI.cs.meta in source.
+27.10.2025 12:49:19: Deleted TutorialManager.cs from replica -- file no longer exists in source.
+27.10.2025 12:49:19: Replicated TutorialManager.cs from source.
+27.10.2025 12:49:19: Updated TutorialManager.cs in replica to match TutorialManager.cs in source.
+27.10.2025 12:49:19: Deleted TutorialManager.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:19: Replicated TutorialManager.cs.meta from source.
+27.10.2025 12:49:19: Updated TutorialManager.cs.meta in replica to match TutorialManager.cs.meta in source.
+27.10.2025 12:49:19: Deleted UpgradesUIBuilder.cs from replica -- file no longer exists in source.
+27.10.2025 12:49:19: Replicated UpgradesUIBuilder.cs from source.
+27.10.2025 12:49:19: Updated UpgradesUIBuilder.cs in replica to match UpgradesUIBuilder.cs in source.
+27.10.2025 12:49:19: Deleted UpgradesUIBuilder.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:19: Replicated UpgradesUIBuilder.cs.meta from source.
+27.10.2025 12:49:19: Updated UpgradesUIBuilder.cs.meta in replica to match UpgradesUIBuilder.cs.meta in source.
+27.10.2025 12:49:19: Deleted ButtonAction.cs from replica -- file no longer exists in source.
+27.10.2025 12:49:19: Replicated ButtonAction.cs from source.
+27.10.2025 12:49:19: Updated ButtonAction.cs in replica to match ButtonAction.cs in source.
+27.10.2025 12:49:19: Deleted ButtonAction.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:19: Replicated ButtonAction.cs.meta from source.
+27.10.2025 12:49:19: Updated ButtonAction.cs.meta in replica to match ButtonAction.cs.meta in source.
+27.10.2025 12:49:19: Deleted ButtonActionEditor.cs from replica -- file no longer exists in source.
+27.10.2025 12:49:19: Replicated ButtonActionEditor.cs from source.
+27.10.2025 12:49:19: Updated ButtonActionEditor.cs in replica to match ButtonActionEditor.cs in source.
+27.10.2025 12:49:19: Deleted ButtonActionEditor.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:19: Replicated ButtonActionEditor.cs.meta from source.
+27.10.2025 12:49:19: Updated ButtonActionEditor.cs.meta in replica to match ButtonActionEditor.cs.meta in source.
+27.10.2025 12:49:19: Deleted FileLogger.cs from replica -- file no longer exists in source.
+27.10.2025 12:49:19: Replicated FileLogger.cs from source.
+27.10.2025 12:49:19: Updated FileLogger.cs in replica to match FileLogger.cs in source.
+27.10.2025 12:49:19: Deleted FileLogger.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:19: Replicated FileLogger.cs.meta from source.
+27.10.2025 12:49:19: Updated FileLogger.cs.meta in replica to match FileLogger.cs.meta in source.
+27.10.2025 12:49:19: Deleted MyMathUtils.cs from replica -- file no longer exists in source.
+27.10.2025 12:49:19: Replicated MyMathUtils.cs from source.
+27.10.2025 12:49:19: Updated MyMathUtils.cs in replica to match MyMathUtils.cs in source.
+27.10.2025 12:49:19: Deleted MyMathUtils.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:19: Replicated MyMathUtils.cs.meta from source.
+27.10.2025 12:49:19: Updated MyMathUtils.cs.meta in replica to match MyMathUtils.cs.meta in source.
+27.10.2025 12:49:19: Deleted NumericRange.cs from replica -- file no longer exists in source.
+27.10.2025 12:49:19: Replicated NumericRange.cs from source.
+27.10.2025 12:49:19: Updated NumericRange.cs in replica to match NumericRange.cs in source.
+27.10.2025 12:49:19: Deleted NumericRange.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:19: Replicated NumericRange.cs.meta from source.
+27.10.2025 12:49:19: Updated NumericRange.cs.meta in replica to match NumericRange.cs.meta in source.
+27.10.2025 12:49:19: Deleted PositionHistory.cs from replica -- file no longer exists in source.
+27.10.2025 12:49:19: Replicated PositionHistory.cs from source.
+27.10.2025 12:49:19: Updated PositionHistory.cs in replica to match PositionHistory.cs in source.
+27.10.2025 12:49:19: Deleted PositionHistory.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:19: Replicated PositionHistory.cs.meta from source.
+27.10.2025 12:49:19: Updated PositionHistory.cs.meta in replica to match PositionHistory.cs.meta in source.
+27.10.2025 12:49:19: Deleted ShowOnlyAttribute.cs from replica -- file no longer exists in source.
+27.10.2025 12:49:19: Replicated ShowOnlyAttribute.cs from source.
+27.10.2025 12:49:19: Updated ShowOnlyAttribute.cs in replica to match ShowOnlyAttribute.cs in source.
+27.10.2025 12:49:19: Deleted ShowOnlyAttribute.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:19: Replicated ShowOnlyAttribute.cs.meta from source.
+27.10.2025 12:49:19: Updated ShowOnlyAttribute.cs.meta in replica to match ShowOnlyAttribute.cs.meta in source.
+27.10.2025 12:49:19: Deleted Strings.cs from replica -- file no longer exists in source.
+27.10.2025 12:49:19: Replicated Strings.cs from source.
+27.10.2025 12:49:19: Updated Strings.cs in replica to match Strings.cs in source.
+27.10.2025 12:49:19: Deleted Strings.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:19: Replicated Strings.cs.meta from source.
+27.10.2025 12:49:19: Updated Strings.cs.meta in replica to match Strings.cs.meta in source.
+27.10.2025 12:49:19: Deleted Tuple.cs from replica -- file no longer exists in source.
+27.10.2025 12:49:19: Replicated Tuple.cs from source.
+27.10.2025 12:49:19: Updated Tuple.cs in replica to match Tuple.cs in source.
+27.10.2025 12:49:19: Deleted Tuple.cs.meta from replica -- file no longer exists in source.
+27.10.2025 12:49:19: Replicated Tuple.cs.meta from source.
+27.10.2025 12:49:19: Updated Tuple.cs.meta in replica to match Tuple.cs.meta in source.
