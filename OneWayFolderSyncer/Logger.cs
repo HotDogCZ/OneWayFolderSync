@@ -59,7 +59,7 @@ namespace FolderSyncing
             );
         }
 
-        public static void LogExcecption(Exception e)
+        public static void LogException(Exception e)
         {
             LogMessage($"[EXCEPTION] {e.Message}\n{e.StackTrace}");
         }
@@ -103,6 +103,13 @@ namespace FolderSyncing
                     Directory.CreateDirectory(logsDirectory);
                 }
             }
+        }
+
+        internal static void LogRenamed(string fileToRename, string newPath)
+        {
+            LogMessage(
+                $"Renamed {fileToRename} to {Path.GetFileName(newPath)} - the content matches."
+            );
         }
     }
 }

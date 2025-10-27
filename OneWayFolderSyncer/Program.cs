@@ -10,7 +10,7 @@ class Program
             PrintHelp();
             return;
         }
-        else if (args.Length != 4)
+        else if (args.Length != 4 && args.Length != 0) // TODO REMOVE zero case
         {
             Console.WriteLine(
                 $"Failed to run the program - expected 4 arguments got {args.Length}"
@@ -18,11 +18,24 @@ class Program
             PrintHelp();
             return;
         }
-
-        string sourcePath = args[0];
-        string replicaPath = args[1];
-        string syncPeriodArg = args[2];
-        string logPath = args[3];
+        string sourcePath;
+        string replicaPath;
+        string syncPeriodArg;
+        string logPath;
+        if (args.Length == 0)
+        {
+            sourcePath = @"C:\Users\vojte\OneWayFolderSync\source";
+            replicaPath = @"C:\Users\vojte\OneWayFolderSync\replica";
+            syncPeriodArg = "5";
+            logPath = @".\log.txt";
+        }
+        else
+        {
+            sourcePath = args[0];
+            replicaPath = args[1];
+            syncPeriodArg = args[2];
+            logPath = args[3];
+        }
 
         int syncPeriod = 10;
 
@@ -39,7 +52,13 @@ class Program
         OneWayFolderSyncer oneWayFolderSyncer;
         try
         {
-            oneWayFolderSyncer = new(sourcePath, replicaPath, logPath, syncPeriod);
+            oneWayFolderSyncer = new(
+                sourcePath,
+                replicaPath,
+                logPath,
+                syncPeriod,
+                new FileNameBasedIdStrategy()
+            );
         }
         catch (DirectoryNotFoundException e)
         {

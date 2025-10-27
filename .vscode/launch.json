@@ -23,9 +23,11 @@
 
     {
       "name": "C#: OneWayFolderSyncer${cwd} Debug",
-      "type": "dotnet",
+      "type": "coreclr",
       "request": "launch",
-      "projectPath": "${workspaceFolder}/<relative-path-to-project-folder>OneWayFolderSyncer${cwd}.csproj"
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/OneWayFolderSyncer/bin/Debug/net8.0/OneWayFolderSyncer.dll",
+
     }
   ]
 }

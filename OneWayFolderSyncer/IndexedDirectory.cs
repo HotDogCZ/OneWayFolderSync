@@ -3,20 +3,24 @@ using System.Text;
 
 namespace FolderSyncing
 {
-    internal class IndexedDirectory
+    public class IndexedDirectory
     {
         private DirectoryInfo directoryInfo;
 
         Dictionary<string, IndexedFile> indexedFiles = new();
         Dictionary<string, IndexedDirectory> indexedDirectories = new();
 
-        public string directoryId { get; }
+        public string directoryId => fileIdStrategy.GetDirectoryId(this);
+
+        private readonly IFileIdStrategy fileIdStrategy;
+        public readonly string directoryName;
         public string DirectoryPath => directoryInfo.FullName;
 
-        internal IndexedDirectory(string directoryPath)
+        internal IndexedDirectory(string directoryPath, IFileIdStrategy fileIdStrategy)
         {
             this.directoryInfo = new(directoryPath);
-            this.directoryId = directoryInfo.Name;
+            this.fileIdStrategy = fileIdStrategy;
+            this.directoryName = directoryInfo.Name;
         }
 
         internal void BuildIndex()
@@ -26,12 +30,12 @@ namespace FolderSyncing
             // handle files and subdirectories separately
             foreach (var file in directoryInfo.GetFiles())
             {
-                IndexedFile indexedFile = new(file.FullName);
+                IndexedFile indexedFile = new(file.FullName, fileIdStrategy);
                 indexedFiles.Add(indexedFile.fileId, indexedFile);
             }
             foreach (var dir in directoryInfo.GetDirectories())
             {
-                IndexedDirectory indexedDirectory = new(dir.FullName);
+                IndexedDirectory indexedDirectory = new(dir.FullName, fileIdStrategy);
                 indexedDirectories.Add(indexedDirectory.directoryId, indexedDirectory);
                 indexedDirectory.BuildIndex();
             }
@@ -65,6 +69,30 @@ namespace FolderSyncing
         internal void IndexDirectory(IndexedDirectory sourceSubDir)
         {
             indexedDirectories.Add(sourceSubDir.directoryId, sourceSubDir);
+        }
+
+        public string CalculateContentHash()
+        {
+            var fileConentHashes = indexedFiles
+                .OrderBy(f => f.Value.FileName)
+                .Select(f =>
+                    Convert.ToBase64String(f.Value.CalculateContentHash()) + f.Value.FileName
+                );
+            var directoryConentHashes = indexedDirectories
+                .OrderBy(f => f.Value.directoryName)
+                .Select(f => f.Value.CalculateContentHash() + f.Value.directoryName);
+            string combinedHash = string.Join("", fileConentHashes.Concat(directoryConentHashes));
+            return combinedHash;
+        }
+
+        internal bool ContentHashEquals(IndexedDirectory adept)
+        {
+            return CalculateContentHash() == adept.CalculateContentHash();
+        }
+
+        internal bool ContainsDirectory(IndexedDirectory dir)
+        {
+            return GetDirById(dir.directoryId) != null;
         }
     }
 }

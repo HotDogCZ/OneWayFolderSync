@@ -12,15 +12,17 @@ namespace FolderSyncing
 {
     public class OneWayFolderSyncer
     {
-        private string sourceFolderPath;
-        private string replicaFolderPath;
-        private Timer syncTimer;
+        private readonly string sourceFolderPath;
+        private readonly string replicaFolderPath;
+        private readonly Timer syncTimer;
+        private readonly IFileIdStrategy fileIdStrategy;
 
         public OneWayFolderSyncer(
             string sourceFolderPath,
             string replicaFolderPath,
             string logFilePath,
-            int syncPeriodInSeconds
+            int syncPeriodInSeconds,
+            IFileIdStrategy fileIdStrategy
         )
         {
             this.sourceFolderPath = Path.GetFullPath(sourceFolderPath);
@@ -41,6 +43,7 @@ namespace FolderSyncing
             syncTimer = new(syncPeriodInSeconds * 1000d);
             syncTimer.Elapsed += onSyncTimerElapsed;
             syncTimer.AutoReset = true;
+            this.fileIdStrategy = fileIdStrategy;
         }
 
         internal void StartSyncing()
@@ -58,13 +61,16 @@ namespace FolderSyncing
         private void SyncReplicaWithSource()
         {
             Console.WriteLine("Syncing " + replicaFolderPath + " to match " + sourceFolderPath);
-            SyncDirectory(new(sourceFolderPath));
+            SyncDirectory(new(sourceFolderPath, fileIdStrategy));
         }
 
         private void SyncDirectory(IndexedDirectory currentSourceDirectory)
         {
             string replicaPath = SourcePathToReplicaPath(currentSourceDirectory.DirectoryPath);
-            IndexedDirectory currentReplicaDirectory = new IndexedDirectory(replicaPath);
+            IndexedDirectory currentReplicaDirectory = new IndexedDirectory(
+                replicaPath,
+                fileIdStrategy
+            );
             currentSourceDirectory.BuildIndex();
             currentReplicaDirectory.BuildIndex();
             SyncFiles(currentSourceDirectory, currentReplicaDirectory);
@@ -89,13 +95,33 @@ namespace FolderSyncing
             // Replicate missing files
             List<SourceReplicaFilePair> potentiallyUpdatedFiles = new();
 
+            // Delete irrelevant files
+            List<IndexedFile> filesToDelete = new();
+            foreach (IndexedFile file in unconfirmedReplicatedFiles)
+            {
+                bool sourceExists = sourceDirectory.ContainsFile(file);
+                if (!sourceExists)
+                {
+                    filesToDelete.Add(file);
+                }
+            }
+
             foreach (IndexedFile sourceFile in sourceDirectory.GetIndexedFiles())
             {
                 IndexedFile replicatedFile = replicaDirectory.GetFileById(sourceFile.fileId);
                 if (replicatedFile == null)
                 {
-                    // sourceFile is not in replica
-                    ReplicateFile(sourceFile);
+                    // sourceFile is not in replica or is renamed
+                    IndexedFile fileToRename = FindFileWithSameContent(sourceFile, filesToDelete);
+                    if (fileToRename == null)
+                    {
+                        ReplicateFile(sourceFile);
+                    }
+                    else
+                    {
+                        filesToDelete.Remove(fileToRename);
+                        RenameFile(fileToRename, sourceFile);
+                    }
                 }
                 else
                 {
@@ -126,15 +152,43 @@ namespace FolderSyncing
                 }
             }
 
-            // Delete irrelevant files
-            foreach (IndexedFile file in unconfirmedReplicatedFiles)
+            foreach (IndexedFile toDelete in filesToDelete)
             {
-                bool sourceExists = sourceDirectory.ContainsFile(file);
-                if (!sourceExists)
+                DeleteFile(toDelete);
+            }
+        }
+
+        private void RenameFile(IndexedFile fileToRename, IndexedFile targetName)
+        {
+            string targetFileName = targetName.FileName;
+            string newPath = Path.Combine(
+                Path.GetDirectoryName(fileToRename.FilePath),
+                targetFileName
+            );
+            try
+            {
+                File.Move(fileToRename.FilePath, newPath);
+                Logger.LogRenamed(fileToRename.FilePath, newPath);
+            }
+            catch (IOException e)
+            {
+                Logger.LogException(e);
+            }
+        }
+
+        private IndexedFile FindFileWithSameContent(
+            IndexedFile targetFile,
+            List<IndexedFile> adepts
+        )
+        {
+            foreach (var adept in adepts)
+            {
+                if (adept.ConentHashEquals(targetFile))
                 {
-                    DeleteFile(file);
+                    return adept;
                 }
             }
+            return null;
         }
 
         private void SyncDirectories(
@@ -145,7 +199,16 @@ namespace FolderSyncing
             List<IndexedDirectory> unconfirmedReplicaDirectories = replicaDirectory
                 .GetIndexedSubdirs()
                 .ToList();
-            ;
+
+            List<IndexedDirectory> toDelete = new();
+            foreach (IndexedDirectory dir in unconfirmedReplicaDirectories)
+            {
+                bool sourceExists = sourceDirectory.ContainsDirectory(dir);
+                if (!sourceExists)
+                {
+                    toDelete.Add(dir);
+                }
+            }
 
             // add missing directories
             foreach (IndexedDirectory sourceSubDir in sourceDirectory.GetIndexedSubdirs())
@@ -155,8 +218,20 @@ namespace FolderSyncing
                 );
                 if (replicatedDirectory == null)
                 {
-                    ReplicateDirectory(sourceSubDir);
-                    replicaDirectory.IndexDirectory(sourceSubDir);
+                    IndexedDirectory dirToRename = FindDirectoryWithSameContent(
+                        sourceSubDir,
+                        toDelete
+                    );
+                    if (dirToRename == null)
+                    {
+                        ReplicateDirectory(sourceSubDir);
+                        replicaDirectory.IndexDirectory(sourceSubDir);
+                    }
+                    else
+                    {
+                        RenameDirectory(dirToRename, sourceSubDir);
+                        toDelete.Remove(dirToRename);
+                    }
                 }
                 else
                 {
@@ -166,10 +241,36 @@ namespace FolderSyncing
                 }
             }
 
-            foreach (IndexedDirectory dir in unconfirmedReplicaDirectories)
+            foreach (IndexedDirectory deletion in toDelete)
             {
-                DeleteDirectory(dir);
+                DeleteDirectory(deletion);
             }
+        }
+
+        private IndexedDirectory FindDirectoryWithSameContent(
+            IndexedDirectory sourceSubDir,
+            List<IndexedDirectory> adepts
+        )
+        {
+            foreach (var adept in adepts)
+            {
+                if (sourceSubDir.ContentHashEquals(adept))
+                {
+                    return adept;
+                }
+            }
+            return null;
+        }
+
+        private void RenameDirectory(IndexedDirectory dirToRename, IndexedDirectory targetDirName)
+        {
+            string parentPath = Path.GetDirectoryName(dirToRename.DirectoryPath)!;
+            string newDirName = Path.GetFileName(targetDirName.DirectoryPath);
+            string newFullPath = Path.Combine(parentPath, newDirName);
+
+            Directory.Move(dirToRename.DirectoryPath, newFullPath);
+
+            Logger.LogRenamed(dirToRename.DirectoryPath, newFullPath);
         }
 
         private void UpdateFile(IndexedFile source, IndexedFile replica)
@@ -197,7 +298,7 @@ namespace FolderSyncing
             }
             catch (IOException e)
             {
-                Logger.LogExcecption(e);
+                Logger.LogException(e);
             }
         }
 
@@ -210,7 +311,7 @@ namespace FolderSyncing
             }
             catch (IOException e)
             {
-                Logger.LogExcecption(e);
+                Logger.LogException(e);
             }
         }
 
@@ -223,7 +324,7 @@ namespace FolderSyncing
             }
             catch (IOException e)
             {
-                Logger.LogExcecption(e);
+                Logger.LogException(e);
             }
         }
 
@@ -236,7 +337,7 @@ namespace FolderSyncing
             }
             catch (IOException e)
             {
-                Logger.LogExcecption(e);
+                Logger.LogException(e);
             }
         }
 
