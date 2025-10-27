@@ -66,12 +66,12 @@ namespace FolderSyncing
 
         public static void LogDeletingDirectory(IndexedDirectory dir)
         {
-            LogMessage($"Trying to delete directory {dir.directoryId}...");
+            LogMessage($"Trying to delete directory {dir.DirectoryId}...");
         }
 
         public static void LogDeletedDirectory(IndexedDirectory dir)
         {
-            LogMessage($"Fully deleted directory {dir.directoryId}");
+            LogMessage($"Fully deleted directory {dir.DirectoryId}");
         }
 
         internal static void LogStart(string sourcePath, string replicaPath, double interval)

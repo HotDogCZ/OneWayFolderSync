@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OneWayFolderSyncer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5d1a19196c3f8c72e1ab39b6c2dc84329601f824")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+814b83ed3030c636d3d4d10467ffc0097aa8100a")]
 [assembly: System.Reflection.AssemblyProductAttribute("OneWayFolderSyncer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OneWayFolderSyncer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

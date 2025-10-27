@@ -27,7 +27,7 @@ class Program
             sourcePath = @"C:\Users\vojte\OneWayFolderSync\source";
             replicaPath = @"C:\Users\vojte\OneWayFolderSync\replica";
             syncPeriodArg = "5";
-            logPath = @".\log.txt";
+            logPath = @"C:\Users\vojte\OneWayFolderSync\log.txt";
         }
         else
         {
@@ -57,13 +57,14 @@ class Program
                 replicaPath,
                 logPath,
                 syncPeriod,
-                new FileNameBasedIdStrategy()
+                new FileNameBasedIdStrategy(),
+                new ModifiedTimeStrategy()
             );
         }
         catch (DirectoryNotFoundException e)
         {
             Console.Error.WriteLine(
-                "[ERROR] Source or Replica directory does not exist. " + e.Message
+                "[ERROR] Source/Replica/Log directory does not exist. " + e.Message
             );
             return;
         }

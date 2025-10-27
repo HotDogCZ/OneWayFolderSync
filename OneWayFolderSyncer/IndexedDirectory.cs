@@ -1,28 +1,41 @@
 using System.Security.Cryptography;
+using System.Security.Principal;
 using System.Text;
 
 namespace FolderSyncing
 {
     public class IndexedDirectory : IHashable
     {
-        private DirectoryInfo directoryInfo;
+        private readonly DirectoryInfo directoryInfo;
 
-        Dictionary<string, IndexedFile> indexedFiles = new();
-        Dictionary<string, IndexedDirectory> indexedDirectories = new();
+        private readonly Dictionary<string, IndexedFile> indexedFiles = new();
+        private readonly Dictionary<string, IndexedDirectory> indexedDirectories = new();
         private readonly string contentHash;
 
-        public string directoryId => fileIdStrategy.GetDirectoryId(this);
-
-        private readonly IFileIdStrategy fileIdStrategy;
-        public readonly string directoryName;
+        public string DirectoryId => fileIdStrategy.GetDirectoryId(this);
         public string DirectoryPath => directoryInfo.FullName;
+        public string DirectoryName => directoryInfo.Name;
+        public DateTime LastModified => directoryInfo.LastWriteTimeUtc;
+        private readonly IFileIdStrategy fileIdStrategy;
+        private readonly IModifiedStrategy modifiedStrategy;
 
-        internal IndexedDirectory(string directoryPath, IFileIdStrategy fileIdStrategy)
+        public bool HasChanged(IndexedDirectory other) =>
+            modifiedStrategy.DirHasChanged(this, other);
+
+        internal IndexedDirectory(
+            string directoryPath,
+            IFileIdStrategy fileIdStrategy,
+            IModifiedStrategy modifiedStrategy
+        )
         {
             this.directoryInfo = new(directoryPath);
             this.fileIdStrategy = fileIdStrategy;
-            this.directoryName = directoryInfo.Name;
-            this.contentHash = CalculateContentHash();
+            this.modifiedStrategy = modifiedStrategy;
+
+            if(modifiedStrategy is ModifiedContentHashStrategy)
+            {
+                this.contentHash = CalculateContentHash();
+            }
         }
 
         internal void BuildIndex()
@@ -32,13 +45,17 @@ namespace FolderSyncing
             // handle files and subdirectories separately
             foreach (var file in directoryInfo.GetFiles())
             {
-                IndexedFile indexedFile = new(file.FullName, fileIdStrategy);
+                IndexedFile indexedFile = new(file.FullName, fileIdStrategy, modifiedStrategy);
                 indexedFiles.Add(indexedFile.fileId, indexedFile);
             }
             foreach (var dir in directoryInfo.GetDirectories())
             {
-                IndexedDirectory indexedDirectory = new(dir.FullName, fileIdStrategy);
-                indexedDirectories.Add(indexedDirectory.directoryId, indexedDirectory);
+                IndexedDirectory indexedDirectory = new(
+                    dir.FullName,
+                    fileIdStrategy,
+                    modifiedStrategy
+                );
+                indexedDirectories.Add(indexedDirectory.DirectoryId, indexedDirectory);
                 indexedDirectory.BuildIndex();
             }
         }
@@ -70,7 +87,7 @@ namespace FolderSyncing
 
         internal void IndexDirectory(IndexedDirectory sourceSubDir)
         {
-            indexedDirectories.Add(sourceSubDir.directoryId, sourceSubDir);
+            indexedDirectories.Add(sourceSubDir.DirectoryId, sourceSubDir);
         }
 
         private string CalculateContentHash()
@@ -80,16 +97,16 @@ namespace FolderSyncing
                 .Select(f => f.Value.GetContentHash() + f.Value.FileName);
 
             var directoryConentHashes = indexedDirectories
-                .OrderBy(f => f.Value.directoryName)
-                .Select(f => f.Value.GetContentHash() + f.Value.directoryName);
+                .OrderBy(f => f.Value.DirectoryName)
+                .Select(f => f.Value.GetContentHash() + f.Value.DirectoryName);
             string combinedHash = string.Join("", fileConentHashes.Concat(directoryConentHashes));
+            Console.WriteLine("Hash calc");
             return combinedHash;
         }
 
-
         internal bool ContainsDirectory(IndexedDirectory dir)
         {
-            return GetDirById(dir.directoryId) != null;
+            return GetDirById(dir.DirectoryId) != null;
         }
 
         public string GetContentHash()

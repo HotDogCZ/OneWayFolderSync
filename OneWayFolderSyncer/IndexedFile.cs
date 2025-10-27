@@ -2,6 +2,7 @@ using System.Diagnostics;
 using System.Net.Http.Headers;
 using System.Runtime.CompilerServices;
 using System.Security.Cryptography;
+using Microsoft.VisualBasic;
 
 namespace FolderSyncing
 {
@@ -13,6 +14,7 @@ namespace FolderSyncing
         /// or using contentHash as id
         /// </summary>
         private readonly IFileIdStrategy fileIdStrategy;
+        private readonly IModifiedStrategy modifiedStrategy;
         public string fileId => fileIdStrategy.GetFileId(this);
         public long Size => fileInfo.Length;
 
@@ -20,14 +22,26 @@ namespace FolderSyncing
 
         public string FileName => fileInfo.Name;
 
-        private readonly FileInfo fileInfo;
-        private readonly string contentHash;
+        public DateTime LastModified => fileInfo.LastWriteTimeUtc;
 
-        public IndexedFile(string sourceFilePath, IFileIdStrategy fileIdStrategy)
+        private readonly FileInfo fileInfo;
+        private readonly string cachedContentHash;
+
+        public bool HasChanged(IndexedFile other) => modifiedStrategy.FileHasChanged(this, other);
+
+        public IndexedFile(
+            string sourceFilePath,
+            IFileIdStrategy fileIdStrategy,
+            IModifiedStrategy modifiedStrategy
+        )
         {
             this.fileInfo = new FileInfo(sourceFilePath);
             this.fileIdStrategy = fileIdStrategy;
-            contentHash = CalculateContentHash();
+            this.modifiedStrategy = modifiedStrategy;
+            if (modifiedStrategy is ModifiedContentHashStrategy)
+            {
+                cachedContentHash = CalculateContentHash();
+            }
         }
 
         public string CalculateContentHash()
@@ -37,6 +51,8 @@ namespace FolderSyncing
                 using (FileStream fileStream = File.OpenRead(FilePath))
                 {
                     byte[] hashBytes = md5.ComputeHash(fileStream);
+                    Console.WriteLine("Hash calc");
+
                     return Convert.ToBase64String(hashBytes);
                 }
             }
@@ -44,12 +60,44 @@ namespace FolderSyncing
 
         public string GetContentHash()
         {
-            return contentHash;
+            return cachedContentHash;
         }
 
         public bool ContentHashEquals(IHashable other)
         {
             return GetContentHash() == other.GetContentHash();
+        }
+    }
+
+    public interface IModifiedStrategy
+    {
+        public bool FileHasChanged(IndexedFile source, IndexedFile replica);
+        public bool DirHasChanged(IndexedDirectory source, IndexedDirectory replica);
+    }
+
+    public class ModifiedContentHashStrategy : IModifiedStrategy
+    {
+        public bool DirHasChanged(IndexedDirectory source, IndexedDirectory replica)
+        {
+            return source.ContentHashEquals(replica);
+        }
+
+        public bool FileHasChanged(IndexedFile source, IndexedFile replica)
+        {
+            return source.ContentHashEquals(replica);
+        }
+    }
+
+    public class ModifiedTimeStrategy : IModifiedStrategy
+    {
+        public bool DirHasChanged(IndexedDirectory source, IndexedDirectory replica)
+        {
+            return source.LastModified == replica.LastModified;
+        }
+
+        public bool FileHasChanged(IndexedFile source, IndexedFile replica)
+        {
+            return source.LastModified != replica.LastModified;
         }
     }
 
@@ -78,7 +126,7 @@ namespace FolderSyncing
 
         public string GetDirectoryId(IndexedDirectory dir)
         {
-            return dir.directoryName;
+            return dir.DirectoryName;
         }
     }
 }
